@@ -32,7 +32,7 @@ jobs:
       - name: Skip Cache Parser Tool
         run: |
           go work init
-          go work edit -replace="github.com/goplus/llpkgstore=github.com/MeteorsLiu/llpkgstore@rebase"
+          go work edit -replace="github.com/MeteorsLiu/llpkgstore=github.com/goplus/llpkgstore@latest"
           go env -w GOPRIVATE=github.com/MeteorsLiu/llpkgstore
       - name: Set up Parser Tool
         run: |
