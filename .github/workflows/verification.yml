@@ -71,14 +71,7 @@ jobs:
         id: changed-files
         uses: tj-actions/changed-files@v45
 
-      - name: PR Verfication
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
-        run: |
-          llpkgstore pr-verfication
-
-      - name: Go Module Verfication
+      - name: Verfication
         id: gen-go-module
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
