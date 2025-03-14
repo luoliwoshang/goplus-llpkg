@@ -23,4 +23,4 @@ jobs:
           go install -v github.com/MeteorsLiu/llpkgstore/cmd/llpkgstore@gha-test
       - name: Run post-processing process
         run: |
-          llpkgstore post-processing
+          llpkgstore postprocessing
