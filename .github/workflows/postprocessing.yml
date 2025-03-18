@@ -24,7 +24,9 @@ jobs:
 
       - name: Copy llpkgstore.json to root
         run: |
-          cp .website/_website/public/llpkgstore.json .
+          # ignore error
+          ls .website .website/_website/public
+          cp .website/_website/public/llpkgstore.json . 2>/dev/null
           rm -rf .website
 
       - name: Set up Go
