@@ -50,8 +50,8 @@ jobs:
           echo "LLGO_ROOT=$LLGO_ROOT" >> $GITHUB_ENV
       - name: Install LLCppg
         run: |
-          llgo install -v github.com/goplus/llcppg/_xtool/llcppsymg@v0.1.0
-          llgo install -v github.com/goplus/llcppg/_xtool/llcppsigfetch@v0.1.0
+          llgo install -v github.com/goplus/llcppg/_xtool/llcppsymg
+          llgo install -v github.com/goplus/llcppg/_xtool/llcppsigfetch
           go install github.com/goplus/llcppg/cmd/llcppcfg@v0.1.0
           go install github.com/goplus/llcppg/cmd/gogensig@v0.1.0
           go install github.com/goplus/llcppg@v0.1.0
