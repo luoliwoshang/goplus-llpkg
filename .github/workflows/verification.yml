@@ -42,7 +42,7 @@ jobs:
           python3 -m pip install conan
       - name: Install LLGO
         run: |
-          go install -v github.com/goplus/llgo/compiler/cmd/llgo@latest
+          go install -v github.com/goplus/llgo/compiler/cmd/llgo
       - name: Install LLCppg
         run: |
           llgo install -v github.com/goplus/llcppg/_xtool/llcppsymg@v0.1.0
