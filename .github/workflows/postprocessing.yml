@@ -11,6 +11,22 @@ jobs:
   post-processing:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout to website
+        uses: actions/checkout@v4
+        with:
+          ref: website
+          path: .website
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Copy llpkgstore.json to root
+        run: |
+          cp .website/_website/public/llpkgstore.json .
+          rm -rf .website
+
       - name: Set up Go
         uses: actions/setup-go@v4
         with:
@@ -26,3 +42,22 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           llpkgstore postprocessing
+
+      - name: Checkout website branch
+        uses: actions/checkout@v4
+        with:
+            ref: website
+            path: .website
+
+      - name: Move llpkgstore.json to website
+        run: |
+            mv llpkgstore.json .website/public
+
+      - name: Commit and push changes
+        working-directory: .website
+        run: |
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            git add public/llpkgstore.json
+            git commit -m "Update llpkgstore.json"
+            git push
