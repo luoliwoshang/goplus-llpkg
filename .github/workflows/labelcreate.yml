@@ -27,5 +27,7 @@ jobs:
         run: |
           go install -v github.com/MeteorsLiu/llpkgstore/cmd/maintain@gha-test
       - name: Run maintenance process
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           maintain labelcreate -l "${{ github.event.label.name }}"
