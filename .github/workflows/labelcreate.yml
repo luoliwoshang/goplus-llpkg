@@ -18,19 +18,22 @@ jobs:
         with:
           ref: website
           path: .website
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          ref: main
       - name: Copy llpkgstore.json to root
         continue-on-error: true
         run: |
           # ignore error
           ls .website .website/_website/public
-          cp .website/_website/public/llpkgstore.json .main
+          cp .website/_website/public/llpkgstore.json .
           rm -rf .website
-          cat llpkgstore.json
 
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Check llpkgjson
+        continue-on-error: true
+        run: |
+          cat llpkgstore.json
       - name: Set up Go
         uses: actions/setup-go@v4
         with:
