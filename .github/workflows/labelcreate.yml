@@ -25,7 +25,7 @@ jobs:
           go env -w GOPRIVATE=github.com/MeteorsLiu/llpkgstore
       - name: Set up Parser Tool
         run: |
-          go install -v github.com/MeteorsLiu/llpkgstore/cmd/maintain@rebase
+          go install -v github.com/MeteorsLiu/llpkgstore/cmd/maintain@gha-test
       - name: Run maintenance process
         run: |
           maintain labelcreate
