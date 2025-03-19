@@ -13,9 +13,24 @@ jobs:
     if: |
       contains(github.event.label.name, 'branch:release-branch.')
     steps:
-      - name: Checkout
-        id: checkout
+      - name: Checkout to website
         uses: actions/checkout@v4
+        with:
+          ref: website
+          path: .website
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Copy llpkgstore.json to root
+        continue-on-error: true
+        run: |
+          # ignore error
+          ls .website .website/_website/public
+          cp .website/_website/public/llpkgstore.json . 2>/dev/null
+          rm -rf .website
       - name: Set up Go
         uses: actions/setup-go@v4
         with:
