@@ -28,4 +28,4 @@ jobs:
           go install -v github.com/MeteorsLiu/llpkgstore/cmd/maintain@gha-test
       - name: Run maintenance process
         run: |
-          maintain labelcreate
+          maintain labelcreate -label  ${{ github.event.label.name }}
