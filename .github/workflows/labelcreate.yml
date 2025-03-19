@@ -22,7 +22,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
-          path: .main
       - name: Copy llpkgstore.json to root
         continue-on-error: true
         run: |
@@ -30,7 +29,6 @@ jobs:
           ls .website .website/_website/public
           cp .website/_website/public/llpkgstore.json .main
           rm -rf .website
-          cd .main
           cat llpkgstore.json
 
       - name: Set up Go
