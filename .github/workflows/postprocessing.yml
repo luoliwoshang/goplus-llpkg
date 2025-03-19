@@ -1,14 +1,14 @@
 name: Post-processing
 
 
-# direct push to repo is not allowed, so just listen the push event
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    types:
+      - closed
 
 jobs:
   post-processing:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout to website
