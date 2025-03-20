@@ -5,8 +5,7 @@ name: Legacy version maintenance
 on:
   label:
     types: [created]
-permissions:
-  contents: write
+
 
 
 jobs:
@@ -14,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     if: |
       contains(github.event.label.name, 'branch:release-branch.')
+    permissions: write-all
     steps:
       - name: Checkout to website
         uses: actions/checkout@v4

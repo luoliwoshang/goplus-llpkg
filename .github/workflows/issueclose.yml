@@ -3,8 +3,6 @@ name: Clean unused branch
 on:
   issues:
     types: [closed]
-permissions:
-  contents: write
 
 jobs:
   clean-resource:
@@ -12,6 +10,7 @@ jobs:
     # I don't know why github action cointains returns false always when using labels.*.name
     if: |
       contains(github.event.issue.labels[0].name, 'branch:release-branch.')
+    permissions: write-all
     steps:
       - name: Checkout
         id: checkout
