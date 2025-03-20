@@ -1,13 +1,13 @@
 name: Legacy version maintenance
 
+permissions: write-all
+
 
 # label trigger
 on:
   label:
     types: [created]
 
-permissions:
-  contents: write
 
 
 jobs:

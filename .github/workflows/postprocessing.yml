@@ -1,5 +1,6 @@
 name: Post-processing
 
+permissions: write-all
 
 # don't limit to main branch
 # consider maintenance branch
@@ -10,8 +11,7 @@ on:
     branches:
       - 'release-branch.**'
       - main
-permissions:
-  contents: write
+
 
 jobs:
   post-processing:
