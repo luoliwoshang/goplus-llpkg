@@ -34,8 +34,8 @@ jobs:
         continue-on-error: true
         run: |
           # ignore error
-          ls .website .website/_website/public
-          cp .website/_website/public/llpkgstore.json .main
+          ls .website .website/public
+          cp .website/public/llpkgstore.json .main
           rm -rf .website
 
       - name: Set up Go
@@ -64,10 +64,10 @@ jobs:
       - name: Move llpkgstore.json to website
         working-directory: .main
         run: |
-            mv llpkgstore.json .website/_website/public
+            mv llpkgstore.json .website/public
 
       - name: Commit and push changes
-        working-directory: .website/_website
+        working-directory: .website
         run: |
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
