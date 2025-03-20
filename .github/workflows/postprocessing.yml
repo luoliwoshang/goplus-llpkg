@@ -62,9 +62,8 @@ jobs:
             path: .website
 
       - name: Move llpkgstore.json to website
-        working-directory: .main
         run: |
-            mv llpkgstore.json ../.website/public
+            mv .main/llpkgstore.json .website/public
 
       - name: Commit and push changes
         working-directory: .website
