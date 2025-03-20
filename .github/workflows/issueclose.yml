@@ -3,7 +3,9 @@ name: Clean unused branch
 on:
   issues:
     types: [closed]
-permissions: write-all
+
+permissions:
+  contents: write
 
 jobs:
   clean-resource:
