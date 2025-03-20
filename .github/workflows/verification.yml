@@ -1,8 +1,12 @@
 name: Verify Go Module
 
+
+# don't limit to main branch
+# consider maintenance branch
 on:
   pull_request:
     branches:
+      - 'release-branch.**'
       - main
 
 
@@ -20,6 +24,7 @@ jobs:
       - name: Checkout
         id: checkout
         uses: actions/checkout@v4
+
 
       - name: Set up Go
         uses: actions/setup-go@v4

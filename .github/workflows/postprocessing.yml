@@ -1,10 +1,16 @@
 name: Post-processing
 
 
+# don't limit to main branch
+# consider maintenance branch
 on:
   pull_request:
     types:
       - closed
+    branches:
+      - 'release-branch.**'
+      - main
+
 
 jobs:
   post-processing:
@@ -21,13 +27,14 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: main
+          path: .main
 
       - name: Copy llpkgstore.json to root
         continue-on-error: true
         run: |
           # ignore error
           ls .website .website/_website/public
-          cp .website/_website/public/llpkgstore.json . 2>/dev/null
+          cp .website/_website/public/llpkgstore.json .main
           rm -rf .website
 
       - name: Set up Go
@@ -41,6 +48,7 @@ jobs:
         run: |
           go install -v github.com/MeteorsLiu/llpkgstore/cmd/llpkgstore@gha-test
       - name: Run post-processing process
+        working-directory: .main
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -53,6 +61,7 @@ jobs:
             path: .website
 
       - name: Move llpkgstore.json to website
+        working-directory: .main
         run: |
             mv llpkgstore.json .website/_website/public
 

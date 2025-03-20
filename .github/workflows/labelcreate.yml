@@ -23,6 +23,13 @@ jobs:
         with:
           ref: main
           path: .main
+      # actions/checkout cannot fetch tags even though using fetch-tags
+      # see issue: https://github.com/actions/checkout/issues/1471
+      - name: Fetch all tags
+        working-directory: .main
+        run: |
+          git fetch --all --tags --prune
+
       - name: Copy llpkgstore.json to root
         continue-on-error: true
         run: |
@@ -46,5 +53,4 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          pwd
           maintain labelcreate -l "${{ github.event.label.name }}"
