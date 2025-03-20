@@ -10,12 +10,12 @@ on:
     branches:
       - 'release-branch.**'
       - main
+permissions: write-all
 
 jobs:
   post-processing:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
-    permissions: write-all
     steps:
       - name: Checkout to website
         uses: actions/checkout@v4
