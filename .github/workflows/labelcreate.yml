@@ -5,6 +5,8 @@ name: Legacy version maintenance
 on:
   label:
     types: [created]
+permissions:
+  contents: write
 
 
 jobs:

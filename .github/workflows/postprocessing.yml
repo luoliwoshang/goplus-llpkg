@@ -10,7 +10,8 @@ on:
     branches:
       - 'release-branch.**'
       - main
-
+permissions:
+  contents: write
 
 jobs:
   post-processing:
