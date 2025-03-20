@@ -46,4 +46,5 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          pwd
           maintain labelcreate -l "${{ github.event.label.name }}"
