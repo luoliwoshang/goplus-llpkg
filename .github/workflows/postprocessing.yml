@@ -30,7 +30,7 @@ jobs:
           ref: main
           path: .main
           fetch-depth: 0
-
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Copy llpkgstore.json to root
         continue-on-error: true

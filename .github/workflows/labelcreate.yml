@@ -26,6 +26,7 @@ jobs:
         with:
           ref: main
           path: .main
+          token: ${{ secrets.GITHUB_TOKEN }}
       # actions/checkout cannot fetch tags even though using fetch-tags
       # see issue: https://github.com/actions/checkout/issues/1471
       - name: Fetch all tags
