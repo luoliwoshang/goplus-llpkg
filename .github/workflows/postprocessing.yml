@@ -29,6 +29,8 @@ jobs:
         with:
           ref: main
           path: .main
+          fetch-depth: 0
+
 
       - name: Copy llpkgstore.json to root
         continue-on-error: true
