@@ -1,7 +1,5 @@
 name: Legacy version maintenance
 
-permissions: write-all
-
 
 # label trigger
 on:
@@ -26,7 +24,6 @@ jobs:
         with:
           ref: main
           path: .main
-          token: ${{ secrets.GITHUB_TOKEN }}
       # actions/checkout cannot fetch tags even though using fetch-tags
       # see issue: https://github.com/actions/checkout/issues/1471
       - name: Fetch all tags
@@ -38,8 +35,8 @@ jobs:
         continue-on-error: true
         run: |
           # ignore error
-          ls .website .website/_website/public
-          cp .website/_website/public/llpkgstore.json .main
+          ls .website .website/public
+          cp .website/public/llpkgstore.json .main
           rm -rf .website
 
       - name: Set up Go

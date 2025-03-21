@@ -1,7 +1,5 @@
 name: Clean unused branch
 
-permissions: write-all
-
 
 on:
   issues:
