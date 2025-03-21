@@ -1,0 +1,3085 @@
+[{
+		"mangle":	"Z3_add_const_interp",
+		"c++":	"Z3_add_const_interp(Z3_context, Z3_model, Z3_func_decl, Z3_ast)",
+		"go":	"AddConstInterp"
+	}, {
+		"mangle":	"Z3_add_func_interp",
+		"c++":	"Z3_add_func_interp(Z3_context, Z3_model, Z3_func_decl, Z3_ast)",
+		"go":	"AddFuncInterp"
+	}, {
+		"mangle":	"Z3_add_rec_def",
+		"c++":	"Z3_add_rec_def(Z3_context, Z3_func_decl, unsigned int, Z3_ast *, Z3_ast)",
+		"go":	"AddRecDef"
+	}, {
+		"mangle":	"Z3_algebraic_add",
+		"c++":	"Z3_algebraic_add(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"AlgebraicAdd"
+	}, {
+		"mangle":	"Z3_algebraic_div",
+		"c++":	"Z3_algebraic_div(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"AlgebraicDiv"
+	}, {
+		"mangle":	"Z3_algebraic_eq",
+		"c++":	"Z3_algebraic_eq(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"AlgebraicEq"
+	}, {
+		"mangle":	"Z3_algebraic_eval",
+		"c++":	"Z3_algebraic_eval(Z3_context, Z3_ast, unsigned int, Z3_ast *)",
+		"go":	"AlgebraicEval"
+	}, {
+		"mangle":	"Z3_algebraic_ge",
+		"c++":	"Z3_algebraic_ge(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"AlgebraicGe"
+	}, {
+		"mangle":	"Z3_algebraic_get_i",
+		"c++":	"Z3_algebraic_get_i(Z3_context, Z3_ast)",
+		"go":	"AlgebraicGetI"
+	}, {
+		"mangle":	"Z3_algebraic_get_poly",
+		"c++":	"Z3_algebraic_get_poly(Z3_context, Z3_ast)",
+		"go":	"AlgebraicGetPoly"
+	}, {
+		"mangle":	"Z3_algebraic_gt",
+		"c++":	"Z3_algebraic_gt(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"AlgebraicGt"
+	}, {
+		"mangle":	"Z3_algebraic_is_neg",
+		"c++":	"Z3_algebraic_is_neg(Z3_context, Z3_ast)",
+		"go":	"AlgebraicIsNeg"
+	}, {
+		"mangle":	"Z3_algebraic_is_pos",
+		"c++":	"Z3_algebraic_is_pos(Z3_context, Z3_ast)",
+		"go":	"AlgebraicIsPos"
+	}, {
+		"mangle":	"Z3_algebraic_is_value",
+		"c++":	"Z3_algebraic_is_value(Z3_context, Z3_ast)",
+		"go":	"AlgebraicIsValue"
+	}, {
+		"mangle":	"Z3_algebraic_is_zero",
+		"c++":	"Z3_algebraic_is_zero(Z3_context, Z3_ast)",
+		"go":	"AlgebraicIsZero"
+	}, {
+		"mangle":	"Z3_algebraic_le",
+		"c++":	"Z3_algebraic_le(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"AlgebraicLe"
+	}, {
+		"mangle":	"Z3_algebraic_lt",
+		"c++":	"Z3_algebraic_lt(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"AlgebraicLt"
+	}, {
+		"mangle":	"Z3_algebraic_mul",
+		"c++":	"Z3_algebraic_mul(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"AlgebraicMul"
+	}, {
+		"mangle":	"Z3_algebraic_neq",
+		"c++":	"Z3_algebraic_neq(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"AlgebraicNeq"
+	}, {
+		"mangle":	"Z3_algebraic_power",
+		"c++":	"Z3_algebraic_power(Z3_context, Z3_ast, unsigned int)",
+		"go":	"AlgebraicPower"
+	}, {
+		"mangle":	"Z3_algebraic_root",
+		"c++":	"Z3_algebraic_root(Z3_context, Z3_ast, unsigned int)",
+		"go":	"AlgebraicRoot"
+	}, {
+		"mangle":	"Z3_algebraic_roots",
+		"c++":	"Z3_algebraic_roots(Z3_context, Z3_ast, unsigned int, Z3_ast *)",
+		"go":	"AlgebraicRoots"
+	}, {
+		"mangle":	"Z3_algebraic_sign",
+		"c++":	"Z3_algebraic_sign(Z3_context, Z3_ast)",
+		"go":	"AlgebraicSign"
+	}, {
+		"mangle":	"Z3_algebraic_sub",
+		"c++":	"Z3_algebraic_sub(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"AlgebraicSub"
+	}, {
+		"mangle":	"Z3_app_to_ast",
+		"c++":	"Z3_app_to_ast(Z3_context, Z3_app)",
+		"go":	"AppToAst"
+	}, {
+		"mangle":	"Z3_append_log",
+		"c++":	"Z3_append_log(Z3_string)",
+		"go":	"AppendLog"
+	}, {
+		"mangle":	"Z3_apply_result_dec_ref",
+		"c++":	"Z3_apply_result_dec_ref(Z3_context, Z3_apply_result)",
+		"go":	"ApplyResultDecRef"
+	}, {
+		"mangle":	"Z3_apply_result_get_num_subgoals",
+		"c++":	"Z3_apply_result_get_num_subgoals(Z3_context, Z3_apply_result)",
+		"go":	"ApplyResultGetNumSubgoals"
+	}, {
+		"mangle":	"Z3_apply_result_get_subgoal",
+		"c++":	"Z3_apply_result_get_subgoal(Z3_context, Z3_apply_result, unsigned int)",
+		"go":	"ApplyResultGetSubgoal"
+	}, {
+		"mangle":	"Z3_apply_result_inc_ref",
+		"c++":	"Z3_apply_result_inc_ref(Z3_context, Z3_apply_result)",
+		"go":	"ApplyResultIncRef"
+	}, {
+		"mangle":	"Z3_apply_result_to_string",
+		"c++":	"Z3_apply_result_to_string(Z3_context, Z3_apply_result)",
+		"go":	"ApplyResultToString"
+	}, {
+		"mangle":	"Z3_ast_map_contains",
+		"c++":	"Z3_ast_map_contains(Z3_context, Z3_ast_map, Z3_ast)",
+		"go":	"AstMapContains"
+	}, {
+		"mangle":	"Z3_ast_map_dec_ref",
+		"c++":	"Z3_ast_map_dec_ref(Z3_context, Z3_ast_map)",
+		"go":	"AstMapDecRef"
+	}, {
+		"mangle":	"Z3_ast_map_erase",
+		"c++":	"Z3_ast_map_erase(Z3_context, Z3_ast_map, Z3_ast)",
+		"go":	"AstMapErase"
+	}, {
+		"mangle":	"Z3_ast_map_find",
+		"c++":	"Z3_ast_map_find(Z3_context, Z3_ast_map, Z3_ast)",
+		"go":	"AstMapFind"
+	}, {
+		"mangle":	"Z3_ast_map_inc_ref",
+		"c++":	"Z3_ast_map_inc_ref(Z3_context, Z3_ast_map)",
+		"go":	"AstMapIncRef"
+	}, {
+		"mangle":	"Z3_ast_map_insert",
+		"c++":	"Z3_ast_map_insert(Z3_context, Z3_ast_map, Z3_ast, Z3_ast)",
+		"go":	"AstMapInsert"
+	}, {
+		"mangle":	"Z3_ast_map_keys",
+		"c++":	"Z3_ast_map_keys(Z3_context, Z3_ast_map)",
+		"go":	"AstMapKeys"
+	}, {
+		"mangle":	"Z3_ast_map_reset",
+		"c++":	"Z3_ast_map_reset(Z3_context, Z3_ast_map)",
+		"go":	"AstMapReset"
+	}, {
+		"mangle":	"Z3_ast_map_size",
+		"c++":	"Z3_ast_map_size(Z3_context, Z3_ast_map)",
+		"go":	"AstMapSize"
+	}, {
+		"mangle":	"Z3_ast_map_to_string",
+		"c++":	"Z3_ast_map_to_string(Z3_context, Z3_ast_map)",
+		"go":	"AstMapToString"
+	}, {
+		"mangle":	"Z3_ast_to_string",
+		"c++":	"Z3_ast_to_string(Z3_context, Z3_ast)",
+		"go":	"AstToString"
+	}, {
+		"mangle":	"Z3_ast_vector_dec_ref",
+		"c++":	"Z3_ast_vector_dec_ref(Z3_context, Z3_ast_vector)",
+		"go":	"AstVectorDecRef"
+	}, {
+		"mangle":	"Z3_ast_vector_get",
+		"c++":	"Z3_ast_vector_get(Z3_context, Z3_ast_vector, unsigned int)",
+		"go":	"AstVectorGet"
+	}, {
+		"mangle":	"Z3_ast_vector_inc_ref",
+		"c++":	"Z3_ast_vector_inc_ref(Z3_context, Z3_ast_vector)",
+		"go":	"AstVectorIncRef"
+	}, {
+		"mangle":	"Z3_ast_vector_push",
+		"c++":	"Z3_ast_vector_push(Z3_context, Z3_ast_vector, Z3_ast)",
+		"go":	"AstVectorPush"
+	}, {
+		"mangle":	"Z3_ast_vector_resize",
+		"c++":	"Z3_ast_vector_resize(Z3_context, Z3_ast_vector, unsigned int)",
+		"go":	"AstVectorResize"
+	}, {
+		"mangle":	"Z3_ast_vector_set",
+		"c++":	"Z3_ast_vector_set(Z3_context, Z3_ast_vector, unsigned int, Z3_ast)",
+		"go":	"AstVectorSet"
+	}, {
+		"mangle":	"Z3_ast_vector_size",
+		"c++":	"Z3_ast_vector_size(Z3_context, Z3_ast_vector)",
+		"go":	"AstVectorSize"
+	}, {
+		"mangle":	"Z3_ast_vector_to_string",
+		"c++":	"Z3_ast_vector_to_string(Z3_context, Z3_ast_vector)",
+		"go":	"AstVectorToString"
+	}, {
+		"mangle":	"Z3_ast_vector_translate",
+		"c++":	"Z3_ast_vector_translate(Z3_context, Z3_ast_vector, Z3_context)",
+		"go":	"AstVectorTranslate"
+	}, {
+		"mangle":	"Z3_benchmark_to_smtlib_string",
+		"c++":	"Z3_benchmark_to_smtlib_string(Z3_context, Z3_string, Z3_string, Z3_string, Z3_string, unsigned int, const Z3_ast *, Z3_ast)",
+		"go":	"BenchmarkToSmtlibString"
+	}, {
+		"mangle":	"Z3_close_log",
+		"c++":	"Z3_close_log()",
+		"go":	"CloseLog"
+	}, {
+		"mangle":	"Z3_constructor_num_fields",
+		"c++":	"Z3_constructor_num_fields(Z3_context, Z3_constructor)",
+		"go":	"ConstructorNumFields"
+	}, {
+		"mangle":	"Z3_datatype_update_field",
+		"c++":	"Z3_datatype_update_field(Z3_context, Z3_func_decl, Z3_ast, Z3_ast)",
+		"go":	"DatatypeUpdateField"
+	}, {
+		"mangle":	"Z3_dec_ref",
+		"c++":	"Z3_dec_ref(Z3_context, Z3_ast)",
+		"go":	"DecRef"
+	}, {
+		"mangle":	"Z3_del_config",
+		"c++":	"Z3_del_config(Z3_config)",
+		"go":	"DelConfig"
+	}, {
+		"mangle":	"Z3_del_constructor",
+		"c++":	"Z3_del_constructor(Z3_context, Z3_constructor)",
+		"go":	"DelConstructor"
+	}, {
+		"mangle":	"Z3_del_constructor_list",
+		"c++":	"Z3_del_constructor_list(Z3_context, Z3_constructor_list)",
+		"go":	"DelConstructorList"
+	}, {
+		"mangle":	"Z3_del_context",
+		"c++":	"Z3_del_context(Z3_context)",
+		"go":	"DelContext"
+	}, {
+		"mangle":	"Z3_disable_trace",
+		"c++":	"Z3_disable_trace(Z3_string)",
+		"go":	"DisableTrace"
+	}, {
+		"mangle":	"Z3_enable_concurrent_dec_ref",
+		"c++":	"Z3_enable_concurrent_dec_ref(Z3_context)",
+		"go":	"EnableConcurrentDecRef"
+	}, {
+		"mangle":	"Z3_enable_trace",
+		"c++":	"Z3_enable_trace(Z3_string)",
+		"go":	"EnableTrace"
+	}, {
+		"mangle":	"Z3_eval_smtlib2_string",
+		"c++":	"Z3_eval_smtlib2_string(Z3_context, Z3_string)",
+		"go":	"EvalSmtlib2String"
+	}, {
+		"mangle":	"Z3_finalize_memory",
+		"c++":	"Z3_finalize_memory()",
+		"go":	"FinalizeMemory"
+	}, {
+		"mangle":	"Z3_fixedpoint_add_callback",
+		"c++":	"Z3_fixedpoint_add_callback(Z3_context, Z3_fixedpoint, void *, Z3_fixedpoint_new_lemma_eh, Z3_fixedpoint_predecessor_eh, Z3_fixedpoint_unfold_eh)",
+		"go":	"FixedpointAddCallback"
+	}, {
+		"mangle":	"Z3_fixedpoint_add_constraint",
+		"c++":	"Z3_fixedpoint_add_constraint(Z3_context, Z3_fixedpoint, Z3_ast, unsigned int)",
+		"go":	"FixedpointAddConstraint"
+	}, {
+		"mangle":	"Z3_fixedpoint_add_cover",
+		"c++":	"Z3_fixedpoint_add_cover(Z3_context, Z3_fixedpoint, int, Z3_func_decl, Z3_ast)",
+		"go":	"FixedpointAddCover"
+	}, {
+		"mangle":	"Z3_fixedpoint_add_fact",
+		"c++":	"Z3_fixedpoint_add_fact(Z3_context, Z3_fixedpoint, Z3_func_decl, unsigned int, unsigned int *)",
+		"go":	"FixedpointAddFact"
+	}, {
+		"mangle":	"Z3_fixedpoint_add_invariant",
+		"c++":	"Z3_fixedpoint_add_invariant(Z3_context, Z3_fixedpoint, Z3_func_decl, Z3_ast)",
+		"go":	"FixedpointAddInvariant"
+	}, {
+		"mangle":	"Z3_fixedpoint_add_rule",
+		"c++":	"Z3_fixedpoint_add_rule(Z3_context, Z3_fixedpoint, Z3_ast, Z3_symbol)",
+		"go":	"FixedpointAddRule"
+	}, {
+		"mangle":	"Z3_fixedpoint_assert",
+		"c++":	"Z3_fixedpoint_assert(Z3_context, Z3_fixedpoint, Z3_ast)",
+		"go":	"FixedpointAssert"
+	}, {
+		"mangle":	"Z3_fixedpoint_dec_ref",
+		"c++":	"Z3_fixedpoint_dec_ref(Z3_context, Z3_fixedpoint)",
+		"go":	"FixedpointDecRef"
+	}, {
+		"mangle":	"Z3_fixedpoint_from_file",
+		"c++":	"Z3_fixedpoint_from_file(Z3_context, Z3_fixedpoint, Z3_string)",
+		"go":	"FixedpointFromFile"
+	}, {
+		"mangle":	"Z3_fixedpoint_from_string",
+		"c++":	"Z3_fixedpoint_from_string(Z3_context, Z3_fixedpoint, Z3_string)",
+		"go":	"FixedpointFromString"
+	}, {
+		"mangle":	"Z3_fixedpoint_get_answer",
+		"c++":	"Z3_fixedpoint_get_answer(Z3_context, Z3_fixedpoint)",
+		"go":	"FixedpointGetAnswer"
+	}, {
+		"mangle":	"Z3_fixedpoint_get_assertions",
+		"c++":	"Z3_fixedpoint_get_assertions(Z3_context, Z3_fixedpoint)",
+		"go":	"FixedpointGetAssertions"
+	}, {
+		"mangle":	"Z3_fixedpoint_get_cover_delta",
+		"c++":	"Z3_fixedpoint_get_cover_delta(Z3_context, Z3_fixedpoint, int, Z3_func_decl)",
+		"go":	"FixedpointGetCoverDelta"
+	}, {
+		"mangle":	"Z3_fixedpoint_get_ground_sat_answer",
+		"c++":	"Z3_fixedpoint_get_ground_sat_answer(Z3_context, Z3_fixedpoint)",
+		"go":	"FixedpointGetGroundSatAnswer"
+	}, {
+		"mangle":	"Z3_fixedpoint_get_help",
+		"c++":	"Z3_fixedpoint_get_help(Z3_context, Z3_fixedpoint)",
+		"go":	"FixedpointGetHelp"
+	}, {
+		"mangle":	"Z3_fixedpoint_get_num_levels",
+		"c++":	"Z3_fixedpoint_get_num_levels(Z3_context, Z3_fixedpoint, Z3_func_decl)",
+		"go":	"FixedpointGetNumLevels"
+	}, {
+		"mangle":	"Z3_fixedpoint_get_param_descrs",
+		"c++":	"Z3_fixedpoint_get_param_descrs(Z3_context, Z3_fixedpoint)",
+		"go":	"FixedpointGetParamDescrs"
+	}, {
+		"mangle":	"Z3_fixedpoint_get_reachable",
+		"c++":	"Z3_fixedpoint_get_reachable(Z3_context, Z3_fixedpoint, Z3_func_decl)",
+		"go":	"FixedpointGetReachable"
+	}, {
+		"mangle":	"Z3_fixedpoint_get_reason_unknown",
+		"c++":	"Z3_fixedpoint_get_reason_unknown(Z3_context, Z3_fixedpoint)",
+		"go":	"FixedpointGetReasonUnknown"
+	}, {
+		"mangle":	"Z3_fixedpoint_get_rule_names_along_trace",
+		"c++":	"Z3_fixedpoint_get_rule_names_along_trace(Z3_context, Z3_fixedpoint)",
+		"go":	"FixedpointGetRuleNamesAlongTrace"
+	}, {
+		"mangle":	"Z3_fixedpoint_get_rules",
+		"c++":	"Z3_fixedpoint_get_rules(Z3_context, Z3_fixedpoint)",
+		"go":	"FixedpointGetRules"
+	}, {
+		"mangle":	"Z3_fixedpoint_get_rules_along_trace",
+		"c++":	"Z3_fixedpoint_get_rules_along_trace(Z3_context, Z3_fixedpoint)",
+		"go":	"FixedpointGetRulesAlongTrace"
+	}, {
+		"mangle":	"Z3_fixedpoint_get_statistics",
+		"c++":	"Z3_fixedpoint_get_statistics(Z3_context, Z3_fixedpoint)",
+		"go":	"FixedpointGetStatistics"
+	}, {
+		"mangle":	"Z3_fixedpoint_inc_ref",
+		"c++":	"Z3_fixedpoint_inc_ref(Z3_context, Z3_fixedpoint)",
+		"go":	"FixedpointIncRef"
+	}, {
+		"mangle":	"Z3_fixedpoint_init",
+		"c++":	"Z3_fixedpoint_init(Z3_context, Z3_fixedpoint, void *)",
+		"go":	"FixedpointInit"
+	}, {
+		"mangle":	"Z3_fixedpoint_query",
+		"c++":	"Z3_fixedpoint_query(Z3_context, Z3_fixedpoint, Z3_ast)",
+		"go":	"FixedpointQuery"
+	}, {
+		"mangle":	"Z3_fixedpoint_query_from_lvl",
+		"c++":	"Z3_fixedpoint_query_from_lvl(Z3_context, Z3_fixedpoint, Z3_ast, unsigned int)",
+		"go":	"FixedpointQueryFromLvl"
+	}, {
+		"mangle":	"Z3_fixedpoint_query_relations",
+		"c++":	"Z3_fixedpoint_query_relations(Z3_context, Z3_fixedpoint, unsigned int, const Z3_func_decl *)",
+		"go":	"FixedpointQueryRelations"
+	}, {
+		"mangle":	"Z3_fixedpoint_register_relation",
+		"c++":	"Z3_fixedpoint_register_relation(Z3_context, Z3_fixedpoint, Z3_func_decl)",
+		"go":	"FixedpointRegisterRelation"
+	}, {
+		"mangle":	"Z3_fixedpoint_set_params",
+		"c++":	"Z3_fixedpoint_set_params(Z3_context, Z3_fixedpoint, Z3_params)",
+		"go":	"FixedpointSetParams"
+	}, {
+		"mangle":	"Z3_fixedpoint_set_predicate_representation",
+		"c++":	"Z3_fixedpoint_set_predicate_representation(Z3_context, Z3_fixedpoint, Z3_func_decl, unsigned int, const Z3_symbol *)",
+		"go":	"FixedpointSetPredicateRepresentation"
+	}, {
+		"mangle":	"Z3_fixedpoint_set_reduce_app_callback",
+		"c++":	"Z3_fixedpoint_set_reduce_app_callback(Z3_context, Z3_fixedpoint, Z3_fixedpoint_reduce_app_callback_fptr *)",
+		"go":	"FixedpointSetReduceAppCallback"
+	}, {
+		"mangle":	"Z3_fixedpoint_set_reduce_assign_callback",
+		"c++":	"Z3_fixedpoint_set_reduce_assign_callback(Z3_context, Z3_fixedpoint, Z3_fixedpoint_reduce_assign_callback_fptr *)",
+		"go":	"FixedpointSetReduceAssignCallback"
+	}, {
+		"mangle":	"Z3_fixedpoint_to_string",
+		"c++":	"Z3_fixedpoint_to_string(Z3_context, Z3_fixedpoint, unsigned int, Z3_ast *)",
+		"go":	"FixedpointToString"
+	}, {
+		"mangle":	"Z3_fixedpoint_update_rule",
+		"c++":	"Z3_fixedpoint_update_rule(Z3_context, Z3_fixedpoint, Z3_ast, Z3_symbol)",
+		"go":	"FixedpointUpdateRule"
+	}, {
+		"mangle":	"Z3_fpa_get_ebits",
+		"c++":	"Z3_fpa_get_ebits(Z3_context, Z3_sort)",
+		"go":	"FpaGetEbits"
+	}, {
+		"mangle":	"Z3_fpa_get_numeral_exponent_bv",
+		"c++":	"Z3_fpa_get_numeral_exponent_bv(Z3_context, Z3_ast, int)",
+		"go":	"FpaGetNumeralExponentBv"
+	}, {
+		"mangle":	"Z3_fpa_get_numeral_exponent_int64",
+		"c++":	"Z3_fpa_get_numeral_exponent_int64(Z3_context, Z3_ast, int64_t *, int)",
+		"go":	"FpaGetNumeralExponentInt64"
+	}, {
+		"mangle":	"Z3_fpa_get_numeral_exponent_string",
+		"c++":	"Z3_fpa_get_numeral_exponent_string(Z3_context, Z3_ast, int)",
+		"go":	"FpaGetNumeralExponentString"
+	}, {
+		"mangle":	"Z3_fpa_get_numeral_sign",
+		"c++":	"Z3_fpa_get_numeral_sign(Z3_context, Z3_ast, int *)",
+		"go":	"FpaGetNumeralSign"
+	}, {
+		"mangle":	"Z3_fpa_get_numeral_sign_bv",
+		"c++":	"Z3_fpa_get_numeral_sign_bv(Z3_context, Z3_ast)",
+		"go":	"FpaGetNumeralSignBv"
+	}, {
+		"mangle":	"Z3_fpa_get_numeral_significand_bv",
+		"c++":	"Z3_fpa_get_numeral_significand_bv(Z3_context, Z3_ast)",
+		"go":	"FpaGetNumeralSignificandBv"
+	}, {
+		"mangle":	"Z3_fpa_get_numeral_significand_string",
+		"c++":	"Z3_fpa_get_numeral_significand_string(Z3_context, Z3_ast)",
+		"go":	"FpaGetNumeralSignificandString"
+	}, {
+		"mangle":	"Z3_fpa_get_numeral_significand_uint64",
+		"c++":	"Z3_fpa_get_numeral_significand_uint64(Z3_context, Z3_ast, uint64_t *)",
+		"go":	"FpaGetNumeralSignificandUint64"
+	}, {
+		"mangle":	"Z3_fpa_get_sbits",
+		"c++":	"Z3_fpa_get_sbits(Z3_context, Z3_sort)",
+		"go":	"FpaGetSbits"
+	}, {
+		"mangle":	"Z3_fpa_is_numeral_inf",
+		"c++":	"Z3_fpa_is_numeral_inf(Z3_context, Z3_ast)",
+		"go":	"FpaIsNumeralInf"
+	}, {
+		"mangle":	"Z3_fpa_is_numeral_nan",
+		"c++":	"Z3_fpa_is_numeral_nan(Z3_context, Z3_ast)",
+		"go":	"FpaIsNumeralNan"
+	}, {
+		"mangle":	"Z3_fpa_is_numeral_negative",
+		"c++":	"Z3_fpa_is_numeral_negative(Z3_context, Z3_ast)",
+		"go":	"FpaIsNumeralNegative"
+	}, {
+		"mangle":	"Z3_fpa_is_numeral_normal",
+		"c++":	"Z3_fpa_is_numeral_normal(Z3_context, Z3_ast)",
+		"go":	"FpaIsNumeralNormal"
+	}, {
+		"mangle":	"Z3_fpa_is_numeral_positive",
+		"c++":	"Z3_fpa_is_numeral_positive(Z3_context, Z3_ast)",
+		"go":	"FpaIsNumeralPositive"
+	}, {
+		"mangle":	"Z3_fpa_is_numeral_subnormal",
+		"c++":	"Z3_fpa_is_numeral_subnormal(Z3_context, Z3_ast)",
+		"go":	"FpaIsNumeralSubnormal"
+	}, {
+		"mangle":	"Z3_fpa_is_numeral_zero",
+		"c++":	"Z3_fpa_is_numeral_zero(Z3_context, Z3_ast)",
+		"go":	"FpaIsNumeralZero"
+	}, {
+		"mangle":	"Z3_func_decl_to_ast",
+		"c++":	"Z3_func_decl_to_ast(Z3_context, Z3_func_decl)",
+		"go":	"FuncDeclToAst"
+	}, {
+		"mangle":	"Z3_func_decl_to_string",
+		"c++":	"Z3_func_decl_to_string(Z3_context, Z3_func_decl)",
+		"go":	"FuncDeclToString"
+	}, {
+		"mangle":	"Z3_func_entry_dec_ref",
+		"c++":	"Z3_func_entry_dec_ref(Z3_context, Z3_func_entry)",
+		"go":	"FuncEntryDecRef"
+	}, {
+		"mangle":	"Z3_func_entry_get_arg",
+		"c++":	"Z3_func_entry_get_arg(Z3_context, Z3_func_entry, unsigned int)",
+		"go":	"FuncEntryGetArg"
+	}, {
+		"mangle":	"Z3_func_entry_get_num_args",
+		"c++":	"Z3_func_entry_get_num_args(Z3_context, Z3_func_entry)",
+		"go":	"FuncEntryGetNumArgs"
+	}, {
+		"mangle":	"Z3_func_entry_get_value",
+		"c++":	"Z3_func_entry_get_value(Z3_context, Z3_func_entry)",
+		"go":	"FuncEntryGetValue"
+	}, {
+		"mangle":	"Z3_func_entry_inc_ref",
+		"c++":	"Z3_func_entry_inc_ref(Z3_context, Z3_func_entry)",
+		"go":	"FuncEntryIncRef"
+	}, {
+		"mangle":	"Z3_func_interp_add_entry",
+		"c++":	"Z3_func_interp_add_entry(Z3_context, Z3_func_interp, Z3_ast_vector, Z3_ast)",
+		"go":	"FuncInterpAddEntry"
+	}, {
+		"mangle":	"Z3_func_interp_dec_ref",
+		"c++":	"Z3_func_interp_dec_ref(Z3_context, Z3_func_interp)",
+		"go":	"FuncInterpDecRef"
+	}, {
+		"mangle":	"Z3_func_interp_get_arity",
+		"c++":	"Z3_func_interp_get_arity(Z3_context, Z3_func_interp)",
+		"go":	"FuncInterpGetArity"
+	}, {
+		"mangle":	"Z3_func_interp_get_else",
+		"c++":	"Z3_func_interp_get_else(Z3_context, Z3_func_interp)",
+		"go":	"FuncInterpGetElse"
+	}, {
+		"mangle":	"Z3_func_interp_get_entry",
+		"c++":	"Z3_func_interp_get_entry(Z3_context, Z3_func_interp, unsigned int)",
+		"go":	"FuncInterpGetEntry"
+	}, {
+		"mangle":	"Z3_func_interp_get_num_entries",
+		"c++":	"Z3_func_interp_get_num_entries(Z3_context, Z3_func_interp)",
+		"go":	"FuncInterpGetNumEntries"
+	}, {
+		"mangle":	"Z3_func_interp_inc_ref",
+		"c++":	"Z3_func_interp_inc_ref(Z3_context, Z3_func_interp)",
+		"go":	"FuncInterpIncRef"
+	}, {
+		"mangle":	"Z3_func_interp_set_else",
+		"c++":	"Z3_func_interp_set_else(Z3_context, Z3_func_interp, Z3_ast)",
+		"go":	"FuncInterpSetElse"
+	}, {
+		"mangle":	"Z3_get_algebraic_number_lower",
+		"c++":	"Z3_get_algebraic_number_lower(Z3_context, Z3_ast, unsigned int)",
+		"go":	"GetAlgebraicNumberLower"
+	}, {
+		"mangle":	"Z3_get_algebraic_number_upper",
+		"c++":	"Z3_get_algebraic_number_upper(Z3_context, Z3_ast, unsigned int)",
+		"go":	"GetAlgebraicNumberUpper"
+	}, {
+		"mangle":	"Z3_get_app_arg",
+		"c++":	"Z3_get_app_arg(Z3_context, Z3_app, unsigned int)",
+		"go":	"GetAppArg"
+	}, {
+		"mangle":	"Z3_get_app_decl",
+		"c++":	"Z3_get_app_decl(Z3_context, Z3_app)",
+		"go":	"GetAppDecl"
+	}, {
+		"mangle":	"Z3_get_app_num_args",
+		"c++":	"Z3_get_app_num_args(Z3_context, Z3_app)",
+		"go":	"GetAppNumArgs"
+	}, {
+		"mangle":	"Z3_get_arity",
+		"c++":	"Z3_get_arity(Z3_context, Z3_func_decl)",
+		"go":	"GetArity"
+	}, {
+		"mangle":	"Z3_get_array_sort_domain",
+		"c++":	"Z3_get_array_sort_domain(Z3_context, Z3_sort)",
+		"go":	"GetArraySortDomain"
+	}, {
+		"mangle":	"Z3_get_array_sort_domain_n",
+		"c++":	"Z3_get_array_sort_domain_n(Z3_context, Z3_sort, unsigned int)",
+		"go":	"GetArraySortDomainN"
+	}, {
+		"mangle":	"Z3_get_array_sort_range",
+		"c++":	"Z3_get_array_sort_range(Z3_context, Z3_sort)",
+		"go":	"GetArraySortRange"
+	}, {
+		"mangle":	"Z3_get_as_array_func_decl",
+		"c++":	"Z3_get_as_array_func_decl(Z3_context, Z3_ast)",
+		"go":	"GetAsArrayFuncDecl"
+	}, {
+		"mangle":	"Z3_get_ast_hash",
+		"c++":	"Z3_get_ast_hash(Z3_context, Z3_ast)",
+		"go":	"GetAstHash"
+	}, {
+		"mangle":	"Z3_get_ast_id",
+		"c++":	"Z3_get_ast_id(Z3_context, Z3_ast)",
+		"go":	"GetAstId"
+	}, {
+		"mangle":	"Z3_get_ast_kind",
+		"c++":	"Z3_get_ast_kind(Z3_context, Z3_ast)",
+		"go":	"GetAstKind"
+	}, {
+		"mangle":	"Z3_get_bool_value",
+		"c++":	"Z3_get_bool_value(Z3_context, Z3_ast)",
+		"go":	"GetBoolValue"
+	}, {
+		"mangle":	"Z3_get_bv_sort_size",
+		"c++":	"Z3_get_bv_sort_size(Z3_context, Z3_sort)",
+		"go":	"GetBvSortSize"
+	}, {
+		"mangle":	"Z3_get_datatype_sort_constructor",
+		"c++":	"Z3_get_datatype_sort_constructor(Z3_context, Z3_sort, unsigned int)",
+		"go":	"GetDatatypeSortConstructor"
+	}, {
+		"mangle":	"Z3_get_datatype_sort_constructor_accessor",
+		"c++":	"Z3_get_datatype_sort_constructor_accessor(Z3_context, Z3_sort, unsigned int, unsigned int)",
+		"go":	"GetDatatypeSortConstructorAccessor"
+	}, {
+		"mangle":	"Z3_get_datatype_sort_num_constructors",
+		"c++":	"Z3_get_datatype_sort_num_constructors(Z3_context, Z3_sort)",
+		"go":	"GetDatatypeSortNumConstructors"
+	}, {
+		"mangle":	"Z3_get_datatype_sort_recognizer",
+		"c++":	"Z3_get_datatype_sort_recognizer(Z3_context, Z3_sort, unsigned int)",
+		"go":	"GetDatatypeSortRecognizer"
+	}, {
+		"mangle":	"Z3_get_decl_ast_parameter",
+		"c++":	"Z3_get_decl_ast_parameter(Z3_context, Z3_func_decl, unsigned int)",
+		"go":	"GetDeclAstParameter"
+	}, {
+		"mangle":	"Z3_get_decl_double_parameter",
+		"c++":	"Z3_get_decl_double_parameter(Z3_context, Z3_func_decl, unsigned int)",
+		"go":	"GetDeclDoubleParameter"
+	}, {
+		"mangle":	"Z3_get_decl_func_decl_parameter",
+		"c++":	"Z3_get_decl_func_decl_parameter(Z3_context, Z3_func_decl, unsigned int)",
+		"go":	"GetDeclFuncDeclParameter"
+	}, {
+		"mangle":	"Z3_get_decl_int_parameter",
+		"c++":	"Z3_get_decl_int_parameter(Z3_context, Z3_func_decl, unsigned int)",
+		"go":	"GetDeclIntParameter"
+	}, {
+		"mangle":	"Z3_get_decl_kind",
+		"c++":	"Z3_get_decl_kind(Z3_context, Z3_func_decl)",
+		"go":	"GetDeclKind"
+	}, {
+		"mangle":	"Z3_get_decl_name",
+		"c++":	"Z3_get_decl_name(Z3_context, Z3_func_decl)",
+		"go":	"GetDeclName"
+	}, {
+		"mangle":	"Z3_get_decl_num_parameters",
+		"c++":	"Z3_get_decl_num_parameters(Z3_context, Z3_func_decl)",
+		"go":	"GetDeclNumParameters"
+	}, {
+		"mangle":	"Z3_get_decl_parameter_kind",
+		"c++":	"Z3_get_decl_parameter_kind(Z3_context, Z3_func_decl, unsigned int)",
+		"go":	"GetDeclParameterKind"
+	}, {
+		"mangle":	"Z3_get_decl_rational_parameter",
+		"c++":	"Z3_get_decl_rational_parameter(Z3_context, Z3_func_decl, unsigned int)",
+		"go":	"GetDeclRationalParameter"
+	}, {
+		"mangle":	"Z3_get_decl_sort_parameter",
+		"c++":	"Z3_get_decl_sort_parameter(Z3_context, Z3_func_decl, unsigned int)",
+		"go":	"GetDeclSortParameter"
+	}, {
+		"mangle":	"Z3_get_decl_symbol_parameter",
+		"c++":	"Z3_get_decl_symbol_parameter(Z3_context, Z3_func_decl, unsigned int)",
+		"go":	"GetDeclSymbolParameter"
+	}, {
+		"mangle":	"Z3_get_denominator",
+		"c++":	"Z3_get_denominator(Z3_context, Z3_ast)",
+		"go":	"GetDenominator"
+	}, {
+		"mangle":	"Z3_get_domain",
+		"c++":	"Z3_get_domain(Z3_context, Z3_func_decl, unsigned int)",
+		"go":	"GetDomain"
+	}, {
+		"mangle":	"Z3_get_domain_size",
+		"c++":	"Z3_get_domain_size(Z3_context, Z3_func_decl)",
+		"go":	"GetDomainSize"
+	}, {
+		"mangle":	"Z3_get_error_code",
+		"c++":	"Z3_get_error_code(Z3_context)",
+		"go":	"GetErrorCode"
+	}, {
+		"mangle":	"Z3_get_error_msg",
+		"c++":	"Z3_get_error_msg(Z3_context, Z3_error_code)",
+		"go":	"GetErrorMsg"
+	}, {
+		"mangle":	"Z3_get_estimated_alloc_size",
+		"c++":	"Z3_get_estimated_alloc_size()",
+		"go":	"GetEstimatedAllocSize"
+	}, {
+		"mangle":	"Z3_get_finite_domain_sort_size",
+		"c++":	"Z3_get_finite_domain_sort_size(Z3_context, Z3_sort, uint64_t *)",
+		"go":	"GetFiniteDomainSortSize"
+	}, {
+		"mangle":	"Z3_get_full_version",
+		"c++":	"Z3_get_full_version()",
+		"go":	"GetFullVersion"
+	}, {
+		"mangle":	"Z3_get_func_decl_id",
+		"c++":	"Z3_get_func_decl_id(Z3_context, Z3_func_decl)",
+		"go":	"GetFuncDeclId"
+	}, {
+		"mangle":	"Z3_get_global_param_descrs",
+		"c++":	"Z3_get_global_param_descrs(Z3_context)",
+		"go":	"GetGlobalParamDescrs"
+	}, {
+		"mangle":	"Z3_get_implied_equalities",
+		"c++":	"Z3_get_implied_equalities(Z3_context, Z3_solver, unsigned int, const Z3_ast *, unsigned int *)",
+		"go":	"GetImpliedEqualities"
+	}, {
+		"mangle":	"Z3_get_index_value",
+		"c++":	"Z3_get_index_value(Z3_context, Z3_ast)",
+		"go":	"GetIndexValue"
+	}, {
+		"mangle":	"Z3_get_lstring",
+		"c++":	"Z3_get_lstring(Z3_context, Z3_ast, unsigned int *)",
+		"go":	"GetLstring"
+	}, {
+		"mangle":	"Z3_get_num_probes",
+		"c++":	"Z3_get_num_probes(Z3_context)",
+		"go":	"GetNumProbes"
+	}, {
+		"mangle":	"Z3_get_num_simplifiers",
+		"c++":	"Z3_get_num_simplifiers(Z3_context)",
+		"go":	"GetNumSimplifiers"
+	}, {
+		"mangle":	"Z3_get_num_tactics",
+		"c++":	"Z3_get_num_tactics(Z3_context)",
+		"go":	"GetNumTactics"
+	}, {
+		"mangle":	"Z3_get_numeral_binary_string",
+		"c++":	"Z3_get_numeral_binary_string(Z3_context, Z3_ast)",
+		"go":	"GetNumeralBinaryString"
+	}, {
+		"mangle":	"Z3_get_numeral_decimal_string",
+		"c++":	"Z3_get_numeral_decimal_string(Z3_context, Z3_ast, unsigned int)",
+		"go":	"GetNumeralDecimalString"
+	}, {
+		"mangle":	"Z3_get_numeral_double",
+		"c++":	"Z3_get_numeral_double(Z3_context, Z3_ast)",
+		"go":	"GetNumeralDouble"
+	}, {
+		"mangle":	"Z3_get_numeral_int",
+		"c++":	"Z3_get_numeral_int(Z3_context, Z3_ast, int *)",
+		"go":	"GetNumeralInt"
+	}, {
+		"mangle":	"Z3_get_numeral_int64",
+		"c++":	"Z3_get_numeral_int64(Z3_context, Z3_ast, int64_t *)",
+		"go":	"GetNumeralInt64"
+	}, {
+		"mangle":	"Z3_get_numeral_rational_int64",
+		"c++":	"Z3_get_numeral_rational_int64(Z3_context, Z3_ast, int64_t *, int64_t *)",
+		"go":	"GetNumeralRationalInt64"
+	}, {
+		"mangle":	"Z3_get_numeral_small",
+		"c++":	"Z3_get_numeral_small(Z3_context, Z3_ast, int64_t *, int64_t *)",
+		"go":	"GetNumeralSmall"
+	}, {
+		"mangle":	"Z3_get_numeral_string",
+		"c++":	"Z3_get_numeral_string(Z3_context, Z3_ast)",
+		"go":	"GetNumeralString"
+	}, {
+		"mangle":	"Z3_get_numeral_uint",
+		"c++":	"Z3_get_numeral_uint(Z3_context, Z3_ast, unsigned int *)",
+		"go":	"GetNumeralUint"
+	}, {
+		"mangle":	"Z3_get_numeral_uint64",
+		"c++":	"Z3_get_numeral_uint64(Z3_context, Z3_ast, uint64_t *)",
+		"go":	"GetNumeralUint64"
+	}, {
+		"mangle":	"Z3_get_numerator",
+		"c++":	"Z3_get_numerator(Z3_context, Z3_ast)",
+		"go":	"GetNumerator"
+	}, {
+		"mangle":	"Z3_get_pattern",
+		"c++":	"Z3_get_pattern(Z3_context, Z3_pattern, unsigned int)",
+		"go":	"GetPattern"
+	}, {
+		"mangle":	"Z3_get_pattern_num_terms",
+		"c++":	"Z3_get_pattern_num_terms(Z3_context, Z3_pattern)",
+		"go":	"GetPatternNumTerms"
+	}, {
+		"mangle":	"Z3_get_probe_name",
+		"c++":	"Z3_get_probe_name(Z3_context, unsigned int)",
+		"go":	"GetProbeName"
+	}, {
+		"mangle":	"Z3_get_quantifier_body",
+		"c++":	"Z3_get_quantifier_body(Z3_context, Z3_ast)",
+		"go":	"GetQuantifierBody"
+	}, {
+		"mangle":	"Z3_get_quantifier_bound_name",
+		"c++":	"Z3_get_quantifier_bound_name(Z3_context, Z3_ast, unsigned int)",
+		"go":	"GetQuantifierBoundName"
+	}, {
+		"mangle":	"Z3_get_quantifier_bound_sort",
+		"c++":	"Z3_get_quantifier_bound_sort(Z3_context, Z3_ast, unsigned int)",
+		"go":	"GetQuantifierBoundSort"
+	}, {
+		"mangle":	"Z3_get_quantifier_id",
+		"c++":	"Z3_get_quantifier_id(Z3_context, Z3_ast)",
+		"go":	"GetQuantifierId"
+	}, {
+		"mangle":	"Z3_get_quantifier_no_pattern_ast",
+		"c++":	"Z3_get_quantifier_no_pattern_ast(Z3_context, Z3_ast, unsigned int)",
+		"go":	"GetQuantifierNoPatternAst"
+	}, {
+		"mangle":	"Z3_get_quantifier_num_bound",
+		"c++":	"Z3_get_quantifier_num_bound(Z3_context, Z3_ast)",
+		"go":	"GetQuantifierNumBound"
+	}, {
+		"mangle":	"Z3_get_quantifier_num_no_patterns",
+		"c++":	"Z3_get_quantifier_num_no_patterns(Z3_context, Z3_ast)",
+		"go":	"GetQuantifierNumNoPatterns"
+	}, {
+		"mangle":	"Z3_get_quantifier_num_patterns",
+		"c++":	"Z3_get_quantifier_num_patterns(Z3_context, Z3_ast)",
+		"go":	"GetQuantifierNumPatterns"
+	}, {
+		"mangle":	"Z3_get_quantifier_pattern_ast",
+		"c++":	"Z3_get_quantifier_pattern_ast(Z3_context, Z3_ast, unsigned int)",
+		"go":	"GetQuantifierPatternAst"
+	}, {
+		"mangle":	"Z3_get_quantifier_skolem_id",
+		"c++":	"Z3_get_quantifier_skolem_id(Z3_context, Z3_ast)",
+		"go":	"GetQuantifierSkolemId"
+	}, {
+		"mangle":	"Z3_get_quantifier_weight",
+		"c++":	"Z3_get_quantifier_weight(Z3_context, Z3_ast)",
+		"go":	"GetQuantifierWeight"
+	}, {
+		"mangle":	"Z3_get_range",
+		"c++":	"Z3_get_range(Z3_context, Z3_func_decl)",
+		"go":	"GetRange"
+	}, {
+		"mangle":	"Z3_get_re_sort_basis",
+		"c++":	"Z3_get_re_sort_basis(Z3_context, Z3_sort)",
+		"go":	"GetReSortBasis"
+	}, {
+		"mangle":	"Z3_get_relation_arity",
+		"c++":	"Z3_get_relation_arity(Z3_context, Z3_sort)",
+		"go":	"GetRelationArity"
+	}, {
+		"mangle":	"Z3_get_relation_column",
+		"c++":	"Z3_get_relation_column(Z3_context, Z3_sort, unsigned int)",
+		"go":	"GetRelationColumn"
+	}, {
+		"mangle":	"Z3_get_seq_sort_basis",
+		"c++":	"Z3_get_seq_sort_basis(Z3_context, Z3_sort)",
+		"go":	"GetSeqSortBasis"
+	}, {
+		"mangle":	"Z3_get_simplifier_name",
+		"c++":	"Z3_get_simplifier_name(Z3_context, unsigned int)",
+		"go":	"GetSimplifierName"
+	}, {
+		"mangle":	"Z3_get_sort",
+		"c++":	"Z3_get_sort(Z3_context, Z3_ast)",
+		"go":	"GetSort"
+	}, {
+		"mangle":	"Z3_get_sort_id",
+		"c++":	"Z3_get_sort_id(Z3_context, Z3_sort)",
+		"go":	"GetSortId"
+	}, {
+		"mangle":	"Z3_get_sort_kind",
+		"c++":	"Z3_get_sort_kind(Z3_context, Z3_sort)",
+		"go":	"GetSortKind"
+	}, {
+		"mangle":	"Z3_get_sort_name",
+		"c++":	"Z3_get_sort_name(Z3_context, Z3_sort)",
+		"go":	"GetSortName"
+	}, {
+		"mangle":	"Z3_get_string",
+		"c++":	"Z3_get_string(Z3_context, Z3_ast)",
+		"go":	"GetString"
+	}, {
+		"mangle":	"Z3_get_string_contents",
+		"c++":	"Z3_get_string_contents(Z3_context, Z3_ast, unsigned int, unsigned int *)",
+		"go":	"GetStringContents"
+	}, {
+		"mangle":	"Z3_get_string_length",
+		"c++":	"Z3_get_string_length(Z3_context, Z3_ast)",
+		"go":	"GetStringLength"
+	}, {
+		"mangle":	"Z3_get_symbol_int",
+		"c++":	"Z3_get_symbol_int(Z3_context, Z3_symbol)",
+		"go":	"GetSymbolInt"
+	}, {
+		"mangle":	"Z3_get_symbol_kind",
+		"c++":	"Z3_get_symbol_kind(Z3_context, Z3_symbol)",
+		"go":	"GetSymbolKind"
+	}, {
+		"mangle":	"Z3_get_symbol_string",
+		"c++":	"Z3_get_symbol_string(Z3_context, Z3_symbol)",
+		"go":	"GetSymbolString"
+	}, {
+		"mangle":	"Z3_get_tactic_name",
+		"c++":	"Z3_get_tactic_name(Z3_context, unsigned int)",
+		"go":	"GetTacticName"
+	}, {
+		"mangle":	"Z3_get_tuple_sort_field_decl",
+		"c++":	"Z3_get_tuple_sort_field_decl(Z3_context, Z3_sort, unsigned int)",
+		"go":	"GetTupleSortFieldDecl"
+	}, {
+		"mangle":	"Z3_get_tuple_sort_mk_decl",
+		"c++":	"Z3_get_tuple_sort_mk_decl(Z3_context, Z3_sort)",
+		"go":	"GetTupleSortMkDecl"
+	}, {
+		"mangle":	"Z3_get_tuple_sort_num_fields",
+		"c++":	"Z3_get_tuple_sort_num_fields(Z3_context, Z3_sort)",
+		"go":	"GetTupleSortNumFields"
+	}, {
+		"mangle":	"Z3_get_version",
+		"c++":	"Z3_get_version(unsigned int *, unsigned int *, unsigned int *, unsigned int *)",
+		"go":	"GetVersion"
+	}, {
+		"mangle":	"Z3_global_param_get",
+		"c++":	"Z3_global_param_get(Z3_string, Z3_string_ptr)",
+		"go":	"GlobalParamGet"
+	}, {
+		"mangle":	"Z3_global_param_reset_all",
+		"c++":	"Z3_global_param_reset_all()",
+		"go":	"GlobalParamResetAll"
+	}, {
+		"mangle":	"Z3_global_param_set",
+		"c++":	"Z3_global_param_set(Z3_string, Z3_string)",
+		"go":	"GlobalParamSet"
+	}, {
+		"mangle":	"Z3_goal_assert",
+		"c++":	"Z3_goal_assert(Z3_context, Z3_goal, Z3_ast)",
+		"go":	"GoalAssert"
+	}, {
+		"mangle":	"Z3_goal_convert_model",
+		"c++":	"Z3_goal_convert_model(Z3_context, Z3_goal, Z3_model)",
+		"go":	"GoalConvertModel"
+	}, {
+		"mangle":	"Z3_goal_dec_ref",
+		"c++":	"Z3_goal_dec_ref(Z3_context, Z3_goal)",
+		"go":	"GoalDecRef"
+	}, {
+		"mangle":	"Z3_goal_depth",
+		"c++":	"Z3_goal_depth(Z3_context, Z3_goal)",
+		"go":	"GoalDepth"
+	}, {
+		"mangle":	"Z3_goal_formula",
+		"c++":	"Z3_goal_formula(Z3_context, Z3_goal, unsigned int)",
+		"go":	"GoalFormula"
+	}, {
+		"mangle":	"Z3_goal_inc_ref",
+		"c++":	"Z3_goal_inc_ref(Z3_context, Z3_goal)",
+		"go":	"GoalIncRef"
+	}, {
+		"mangle":	"Z3_goal_inconsistent",
+		"c++":	"Z3_goal_inconsistent(Z3_context, Z3_goal)",
+		"go":	"GoalInconsistent"
+	}, {
+		"mangle":	"Z3_goal_is_decided_sat",
+		"c++":	"Z3_goal_is_decided_sat(Z3_context, Z3_goal)",
+		"go":	"GoalIsDecidedSat"
+	}, {
+		"mangle":	"Z3_goal_is_decided_unsat",
+		"c++":	"Z3_goal_is_decided_unsat(Z3_context, Z3_goal)",
+		"go":	"GoalIsDecidedUnsat"
+	}, {
+		"mangle":	"Z3_goal_num_exprs",
+		"c++":	"Z3_goal_num_exprs(Z3_context, Z3_goal)",
+		"go":	"GoalNumExprs"
+	}, {
+		"mangle":	"Z3_goal_precision",
+		"c++":	"Z3_goal_precision(Z3_context, Z3_goal)",
+		"go":	"GoalPrecision"
+	}, {
+		"mangle":	"Z3_goal_reset",
+		"c++":	"Z3_goal_reset(Z3_context, Z3_goal)",
+		"go":	"GoalReset"
+	}, {
+		"mangle":	"Z3_goal_size",
+		"c++":	"Z3_goal_size(Z3_context, Z3_goal)",
+		"go":	"GoalSize"
+	}, {
+		"mangle":	"Z3_goal_to_dimacs_string",
+		"c++":	"Z3_goal_to_dimacs_string(Z3_context, Z3_goal, int)",
+		"go":	"GoalToDimacsString"
+	}, {
+		"mangle":	"Z3_goal_to_string",
+		"c++":	"Z3_goal_to_string(Z3_context, Z3_goal)",
+		"go":	"GoalToString"
+	}, {
+		"mangle":	"Z3_goal_translate",
+		"c++":	"Z3_goal_translate(Z3_context, Z3_goal, Z3_context)",
+		"go":	"GoalTranslate"
+	}, {
+		"mangle":	"Z3_inc_ref",
+		"c++":	"Z3_inc_ref(Z3_context, Z3_ast)",
+		"go":	"IncRef"
+	}, {
+		"mangle":	"Z3_interrupt",
+		"c++":	"Z3_interrupt(Z3_context)",
+		"go":	"Interrupt"
+	}, {
+		"mangle":	"Z3_is_algebraic_number",
+		"c++":	"Z3_is_algebraic_number(Z3_context, Z3_ast)",
+		"go":	"IsAlgebraicNumber"
+	}, {
+		"mangle":	"Z3_is_app",
+		"c++":	"Z3_is_app(Z3_context, Z3_ast)",
+		"go":	"IsApp"
+	}, {
+		"mangle":	"Z3_is_as_array",
+		"c++":	"Z3_is_as_array(Z3_context, Z3_ast)",
+		"go":	"IsAsArray"
+	}, {
+		"mangle":	"Z3_is_char_sort",
+		"c++":	"Z3_is_char_sort(Z3_context, Z3_sort)",
+		"go":	"IsCharSort"
+	}, {
+		"mangle":	"Z3_is_eq_ast",
+		"c++":	"Z3_is_eq_ast(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"IsEqAst"
+	}, {
+		"mangle":	"Z3_is_eq_func_decl",
+		"c++":	"Z3_is_eq_func_decl(Z3_context, Z3_func_decl, Z3_func_decl)",
+		"go":	"IsEqFuncDecl"
+	}, {
+		"mangle":	"Z3_is_eq_sort",
+		"c++":	"Z3_is_eq_sort(Z3_context, Z3_sort, Z3_sort)",
+		"go":	"IsEqSort"
+	}, {
+		"mangle":	"Z3_is_lambda",
+		"c++":	"Z3_is_lambda(Z3_context, Z3_ast)",
+		"go":	"IsLambda"
+	}, {
+		"mangle":	"Z3_is_numeral_ast",
+		"c++":	"Z3_is_numeral_ast(Z3_context, Z3_ast)",
+		"go":	"IsNumeralAst"
+	}, {
+		"mangle":	"Z3_is_quantifier_exists",
+		"c++":	"Z3_is_quantifier_exists(Z3_context, Z3_ast)",
+		"go":	"IsQuantifierExists"
+	}, {
+		"mangle":	"Z3_is_quantifier_forall",
+		"c++":	"Z3_is_quantifier_forall(Z3_context, Z3_ast)",
+		"go":	"IsQuantifierForall"
+	}, {
+		"mangle":	"Z3_is_re_sort",
+		"c++":	"Z3_is_re_sort(Z3_context, Z3_sort)",
+		"go":	"IsReSort"
+	}, {
+		"mangle":	"Z3_is_seq_sort",
+		"c++":	"Z3_is_seq_sort(Z3_context, Z3_sort)",
+		"go":	"IsSeqSort"
+	}, {
+		"mangle":	"Z3_is_string",
+		"c++":	"Z3_is_string(Z3_context, Z3_ast)",
+		"go":	"IsString"
+	}, {
+		"mangle":	"Z3_is_string_sort",
+		"c++":	"Z3_is_string_sort(Z3_context, Z3_sort)",
+		"go":	"IsStringSort"
+	}, {
+		"mangle":	"Z3_is_well_sorted",
+		"c++":	"Z3_is_well_sorted(Z3_context, Z3_ast)",
+		"go":	"IsWellSorted"
+	}, {
+		"mangle":	"Z3_mk_add",
+		"c++":	"Z3_mk_add(Z3_context, unsigned int, const Z3_ast *)",
+		"go":	"MkAdd"
+	}, {
+		"mangle":	"Z3_mk_and",
+		"c++":	"Z3_mk_and(Z3_context, unsigned int, const Z3_ast *)",
+		"go":	"MkAnd"
+	}, {
+		"mangle":	"Z3_mk_app",
+		"c++":	"Z3_mk_app(Z3_context, Z3_func_decl, unsigned int, const Z3_ast *)",
+		"go":	"MkApp"
+	}, {
+		"mangle":	"Z3_mk_array_default",
+		"c++":	"Z3_mk_array_default(Z3_context, Z3_ast)",
+		"go":	"MkArrayDefault"
+	}, {
+		"mangle":	"Z3_mk_array_ext",
+		"c++":	"Z3_mk_array_ext(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkArrayExt"
+	}, {
+		"mangle":	"Z3_mk_array_sort",
+		"c++":	"Z3_mk_array_sort(Z3_context, Z3_sort, Z3_sort)",
+		"go":	"MkArraySort"
+	}, {
+		"mangle":	"Z3_mk_array_sort_n",
+		"c++":	"Z3_mk_array_sort_n(Z3_context, unsigned int, const Z3_sort *, Z3_sort)",
+		"go":	"MkArraySortN"
+	}, {
+		"mangle":	"Z3_mk_as_array",
+		"c++":	"Z3_mk_as_array(Z3_context, Z3_func_decl)",
+		"go":	"MkAsArray"
+	}, {
+		"mangle":	"Z3_mk_ast_map",
+		"c++":	"Z3_mk_ast_map(Z3_context)",
+		"go":	"MkAstMap"
+	}, {
+		"mangle":	"Z3_mk_ast_vector",
+		"c++":	"Z3_mk_ast_vector(Z3_context)",
+		"go":	"MkAstVector"
+	}, {
+		"mangle":	"Z3_mk_atleast",
+		"c++":	"Z3_mk_atleast(Z3_context, unsigned int, const Z3_ast *, unsigned int)",
+		"go":	"MkAtleast"
+	}, {
+		"mangle":	"Z3_mk_atmost",
+		"c++":	"Z3_mk_atmost(Z3_context, unsigned int, const Z3_ast *, unsigned int)",
+		"go":	"MkAtmost"
+	}, {
+		"mangle":	"Z3_mk_bit2bool",
+		"c++":	"Z3_mk_bit2bool(Z3_context, unsigned int, Z3_ast)",
+		"go":	"MkBit2bool"
+	}, {
+		"mangle":	"Z3_mk_bool_sort",
+		"c++":	"Z3_mk_bool_sort(Z3_context)",
+		"go":	"MkBoolSort"
+	}, {
+		"mangle":	"Z3_mk_bound",
+		"c++":	"Z3_mk_bound(Z3_context, unsigned int, Z3_sort)",
+		"go":	"MkBound"
+	}, {
+		"mangle":	"Z3_mk_bv2int",
+		"c++":	"Z3_mk_bv2int(Z3_context, Z3_ast, int)",
+		"go":	"MkBv2int"
+	}, {
+		"mangle":	"Z3_mk_bv_numeral",
+		"c++":	"Z3_mk_bv_numeral(Z3_context, unsigned int, const int *)",
+		"go":	"MkBvNumeral"
+	}, {
+		"mangle":	"Z3_mk_bv_sort",
+		"c++":	"Z3_mk_bv_sort(Z3_context, unsigned int)",
+		"go":	"MkBvSort"
+	}, {
+		"mangle":	"Z3_mk_bvadd",
+		"c++":	"Z3_mk_bvadd(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvadd"
+	}, {
+		"mangle":	"Z3_mk_bvadd_no_overflow",
+		"c++":	"Z3_mk_bvadd_no_overflow(Z3_context, Z3_ast, Z3_ast, int)",
+		"go":	"MkBvaddNoOverflow"
+	}, {
+		"mangle":	"Z3_mk_bvadd_no_underflow",
+		"c++":	"Z3_mk_bvadd_no_underflow(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvaddNoUnderflow"
+	}, {
+		"mangle":	"Z3_mk_bvand",
+		"c++":	"Z3_mk_bvand(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvand"
+	}, {
+		"mangle":	"Z3_mk_bvashr",
+		"c++":	"Z3_mk_bvashr(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvashr"
+	}, {
+		"mangle":	"Z3_mk_bvlshr",
+		"c++":	"Z3_mk_bvlshr(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvlshr"
+	}, {
+		"mangle":	"Z3_mk_bvmul",
+		"c++":	"Z3_mk_bvmul(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvmul"
+	}, {
+		"mangle":	"Z3_mk_bvmul_no_overflow",
+		"c++":	"Z3_mk_bvmul_no_overflow(Z3_context, Z3_ast, Z3_ast, int)",
+		"go":	"MkBvmulNoOverflow"
+	}, {
+		"mangle":	"Z3_mk_bvmul_no_underflow",
+		"c++":	"Z3_mk_bvmul_no_underflow(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvmulNoUnderflow"
+	}, {
+		"mangle":	"Z3_mk_bvnand",
+		"c++":	"Z3_mk_bvnand(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvnand"
+	}, {
+		"mangle":	"Z3_mk_bvneg",
+		"c++":	"Z3_mk_bvneg(Z3_context, Z3_ast)",
+		"go":	"MkBvneg"
+	}, {
+		"mangle":	"Z3_mk_bvneg_no_overflow",
+		"c++":	"Z3_mk_bvneg_no_overflow(Z3_context, Z3_ast)",
+		"go":	"MkBvnegNoOverflow"
+	}, {
+		"mangle":	"Z3_mk_bvnor",
+		"c++":	"Z3_mk_bvnor(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvnor"
+	}, {
+		"mangle":	"Z3_mk_bvnot",
+		"c++":	"Z3_mk_bvnot(Z3_context, Z3_ast)",
+		"go":	"MkBvnot"
+	}, {
+		"mangle":	"Z3_mk_bvor",
+		"c++":	"Z3_mk_bvor(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvor"
+	}, {
+		"mangle":	"Z3_mk_bvredand",
+		"c++":	"Z3_mk_bvredand(Z3_context, Z3_ast)",
+		"go":	"MkBvredand"
+	}, {
+		"mangle":	"Z3_mk_bvredor",
+		"c++":	"Z3_mk_bvredor(Z3_context, Z3_ast)",
+		"go":	"MkBvredor"
+	}, {
+		"mangle":	"Z3_mk_bvsdiv",
+		"c++":	"Z3_mk_bvsdiv(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvsdiv"
+	}, {
+		"mangle":	"Z3_mk_bvsdiv_no_overflow",
+		"c++":	"Z3_mk_bvsdiv_no_overflow(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvsdivNoOverflow"
+	}, {
+		"mangle":	"Z3_mk_bvsge",
+		"c++":	"Z3_mk_bvsge(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvsge"
+	}, {
+		"mangle":	"Z3_mk_bvsgt",
+		"c++":	"Z3_mk_bvsgt(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvsgt"
+	}, {
+		"mangle":	"Z3_mk_bvshl",
+		"c++":	"Z3_mk_bvshl(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvshl"
+	}, {
+		"mangle":	"Z3_mk_bvsle",
+		"c++":	"Z3_mk_bvsle(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvsle"
+	}, {
+		"mangle":	"Z3_mk_bvslt",
+		"c++":	"Z3_mk_bvslt(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvslt"
+	}, {
+		"mangle":	"Z3_mk_bvsmod",
+		"c++":	"Z3_mk_bvsmod(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvsmod"
+	}, {
+		"mangle":	"Z3_mk_bvsrem",
+		"c++":	"Z3_mk_bvsrem(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvsrem"
+	}, {
+		"mangle":	"Z3_mk_bvsub",
+		"c++":	"Z3_mk_bvsub(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvsub"
+	}, {
+		"mangle":	"Z3_mk_bvsub_no_overflow",
+		"c++":	"Z3_mk_bvsub_no_overflow(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvsubNoOverflow"
+	}, {
+		"mangle":	"Z3_mk_bvsub_no_underflow",
+		"c++":	"Z3_mk_bvsub_no_underflow(Z3_context, Z3_ast, Z3_ast, int)",
+		"go":	"MkBvsubNoUnderflow"
+	}, {
+		"mangle":	"Z3_mk_bvudiv",
+		"c++":	"Z3_mk_bvudiv(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvudiv"
+	}, {
+		"mangle":	"Z3_mk_bvuge",
+		"c++":	"Z3_mk_bvuge(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvuge"
+	}, {
+		"mangle":	"Z3_mk_bvugt",
+		"c++":	"Z3_mk_bvugt(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvugt"
+	}, {
+		"mangle":	"Z3_mk_bvule",
+		"c++":	"Z3_mk_bvule(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvule"
+	}, {
+		"mangle":	"Z3_mk_bvult",
+		"c++":	"Z3_mk_bvult(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvult"
+	}, {
+		"mangle":	"Z3_mk_bvurem",
+		"c++":	"Z3_mk_bvurem(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvurem"
+	}, {
+		"mangle":	"Z3_mk_bvxnor",
+		"c++":	"Z3_mk_bvxnor(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvxnor"
+	}, {
+		"mangle":	"Z3_mk_bvxor",
+		"c++":	"Z3_mk_bvxor(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkBvxor"
+	}, {
+		"mangle":	"Z3_mk_char",
+		"c++":	"Z3_mk_char(Z3_context, unsigned int)",
+		"go":	"MkChar"
+	}, {
+		"mangle":	"Z3_mk_char_from_bv",
+		"c++":	"Z3_mk_char_from_bv(Z3_context, Z3_ast)",
+		"go":	"MkCharFromBv"
+	}, {
+		"mangle":	"Z3_mk_char_is_digit",
+		"c++":	"Z3_mk_char_is_digit(Z3_context, Z3_ast)",
+		"go":	"MkCharIsDigit"
+	}, {
+		"mangle":	"Z3_mk_char_le",
+		"c++":	"Z3_mk_char_le(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkCharLe"
+	}, {
+		"mangle":	"Z3_mk_char_sort",
+		"c++":	"Z3_mk_char_sort(Z3_context)",
+		"go":	"MkCharSort"
+	}, {
+		"mangle":	"Z3_mk_char_to_bv",
+		"c++":	"Z3_mk_char_to_bv(Z3_context, Z3_ast)",
+		"go":	"MkCharToBv"
+	}, {
+		"mangle":	"Z3_mk_char_to_int",
+		"c++":	"Z3_mk_char_to_int(Z3_context, Z3_ast)",
+		"go":	"MkCharToInt"
+	}, {
+		"mangle":	"Z3_mk_concat",
+		"c++":	"Z3_mk_concat(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkConcat"
+	}, {
+		"mangle":	"Z3_mk_config",
+		"c++":	"Z3_mk_config()",
+		"go":	"MkConfig"
+	}, {
+		"mangle":	"Z3_mk_const",
+		"c++":	"Z3_mk_const(Z3_context, Z3_symbol, Z3_sort)",
+		"go":	"MkConst"
+	}, {
+		"mangle":	"Z3_mk_const_array",
+		"c++":	"Z3_mk_const_array(Z3_context, Z3_sort, Z3_ast)",
+		"go":	"MkConstArray"
+	}, {
+		"mangle":	"Z3_mk_constructor",
+		"c++":	"Z3_mk_constructor(Z3_context, Z3_symbol, Z3_symbol, unsigned int, const Z3_symbol *, const Z3_sort *, unsigned int *)",
+		"go":	"MkConstructor"
+	}, {
+		"mangle":	"Z3_mk_constructor_list",
+		"c++":	"Z3_mk_constructor_list(Z3_context, unsigned int, const Z3_constructor *)",
+		"go":	"MkConstructorList"
+	}, {
+		"mangle":	"Z3_mk_context",
+		"c++":	"Z3_mk_context(Z3_config)",
+		"go":	"MkContext"
+	}, {
+		"mangle":	"Z3_mk_context_rc",
+		"c++":	"Z3_mk_context_rc(Z3_config)",
+		"go":	"MkContextRc"
+	}, {
+		"mangle":	"Z3_mk_datatype",
+		"c++":	"Z3_mk_datatype(Z3_context, Z3_symbol, unsigned int, Z3_constructor *)",
+		"go":	"MkDatatype"
+	}, {
+		"mangle":	"Z3_mk_datatype_sort",
+		"c++":	"Z3_mk_datatype_sort(Z3_context, Z3_symbol)",
+		"go":	"MkDatatypeSort"
+	}, {
+		"mangle":	"Z3_mk_datatypes",
+		"c++":	"Z3_mk_datatypes(Z3_context, unsigned int, const Z3_symbol *, Z3_sort *, Z3_constructor_list *)",
+		"go":	"MkDatatypes"
+	}, {
+		"mangle":	"Z3_mk_distinct",
+		"c++":	"Z3_mk_distinct(Z3_context, unsigned int, const Z3_ast *)",
+		"go":	"MkDistinct"
+	}, {
+		"mangle":	"Z3_mk_div",
+		"c++":	"Z3_mk_div(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkDiv"
+	}, {
+		"mangle":	"Z3_mk_divides",
+		"c++":	"Z3_mk_divides(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkDivides"
+	}, {
+		"mangle":	"Z3_mk_empty_set",
+		"c++":	"Z3_mk_empty_set(Z3_context, Z3_sort)",
+		"go":	"MkEmptySet"
+	}, {
+		"mangle":	"Z3_mk_enumeration_sort",
+		"c++":	"Z3_mk_enumeration_sort(Z3_context, Z3_symbol, unsigned int, const Z3_symbol *, Z3_func_decl *, Z3_func_decl *)",
+		"go":	"MkEnumerationSort"
+	}, {
+		"mangle":	"Z3_mk_eq",
+		"c++":	"Z3_mk_eq(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkEq"
+	}, {
+		"mangle":	"Z3_mk_exists",
+		"c++":	"Z3_mk_exists(Z3_context, unsigned int, unsigned int, const Z3_pattern *, unsigned int, const Z3_sort *, const Z3_symbol *, Z3_ast)",
+		"go":	"MkExists"
+	}, {
+		"mangle":	"Z3_mk_exists_const",
+		"c++":	"Z3_mk_exists_const(Z3_context, unsigned int, unsigned int, const Z3_app *, unsigned int, const Z3_pattern *, Z3_ast)",
+		"go":	"MkExistsConst"
+	}, {
+		"mangle":	"Z3_mk_ext_rotate_left",
+		"c++":	"Z3_mk_ext_rotate_left(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkExtRotateLeft"
+	}, {
+		"mangle":	"Z3_mk_ext_rotate_right",
+		"c++":	"Z3_mk_ext_rotate_right(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkExtRotateRight"
+	}, {
+		"mangle":	"Z3_mk_extract",
+		"c++":	"Z3_mk_extract(Z3_context, unsigned int, unsigned int, Z3_ast)",
+		"go":	"MkExtract"
+	}, {
+		"mangle":	"Z3_mk_false",
+		"c++":	"Z3_mk_false(Z3_context)",
+		"go":	"MkFalse"
+	}, {
+		"mangle":	"Z3_mk_finite_domain_sort",
+		"c++":	"Z3_mk_finite_domain_sort(Z3_context, Z3_symbol, uint64_t)",
+		"go":	"MkFiniteDomainSort"
+	}, {
+		"mangle":	"Z3_mk_fixedpoint",
+		"c++":	"Z3_mk_fixedpoint(Z3_context)",
+		"go":	"MkFixedpoint"
+	}, {
+		"mangle":	"Z3_mk_forall",
+		"c++":	"Z3_mk_forall(Z3_context, unsigned int, unsigned int, const Z3_pattern *, unsigned int, const Z3_sort *, const Z3_symbol *, Z3_ast)",
+		"go":	"MkForall"
+	}, {
+		"mangle":	"Z3_mk_forall_const",
+		"c++":	"Z3_mk_forall_const(Z3_context, unsigned int, unsigned int, const Z3_app *, unsigned int, const Z3_pattern *, Z3_ast)",
+		"go":	"MkForallConst"
+	}, {
+		"mangle":	"Z3_mk_fpa_abs",
+		"c++":	"Z3_mk_fpa_abs(Z3_context, Z3_ast)",
+		"go":	"MkFpaAbs"
+	}, {
+		"mangle":	"Z3_mk_fpa_add",
+		"c++":	"Z3_mk_fpa_add(Z3_context, Z3_ast, Z3_ast, Z3_ast)",
+		"go":	"MkFpaAdd"
+	}, {
+		"mangle":	"Z3_mk_fpa_div",
+		"c++":	"Z3_mk_fpa_div(Z3_context, Z3_ast, Z3_ast, Z3_ast)",
+		"go":	"MkFpaDiv"
+	}, {
+		"mangle":	"Z3_mk_fpa_eq",
+		"c++":	"Z3_mk_fpa_eq(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkFpaEq"
+	}, {
+		"mangle":	"Z3_mk_fpa_fma",
+		"c++":	"Z3_mk_fpa_fma(Z3_context, Z3_ast, Z3_ast, Z3_ast, Z3_ast)",
+		"go":	"MkFpaFma"
+	}, {
+		"mangle":	"Z3_mk_fpa_fp",
+		"c++":	"Z3_mk_fpa_fp(Z3_context, Z3_ast, Z3_ast, Z3_ast)",
+		"go":	"MkFpaFp"
+	}, {
+		"mangle":	"Z3_mk_fpa_geq",
+		"c++":	"Z3_mk_fpa_geq(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkFpaGeq"
+	}, {
+		"mangle":	"Z3_mk_fpa_gt",
+		"c++":	"Z3_mk_fpa_gt(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkFpaGt"
+	}, {
+		"mangle":	"Z3_mk_fpa_inf",
+		"c++":	"Z3_mk_fpa_inf(Z3_context, Z3_sort, int)",
+		"go":	"MkFpaInf"
+	}, {
+		"mangle":	"Z3_mk_fpa_is_infinite",
+		"c++":	"Z3_mk_fpa_is_infinite(Z3_context, Z3_ast)",
+		"go":	"MkFpaIsInfinite"
+	}, {
+		"mangle":	"Z3_mk_fpa_is_nan",
+		"c++":	"Z3_mk_fpa_is_nan(Z3_context, Z3_ast)",
+		"go":	"MkFpaIsNan"
+	}, {
+		"mangle":	"Z3_mk_fpa_is_negative",
+		"c++":	"Z3_mk_fpa_is_negative(Z3_context, Z3_ast)",
+		"go":	"MkFpaIsNegative"
+	}, {
+		"mangle":	"Z3_mk_fpa_is_normal",
+		"c++":	"Z3_mk_fpa_is_normal(Z3_context, Z3_ast)",
+		"go":	"MkFpaIsNormal"
+	}, {
+		"mangle":	"Z3_mk_fpa_is_positive",
+		"c++":	"Z3_mk_fpa_is_positive(Z3_context, Z3_ast)",
+		"go":	"MkFpaIsPositive"
+	}, {
+		"mangle":	"Z3_mk_fpa_is_subnormal",
+		"c++":	"Z3_mk_fpa_is_subnormal(Z3_context, Z3_ast)",
+		"go":	"MkFpaIsSubnormal"
+	}, {
+		"mangle":	"Z3_mk_fpa_is_zero",
+		"c++":	"Z3_mk_fpa_is_zero(Z3_context, Z3_ast)",
+		"go":	"MkFpaIsZero"
+	}, {
+		"mangle":	"Z3_mk_fpa_leq",
+		"c++":	"Z3_mk_fpa_leq(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkFpaLeq"
+	}, {
+		"mangle":	"Z3_mk_fpa_lt",
+		"c++":	"Z3_mk_fpa_lt(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkFpaLt"
+	}, {
+		"mangle":	"Z3_mk_fpa_max",
+		"c++":	"Z3_mk_fpa_max(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkFpaMax"
+	}, {
+		"mangle":	"Z3_mk_fpa_min",
+		"c++":	"Z3_mk_fpa_min(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkFpaMin"
+	}, {
+		"mangle":	"Z3_mk_fpa_mul",
+		"c++":	"Z3_mk_fpa_mul(Z3_context, Z3_ast, Z3_ast, Z3_ast)",
+		"go":	"MkFpaMul"
+	}, {
+		"mangle":	"Z3_mk_fpa_nan",
+		"c++":	"Z3_mk_fpa_nan(Z3_context, Z3_sort)",
+		"go":	"MkFpaNan"
+	}, {
+		"mangle":	"Z3_mk_fpa_neg",
+		"c++":	"Z3_mk_fpa_neg(Z3_context, Z3_ast)",
+		"go":	"MkFpaNeg"
+	}, {
+		"mangle":	"Z3_mk_fpa_numeral_double",
+		"c++":	"Z3_mk_fpa_numeral_double(Z3_context, double, Z3_sort)",
+		"go":	"MkFpaNumeralDouble"
+	}, {
+		"mangle":	"Z3_mk_fpa_numeral_float",
+		"c++":	"Z3_mk_fpa_numeral_float(Z3_context, float, Z3_sort)",
+		"go":	"MkFpaNumeralFloat"
+	}, {
+		"mangle":	"Z3_mk_fpa_numeral_int",
+		"c++":	"Z3_mk_fpa_numeral_int(Z3_context, int, Z3_sort)",
+		"go":	"MkFpaNumeralInt"
+	}, {
+		"mangle":	"Z3_mk_fpa_numeral_int64_uint64",
+		"c++":	"Z3_mk_fpa_numeral_int64_uint64(Z3_context, int, int64_t, uint64_t, Z3_sort)",
+		"go":	"MkFpaNumeralInt64Uint64"
+	}, {
+		"mangle":	"Z3_mk_fpa_numeral_int_uint",
+		"c++":	"Z3_mk_fpa_numeral_int_uint(Z3_context, int, int, unsigned int, Z3_sort)",
+		"go":	"MkFpaNumeralIntUint"
+	}, {
+		"mangle":	"Z3_mk_fpa_rem",
+		"c++":	"Z3_mk_fpa_rem(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkFpaRem"
+	}, {
+		"mangle":	"Z3_mk_fpa_rna",
+		"c++":	"Z3_mk_fpa_rna(Z3_context)",
+		"go":	"MkFpaRna"
+	}, {
+		"mangle":	"Z3_mk_fpa_rne",
+		"c++":	"Z3_mk_fpa_rne(Z3_context)",
+		"go":	"MkFpaRne"
+	}, {
+		"mangle":	"Z3_mk_fpa_round_nearest_ties_to_away",
+		"c++":	"Z3_mk_fpa_round_nearest_ties_to_away(Z3_context)",
+		"go":	"MkFpaRoundNearestTiesToAway"
+	}, {
+		"mangle":	"Z3_mk_fpa_round_nearest_ties_to_even",
+		"c++":	"Z3_mk_fpa_round_nearest_ties_to_even(Z3_context)",
+		"go":	"MkFpaRoundNearestTiesToEven"
+	}, {
+		"mangle":	"Z3_mk_fpa_round_to_integral",
+		"c++":	"Z3_mk_fpa_round_to_integral(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkFpaRoundToIntegral"
+	}, {
+		"mangle":	"Z3_mk_fpa_round_toward_negative",
+		"c++":	"Z3_mk_fpa_round_toward_negative(Z3_context)",
+		"go":	"MkFpaRoundTowardNegative"
+	}, {
+		"mangle":	"Z3_mk_fpa_round_toward_positive",
+		"c++":	"Z3_mk_fpa_round_toward_positive(Z3_context)",
+		"go":	"MkFpaRoundTowardPositive"
+	}, {
+		"mangle":	"Z3_mk_fpa_round_toward_zero",
+		"c++":	"Z3_mk_fpa_round_toward_zero(Z3_context)",
+		"go":	"MkFpaRoundTowardZero"
+	}, {
+		"mangle":	"Z3_mk_fpa_rounding_mode_sort",
+		"c++":	"Z3_mk_fpa_rounding_mode_sort(Z3_context)",
+		"go":	"MkFpaRoundingModeSort"
+	}, {
+		"mangle":	"Z3_mk_fpa_rtn",
+		"c++":	"Z3_mk_fpa_rtn(Z3_context)",
+		"go":	"MkFpaRtn"
+	}, {
+		"mangle":	"Z3_mk_fpa_rtp",
+		"c++":	"Z3_mk_fpa_rtp(Z3_context)",
+		"go":	"MkFpaRtp"
+	}, {
+		"mangle":	"Z3_mk_fpa_rtz",
+		"c++":	"Z3_mk_fpa_rtz(Z3_context)",
+		"go":	"MkFpaRtz"
+	}, {
+		"mangle":	"Z3_mk_fpa_sort",
+		"c++":	"Z3_mk_fpa_sort(Z3_context, unsigned int, unsigned int)",
+		"go":	"MkFpaSort"
+	}, {
+		"mangle":	"Z3_mk_fpa_sort_128",
+		"c++":	"Z3_mk_fpa_sort_128(Z3_context)",
+		"go":	"MkFpaSort128"
+	}, {
+		"mangle":	"Z3_mk_fpa_sort_16",
+		"c++":	"Z3_mk_fpa_sort_16(Z3_context)",
+		"go":	"MkFpaSort16"
+	}, {
+		"mangle":	"Z3_mk_fpa_sort_32",
+		"c++":	"Z3_mk_fpa_sort_32(Z3_context)",
+		"go":	"MkFpaSort32"
+	}, {
+		"mangle":	"Z3_mk_fpa_sort_64",
+		"c++":	"Z3_mk_fpa_sort_64(Z3_context)",
+		"go":	"MkFpaSort64"
+	}, {
+		"mangle":	"Z3_mk_fpa_sort_double",
+		"c++":	"Z3_mk_fpa_sort_double(Z3_context)",
+		"go":	"MkFpaSortDouble"
+	}, {
+		"mangle":	"Z3_mk_fpa_sort_half",
+		"c++":	"Z3_mk_fpa_sort_half(Z3_context)",
+		"go":	"MkFpaSortHalf"
+	}, {
+		"mangle":	"Z3_mk_fpa_sort_quadruple",
+		"c++":	"Z3_mk_fpa_sort_quadruple(Z3_context)",
+		"go":	"MkFpaSortQuadruple"
+	}, {
+		"mangle":	"Z3_mk_fpa_sort_single",
+		"c++":	"Z3_mk_fpa_sort_single(Z3_context)",
+		"go":	"MkFpaSortSingle"
+	}, {
+		"mangle":	"Z3_mk_fpa_sqrt",
+		"c++":	"Z3_mk_fpa_sqrt(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkFpaSqrt"
+	}, {
+		"mangle":	"Z3_mk_fpa_sub",
+		"c++":	"Z3_mk_fpa_sub(Z3_context, Z3_ast, Z3_ast, Z3_ast)",
+		"go":	"MkFpaSub"
+	}, {
+		"mangle":	"Z3_mk_fpa_to_fp_bv",
+		"c++":	"Z3_mk_fpa_to_fp_bv(Z3_context, Z3_ast, Z3_sort)",
+		"go":	"MkFpaToFpBv"
+	}, {
+		"mangle":	"Z3_mk_fpa_to_fp_float",
+		"c++":	"Z3_mk_fpa_to_fp_float(Z3_context, Z3_ast, Z3_ast, Z3_sort)",
+		"go":	"MkFpaToFpFloat"
+	}, {
+		"mangle":	"Z3_mk_fpa_to_fp_int_real",
+		"c++":	"Z3_mk_fpa_to_fp_int_real(Z3_context, Z3_ast, Z3_ast, Z3_ast, Z3_sort)",
+		"go":	"MkFpaToFpIntReal"
+	}, {
+		"mangle":	"Z3_mk_fpa_to_fp_real",
+		"c++":	"Z3_mk_fpa_to_fp_real(Z3_context, Z3_ast, Z3_ast, Z3_sort)",
+		"go":	"MkFpaToFpReal"
+	}, {
+		"mangle":	"Z3_mk_fpa_to_fp_signed",
+		"c++":	"Z3_mk_fpa_to_fp_signed(Z3_context, Z3_ast, Z3_ast, Z3_sort)",
+		"go":	"MkFpaToFpSigned"
+	}, {
+		"mangle":	"Z3_mk_fpa_to_fp_unsigned",
+		"c++":	"Z3_mk_fpa_to_fp_unsigned(Z3_context, Z3_ast, Z3_ast, Z3_sort)",
+		"go":	"MkFpaToFpUnsigned"
+	}, {
+		"mangle":	"Z3_mk_fpa_to_ieee_bv",
+		"c++":	"Z3_mk_fpa_to_ieee_bv(Z3_context, Z3_ast)",
+		"go":	"MkFpaToIeeeBv"
+	}, {
+		"mangle":	"Z3_mk_fpa_to_real",
+		"c++":	"Z3_mk_fpa_to_real(Z3_context, Z3_ast)",
+		"go":	"MkFpaToReal"
+	}, {
+		"mangle":	"Z3_mk_fpa_to_sbv",
+		"c++":	"Z3_mk_fpa_to_sbv(Z3_context, Z3_ast, Z3_ast, unsigned int)",
+		"go":	"MkFpaToSbv"
+	}, {
+		"mangle":	"Z3_mk_fpa_to_ubv",
+		"c++":	"Z3_mk_fpa_to_ubv(Z3_context, Z3_ast, Z3_ast, unsigned int)",
+		"go":	"MkFpaToUbv"
+	}, {
+		"mangle":	"Z3_mk_fpa_zero",
+		"c++":	"Z3_mk_fpa_zero(Z3_context, Z3_sort, int)",
+		"go":	"MkFpaZero"
+	}, {
+		"mangle":	"Z3_mk_fresh_const",
+		"c++":	"Z3_mk_fresh_const(Z3_context, Z3_string, Z3_sort)",
+		"go":	"MkFreshConst"
+	}, {
+		"mangle":	"Z3_mk_fresh_func_decl",
+		"c++":	"Z3_mk_fresh_func_decl(Z3_context, Z3_string, unsigned int, const Z3_sort *, Z3_sort)",
+		"go":	"MkFreshFuncDecl"
+	}, {
+		"mangle":	"Z3_mk_full_set",
+		"c++":	"Z3_mk_full_set(Z3_context, Z3_sort)",
+		"go":	"MkFullSet"
+	}, {
+		"mangle":	"Z3_mk_func_decl",
+		"c++":	"Z3_mk_func_decl(Z3_context, Z3_symbol, unsigned int, const Z3_sort *, Z3_sort)",
+		"go":	"MkFuncDecl"
+	}, {
+		"mangle":	"Z3_mk_ge",
+		"c++":	"Z3_mk_ge(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkGe"
+	}, {
+		"mangle":	"Z3_mk_goal",
+		"c++":	"Z3_mk_goal(Z3_context, int, int, int)",
+		"go":	"MkGoal"
+	}, {
+		"mangle":	"Z3_mk_gt",
+		"c++":	"Z3_mk_gt(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkGt"
+	}, {
+		"mangle":	"Z3_mk_iff",
+		"c++":	"Z3_mk_iff(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkIff"
+	}, {
+		"mangle":	"Z3_mk_implies",
+		"c++":	"Z3_mk_implies(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkImplies"
+	}, {
+		"mangle":	"Z3_mk_int",
+		"c++":	"Z3_mk_int(Z3_context, int, Z3_sort)",
+		"go":	"MkInt"
+	}, {
+		"mangle":	"Z3_mk_int2bv",
+		"c++":	"Z3_mk_int2bv(Z3_context, unsigned int, Z3_ast)",
+		"go":	"MkInt2bv"
+	}, {
+		"mangle":	"Z3_mk_int2real",
+		"c++":	"Z3_mk_int2real(Z3_context, Z3_ast)",
+		"go":	"MkInt2real"
+	}, {
+		"mangle":	"Z3_mk_int64",
+		"c++":	"Z3_mk_int64(Z3_context, int64_t, Z3_sort)",
+		"go":	"MkInt64"
+	}, {
+		"mangle":	"Z3_mk_int_sort",
+		"c++":	"Z3_mk_int_sort(Z3_context)",
+		"go":	"MkIntSort"
+	}, {
+		"mangle":	"Z3_mk_int_symbol",
+		"c++":	"Z3_mk_int_symbol(Z3_context, int)",
+		"go":	"MkIntSymbol"
+	}, {
+		"mangle":	"Z3_mk_int_to_str",
+		"c++":	"Z3_mk_int_to_str(Z3_context, Z3_ast)",
+		"go":	"MkIntToStr"
+	}, {
+		"mangle":	"Z3_mk_is_int",
+		"c++":	"Z3_mk_is_int(Z3_context, Z3_ast)",
+		"go":	"MkIsInt"
+	}, {
+		"mangle":	"Z3_mk_ite",
+		"c++":	"Z3_mk_ite(Z3_context, Z3_ast, Z3_ast, Z3_ast)",
+		"go":	"MkIte"
+	}, {
+		"mangle":	"Z3_mk_lambda",
+		"c++":	"Z3_mk_lambda(Z3_context, unsigned int, const Z3_sort *, const Z3_symbol *, Z3_ast)",
+		"go":	"MkLambda"
+	}, {
+		"mangle":	"Z3_mk_lambda_const",
+		"c++":	"Z3_mk_lambda_const(Z3_context, unsigned int, const Z3_app *, Z3_ast)",
+		"go":	"MkLambdaConst"
+	}, {
+		"mangle":	"Z3_mk_le",
+		"c++":	"Z3_mk_le(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkLe"
+	}, {
+		"mangle":	"Z3_mk_linear_order",
+		"c++":	"Z3_mk_linear_order(Z3_context, Z3_sort, unsigned int)",
+		"go":	"MkLinearOrder"
+	}, {
+		"mangle":	"Z3_mk_list_sort",
+		"c++":	"Z3_mk_list_sort(Z3_context, Z3_symbol, Z3_sort, Z3_func_decl *, Z3_func_decl *, Z3_func_decl *, Z3_func_decl *, Z3_func_decl *, Z3_func_decl *)",
+		"go":	"MkListSort"
+	}, {
+		"mangle":	"Z3_mk_lstring",
+		"c++":	"Z3_mk_lstring(Z3_context, unsigned int, Z3_string)",
+		"go":	"MkLstring"
+	}, {
+		"mangle":	"Z3_mk_lt",
+		"c++":	"Z3_mk_lt(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkLt"
+	}, {
+		"mangle":	"Z3_mk_map",
+		"c++":	"Z3_mk_map(Z3_context, Z3_func_decl, unsigned int, const Z3_ast *)",
+		"go":	"MkMap"
+	}, {
+		"mangle":	"Z3_mk_mod",
+		"c++":	"Z3_mk_mod(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkMod"
+	}, {
+		"mangle":	"Z3_mk_model",
+		"c++":	"Z3_mk_model(Z3_context)",
+		"go":	"MkModel"
+	}, {
+		"mangle":	"Z3_mk_mul",
+		"c++":	"Z3_mk_mul(Z3_context, unsigned int, const Z3_ast *)",
+		"go":	"MkMul"
+	}, {
+		"mangle":	"Z3_mk_not",
+		"c++":	"Z3_mk_not(Z3_context, Z3_ast)",
+		"go":	"MkNot"
+	}, {
+		"mangle":	"Z3_mk_numeral",
+		"c++":	"Z3_mk_numeral(Z3_context, Z3_string, Z3_sort)",
+		"go":	"MkNumeral"
+	}, {
+		"mangle":	"Z3_mk_optimize",
+		"c++":	"Z3_mk_optimize(Z3_context)",
+		"go":	"MkOptimize"
+	}, {
+		"mangle":	"Z3_mk_or",
+		"c++":	"Z3_mk_or(Z3_context, unsigned int, const Z3_ast *)",
+		"go":	"MkOr"
+	}, {
+		"mangle":	"Z3_mk_params",
+		"c++":	"Z3_mk_params(Z3_context)",
+		"go":	"MkParams"
+	}, {
+		"mangle":	"Z3_mk_parser_context",
+		"c++":	"Z3_mk_parser_context(Z3_context)",
+		"go":	"MkParserContext"
+	}, {
+		"mangle":	"Z3_mk_partial_order",
+		"c++":	"Z3_mk_partial_order(Z3_context, Z3_sort, unsigned int)",
+		"go":	"MkPartialOrder"
+	}, {
+		"mangle":	"Z3_mk_pattern",
+		"c++":	"Z3_mk_pattern(Z3_context, unsigned int, const Z3_ast *)",
+		"go":	"MkPattern"
+	}, {
+		"mangle":	"Z3_mk_pbeq",
+		"c++":	"Z3_mk_pbeq(Z3_context, unsigned int, const Z3_ast *, const int *, int)",
+		"go":	"MkPbeq"
+	}, {
+		"mangle":	"Z3_mk_pbge",
+		"c++":	"Z3_mk_pbge(Z3_context, unsigned int, const Z3_ast *, const int *, int)",
+		"go":	"MkPbge"
+	}, {
+		"mangle":	"Z3_mk_pble",
+		"c++":	"Z3_mk_pble(Z3_context, unsigned int, const Z3_ast *, const int *, int)",
+		"go":	"MkPble"
+	}, {
+		"mangle":	"Z3_mk_piecewise_linear_order",
+		"c++":	"Z3_mk_piecewise_linear_order(Z3_context, Z3_sort, unsigned int)",
+		"go":	"MkPiecewiseLinearOrder"
+	}, {
+		"mangle":	"Z3_mk_power",
+		"c++":	"Z3_mk_power(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkPower"
+	}, {
+		"mangle":	"Z3_mk_probe",
+		"c++":	"Z3_mk_probe(Z3_context, Z3_string)",
+		"go":	"MkProbe"
+	}, {
+		"mangle":	"Z3_mk_quantifier",
+		"c++":	"Z3_mk_quantifier(Z3_context, int, unsigned int, unsigned int, const Z3_pattern *, unsigned int, const Z3_sort *, const Z3_symbol *, Z3_ast)",
+		"go":	"MkQuantifier"
+	}, {
+		"mangle":	"Z3_mk_quantifier_const",
+		"c++":	"Z3_mk_quantifier_const(Z3_context, int, unsigned int, unsigned int, const Z3_app *, unsigned int, const Z3_pattern *, Z3_ast)",
+		"go":	"MkQuantifierConst"
+	}, {
+		"mangle":	"Z3_mk_quantifier_const_ex",
+		"c++":	"Z3_mk_quantifier_const_ex(Z3_context, int, unsigned int, Z3_symbol, Z3_symbol, unsigned int, const Z3_app *, unsigned int, const Z3_pattern *, unsigned int, const Z3_ast *, Z3_ast)",
+		"go":	"MkQuantifierConstEx"
+	}, {
+		"mangle":	"Z3_mk_quantifier_ex",
+		"c++":	"Z3_mk_quantifier_ex(Z3_context, int, unsigned int, Z3_symbol, Z3_symbol, unsigned int, const Z3_pattern *, unsigned int, const Z3_ast *, unsigned int, const Z3_sort *, const Z3_symbol *, Z3_ast)",
+		"go":	"MkQuantifierEx"
+	}, {
+		"mangle":	"Z3_mk_re_allchar",
+		"c++":	"Z3_mk_re_allchar(Z3_context, Z3_sort)",
+		"go":	"MkReAllchar"
+	}, {
+		"mangle":	"Z3_mk_re_complement",
+		"c++":	"Z3_mk_re_complement(Z3_context, Z3_ast)",
+		"go":	"MkReComplement"
+	}, {
+		"mangle":	"Z3_mk_re_concat",
+		"c++":	"Z3_mk_re_concat(Z3_context, unsigned int, const Z3_ast *)",
+		"go":	"MkReConcat"
+	}, {
+		"mangle":	"Z3_mk_re_diff",
+		"c++":	"Z3_mk_re_diff(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkReDiff"
+	}, {
+		"mangle":	"Z3_mk_re_empty",
+		"c++":	"Z3_mk_re_empty(Z3_context, Z3_sort)",
+		"go":	"MkReEmpty"
+	}, {
+		"mangle":	"Z3_mk_re_full",
+		"c++":	"Z3_mk_re_full(Z3_context, Z3_sort)",
+		"go":	"MkReFull"
+	}, {
+		"mangle":	"Z3_mk_re_intersect",
+		"c++":	"Z3_mk_re_intersect(Z3_context, unsigned int, const Z3_ast *)",
+		"go":	"MkReIntersect"
+	}, {
+		"mangle":	"Z3_mk_re_loop",
+		"c++":	"Z3_mk_re_loop(Z3_context, Z3_ast, unsigned int, unsigned int)",
+		"go":	"MkReLoop"
+	}, {
+		"mangle":	"Z3_mk_re_option",
+		"c++":	"Z3_mk_re_option(Z3_context, Z3_ast)",
+		"go":	"MkReOption"
+	}, {
+		"mangle":	"Z3_mk_re_plus",
+		"c++":	"Z3_mk_re_plus(Z3_context, Z3_ast)",
+		"go":	"MkRePlus"
+	}, {
+		"mangle":	"Z3_mk_re_power",
+		"c++":	"Z3_mk_re_power(Z3_context, Z3_ast, unsigned int)",
+		"go":	"MkRePower"
+	}, {
+		"mangle":	"Z3_mk_re_range",
+		"c++":	"Z3_mk_re_range(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkReRange"
+	}, {
+		"mangle":	"Z3_mk_re_sort",
+		"c++":	"Z3_mk_re_sort(Z3_context, Z3_sort)",
+		"go":	"MkReSort"
+	}, {
+		"mangle":	"Z3_mk_re_star",
+		"c++":	"Z3_mk_re_star(Z3_context, Z3_ast)",
+		"go":	"MkReStar"
+	}, {
+		"mangle":	"Z3_mk_re_union",
+		"c++":	"Z3_mk_re_union(Z3_context, unsigned int, const Z3_ast *)",
+		"go":	"MkReUnion"
+	}, {
+		"mangle":	"Z3_mk_real",
+		"c++":	"Z3_mk_real(Z3_context, int, int)",
+		"go":	"MkReal"
+	}, {
+		"mangle":	"Z3_mk_real2int",
+		"c++":	"Z3_mk_real2int(Z3_context, Z3_ast)",
+		"go":	"MkReal2int"
+	}, {
+		"mangle":	"Z3_mk_real_int64",
+		"c++":	"Z3_mk_real_int64(Z3_context, int64_t, int64_t)",
+		"go":	"MkRealInt64"
+	}, {
+		"mangle":	"Z3_mk_real_sort",
+		"c++":	"Z3_mk_real_sort(Z3_context)",
+		"go":	"MkRealSort"
+	}, {
+		"mangle":	"Z3_mk_rec_func_decl",
+		"c++":	"Z3_mk_rec_func_decl(Z3_context, Z3_symbol, unsigned int, const Z3_sort *, Z3_sort)",
+		"go":	"MkRecFuncDecl"
+	}, {
+		"mangle":	"Z3_mk_rem",
+		"c++":	"Z3_mk_rem(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkRem"
+	}, {
+		"mangle":	"Z3_mk_repeat",
+		"c++":	"Z3_mk_repeat(Z3_context, unsigned int, Z3_ast)",
+		"go":	"MkRepeat"
+	}, {
+		"mangle":	"Z3_mk_rotate_left",
+		"c++":	"Z3_mk_rotate_left(Z3_context, unsigned int, Z3_ast)",
+		"go":	"MkRotateLeft"
+	}, {
+		"mangle":	"Z3_mk_rotate_right",
+		"c++":	"Z3_mk_rotate_right(Z3_context, unsigned int, Z3_ast)",
+		"go":	"MkRotateRight"
+	}, {
+		"mangle":	"Z3_mk_sbv_to_str",
+		"c++":	"Z3_mk_sbv_to_str(Z3_context, Z3_ast)",
+		"go":	"MkSbvToStr"
+	}, {
+		"mangle":	"Z3_mk_select",
+		"c++":	"Z3_mk_select(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkSelect"
+	}, {
+		"mangle":	"Z3_mk_select_n",
+		"c++":	"Z3_mk_select_n(Z3_context, Z3_ast, unsigned int, const Z3_ast *)",
+		"go":	"MkSelectN"
+	}, {
+		"mangle":	"Z3_mk_seq_at",
+		"c++":	"Z3_mk_seq_at(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkSeqAt"
+	}, {
+		"mangle":	"Z3_mk_seq_concat",
+		"c++":	"Z3_mk_seq_concat(Z3_context, unsigned int, const Z3_ast *)",
+		"go":	"MkSeqConcat"
+	}, {
+		"mangle":	"Z3_mk_seq_contains",
+		"c++":	"Z3_mk_seq_contains(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkSeqContains"
+	}, {
+		"mangle":	"Z3_mk_seq_empty",
+		"c++":	"Z3_mk_seq_empty(Z3_context, Z3_sort)",
+		"go":	"MkSeqEmpty"
+	}, {
+		"mangle":	"Z3_mk_seq_extract",
+		"c++":	"Z3_mk_seq_extract(Z3_context, Z3_ast, Z3_ast, Z3_ast)",
+		"go":	"MkSeqExtract"
+	}, {
+		"mangle":	"Z3_mk_seq_in_re",
+		"c++":	"Z3_mk_seq_in_re(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkSeqInRe"
+	}, {
+		"mangle":	"Z3_mk_seq_index",
+		"c++":	"Z3_mk_seq_index(Z3_context, Z3_ast, Z3_ast, Z3_ast)",
+		"go":	"MkSeqIndex"
+	}, {
+		"mangle":	"Z3_mk_seq_last_index",
+		"c++":	"Z3_mk_seq_last_index(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkSeqLastIndex"
+	}, {
+		"mangle":	"Z3_mk_seq_length",
+		"c++":	"Z3_mk_seq_length(Z3_context, Z3_ast)",
+		"go":	"MkSeqLength"
+	}, {
+		"mangle":	"Z3_mk_seq_nth",
+		"c++":	"Z3_mk_seq_nth(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkSeqNth"
+	}, {
+		"mangle":	"Z3_mk_seq_prefix",
+		"c++":	"Z3_mk_seq_prefix(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkSeqPrefix"
+	}, {
+		"mangle":	"Z3_mk_seq_replace",
+		"c++":	"Z3_mk_seq_replace(Z3_context, Z3_ast, Z3_ast, Z3_ast)",
+		"go":	"MkSeqReplace"
+	}, {
+		"mangle":	"Z3_mk_seq_sort",
+		"c++":	"Z3_mk_seq_sort(Z3_context, Z3_sort)",
+		"go":	"MkSeqSort"
+	}, {
+		"mangle":	"Z3_mk_seq_suffix",
+		"c++":	"Z3_mk_seq_suffix(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkSeqSuffix"
+	}, {
+		"mangle":	"Z3_mk_seq_to_re",
+		"c++":	"Z3_mk_seq_to_re(Z3_context, Z3_ast)",
+		"go":	"MkSeqToRe"
+	}, {
+		"mangle":	"Z3_mk_seq_unit",
+		"c++":	"Z3_mk_seq_unit(Z3_context, Z3_ast)",
+		"go":	"MkSeqUnit"
+	}, {
+		"mangle":	"Z3_mk_set_add",
+		"c++":	"Z3_mk_set_add(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkSetAdd"
+	}, {
+		"mangle":	"Z3_mk_set_complement",
+		"c++":	"Z3_mk_set_complement(Z3_context, Z3_ast)",
+		"go":	"MkSetComplement"
+	}, {
+		"mangle":	"Z3_mk_set_del",
+		"c++":	"Z3_mk_set_del(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkSetDel"
+	}, {
+		"mangle":	"Z3_mk_set_difference",
+		"c++":	"Z3_mk_set_difference(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkSetDifference"
+	}, {
+		"mangle":	"Z3_mk_set_has_size",
+		"c++":	"Z3_mk_set_has_size(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkSetHasSize"
+	}, {
+		"mangle":	"Z3_mk_set_intersect",
+		"c++":	"Z3_mk_set_intersect(Z3_context, unsigned int, const Z3_ast *)",
+		"go":	"MkSetIntersect"
+	}, {
+		"mangle":	"Z3_mk_set_member",
+		"c++":	"Z3_mk_set_member(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkSetMember"
+	}, {
+		"mangle":	"Z3_mk_set_sort",
+		"c++":	"Z3_mk_set_sort(Z3_context, Z3_sort)",
+		"go":	"MkSetSort"
+	}, {
+		"mangle":	"Z3_mk_set_subset",
+		"c++":	"Z3_mk_set_subset(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkSetSubset"
+	}, {
+		"mangle":	"Z3_mk_set_union",
+		"c++":	"Z3_mk_set_union(Z3_context, unsigned int, const Z3_ast *)",
+		"go":	"MkSetUnion"
+	}, {
+		"mangle":	"Z3_mk_sign_ext",
+		"c++":	"Z3_mk_sign_ext(Z3_context, unsigned int, Z3_ast)",
+		"go":	"MkSignExt"
+	}, {
+		"mangle":	"Z3_mk_simple_solver",
+		"c++":	"Z3_mk_simple_solver(Z3_context)",
+		"go":	"MkSimpleSolver"
+	}, {
+		"mangle":	"Z3_mk_simplifier",
+		"c++":	"Z3_mk_simplifier(Z3_context, Z3_string)",
+		"go":	"MkSimplifier"
+	}, {
+		"mangle":	"Z3_mk_solver",
+		"c++":	"Z3_mk_solver(Z3_context)",
+		"go":	"MkSolver"
+	}, {
+		"mangle":	"Z3_mk_solver_for_logic",
+		"c++":	"Z3_mk_solver_for_logic(Z3_context, Z3_symbol)",
+		"go":	"MkSolverForLogic"
+	}, {
+		"mangle":	"Z3_mk_solver_from_tactic",
+		"c++":	"Z3_mk_solver_from_tactic(Z3_context, Z3_tactic)",
+		"go":	"MkSolverFromTactic"
+	}, {
+		"mangle":	"Z3_mk_store",
+		"c++":	"Z3_mk_store(Z3_context, Z3_ast, Z3_ast, Z3_ast)",
+		"go":	"MkStore"
+	}, {
+		"mangle":	"Z3_mk_store_n",
+		"c++":	"Z3_mk_store_n(Z3_context, Z3_ast, unsigned int, const Z3_ast *, Z3_ast)",
+		"go":	"MkStoreN"
+	}, {
+		"mangle":	"Z3_mk_str_le",
+		"c++":	"Z3_mk_str_le(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkStrLe"
+	}, {
+		"mangle":	"Z3_mk_str_lt",
+		"c++":	"Z3_mk_str_lt(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkStrLt"
+	}, {
+		"mangle":	"Z3_mk_str_to_int",
+		"c++":	"Z3_mk_str_to_int(Z3_context, Z3_ast)",
+		"go":	"MkStrToInt"
+	}, {
+		"mangle":	"Z3_mk_string",
+		"c++":	"Z3_mk_string(Z3_context, Z3_string)",
+		"go":	"MkString"
+	}, {
+		"mangle":	"Z3_mk_string_from_code",
+		"c++":	"Z3_mk_string_from_code(Z3_context, Z3_ast)",
+		"go":	"MkStringFromCode"
+	}, {
+		"mangle":	"Z3_mk_string_sort",
+		"c++":	"Z3_mk_string_sort(Z3_context)",
+		"go":	"MkStringSort"
+	}, {
+		"mangle":	"Z3_mk_string_symbol",
+		"c++":	"Z3_mk_string_symbol(Z3_context, Z3_string)",
+		"go":	"MkStringSymbol"
+	}, {
+		"mangle":	"Z3_mk_string_to_code",
+		"c++":	"Z3_mk_string_to_code(Z3_context, Z3_ast)",
+		"go":	"MkStringToCode"
+	}, {
+		"mangle":	"Z3_mk_sub",
+		"c++":	"Z3_mk_sub(Z3_context, unsigned int, const Z3_ast *)",
+		"go":	"MkSub"
+	}, {
+		"mangle":	"Z3_mk_tactic",
+		"c++":	"Z3_mk_tactic(Z3_context, Z3_string)",
+		"go":	"MkTactic"
+	}, {
+		"mangle":	"Z3_mk_transitive_closure",
+		"c++":	"Z3_mk_transitive_closure(Z3_context, Z3_func_decl)",
+		"go":	"MkTransitiveClosure"
+	}, {
+		"mangle":	"Z3_mk_tree_order",
+		"c++":	"Z3_mk_tree_order(Z3_context, Z3_sort, unsigned int)",
+		"go":	"MkTreeOrder"
+	}, {
+		"mangle":	"Z3_mk_true",
+		"c++":	"Z3_mk_true(Z3_context)",
+		"go":	"MkTrue"
+	}, {
+		"mangle":	"Z3_mk_tuple_sort",
+		"c++":	"Z3_mk_tuple_sort(Z3_context, Z3_symbol, unsigned int, const Z3_symbol *, const Z3_sort *, Z3_func_decl *, Z3_func_decl *)",
+		"go":	"MkTupleSort"
+	}, {
+		"mangle":	"Z3_mk_type_variable",
+		"c++":	"Z3_mk_type_variable(Z3_context, Z3_symbol)",
+		"go":	"MkTypeVariable"
+	}, {
+		"mangle":	"Z3_mk_u32string",
+		"c++":	"Z3_mk_u32string(Z3_context, unsigned int, const unsigned int *)",
+		"go":	"MkU32string"
+	}, {
+		"mangle":	"Z3_mk_ubv_to_str",
+		"c++":	"Z3_mk_ubv_to_str(Z3_context, Z3_ast)",
+		"go":	"MkUbvToStr"
+	}, {
+		"mangle":	"Z3_mk_unary_minus",
+		"c++":	"Z3_mk_unary_minus(Z3_context, Z3_ast)",
+		"go":	"MkUnaryMinus"
+	}, {
+		"mangle":	"Z3_mk_uninterpreted_sort",
+		"c++":	"Z3_mk_uninterpreted_sort(Z3_context, Z3_symbol)",
+		"go":	"MkUninterpretedSort"
+	}, {
+		"mangle":	"Z3_mk_unsigned_int",
+		"c++":	"Z3_mk_unsigned_int(Z3_context, unsigned int, Z3_sort)",
+		"go":	"MkUnsignedInt"
+	}, {
+		"mangle":	"Z3_mk_unsigned_int64",
+		"c++":	"Z3_mk_unsigned_int64(Z3_context, uint64_t, Z3_sort)",
+		"go":	"MkUnsignedInt64"
+	}, {
+		"mangle":	"Z3_mk_xor",
+		"c++":	"Z3_mk_xor(Z3_context, Z3_ast, Z3_ast)",
+		"go":	"MkXor"
+	}, {
+		"mangle":	"Z3_mk_zero_ext",
+		"c++":	"Z3_mk_zero_ext(Z3_context, unsigned int, Z3_ast)",
+		"go":	"MkZeroExt"
+	}, {
+		"mangle":	"Z3_model_dec_ref",
+		"c++":	"Z3_model_dec_ref(Z3_context, Z3_model)",
+		"go":	"ModelDecRef"
+	}, {
+		"mangle":	"Z3_model_eval",
+		"c++":	"Z3_model_eval(Z3_context, Z3_model, Z3_ast, int, Z3_ast *)",
+		"go":	"ModelEval"
+	}, {
+		"mangle":	"Z3_model_extrapolate",
+		"c++":	"Z3_model_extrapolate(Z3_context, Z3_model, Z3_ast)",
+		"go":	"ModelExtrapolate"
+	}, {
+		"mangle":	"Z3_model_get_const_decl",
+		"c++":	"Z3_model_get_const_decl(Z3_context, Z3_model, unsigned int)",
+		"go":	"ModelGetConstDecl"
+	}, {
+		"mangle":	"Z3_model_get_const_interp",
+		"c++":	"Z3_model_get_const_interp(Z3_context, Z3_model, Z3_func_decl)",
+		"go":	"ModelGetConstInterp"
+	}, {
+		"mangle":	"Z3_model_get_func_decl",
+		"c++":	"Z3_model_get_func_decl(Z3_context, Z3_model, unsigned int)",
+		"go":	"ModelGetFuncDecl"
+	}, {
+		"mangle":	"Z3_model_get_func_interp",
+		"c++":	"Z3_model_get_func_interp(Z3_context, Z3_model, Z3_func_decl)",
+		"go":	"ModelGetFuncInterp"
+	}, {
+		"mangle":	"Z3_model_get_num_consts",
+		"c++":	"Z3_model_get_num_consts(Z3_context, Z3_model)",
+		"go":	"ModelGetNumConsts"
+	}, {
+		"mangle":	"Z3_model_get_num_funcs",
+		"c++":	"Z3_model_get_num_funcs(Z3_context, Z3_model)",
+		"go":	"ModelGetNumFuncs"
+	}, {
+		"mangle":	"Z3_model_get_num_sorts",
+		"c++":	"Z3_model_get_num_sorts(Z3_context, Z3_model)",
+		"go":	"ModelGetNumSorts"
+	}, {
+		"mangle":	"Z3_model_get_sort",
+		"c++":	"Z3_model_get_sort(Z3_context, Z3_model, unsigned int)",
+		"go":	"ModelGetSort"
+	}, {
+		"mangle":	"Z3_model_get_sort_universe",
+		"c++":	"Z3_model_get_sort_universe(Z3_context, Z3_model, Z3_sort)",
+		"go":	"ModelGetSortUniverse"
+	}, {
+		"mangle":	"Z3_model_has_interp",
+		"c++":	"Z3_model_has_interp(Z3_context, Z3_model, Z3_func_decl)",
+		"go":	"ModelHasInterp"
+	}, {
+		"mangle":	"Z3_model_inc_ref",
+		"c++":	"Z3_model_inc_ref(Z3_context, Z3_model)",
+		"go":	"ModelIncRef"
+	}, {
+		"mangle":	"Z3_model_to_string",
+		"c++":	"Z3_model_to_string(Z3_context, Z3_model)",
+		"go":	"ModelToString"
+	}, {
+		"mangle":	"Z3_model_translate",
+		"c++":	"Z3_model_translate(Z3_context, Z3_model, Z3_context)",
+		"go":	"ModelTranslate"
+	}, {
+		"mangle":	"Z3_open_log",
+		"c++":	"Z3_open_log(Z3_string)",
+		"go":	"OpenLog"
+	}, {
+		"mangle":	"Z3_optimize_assert",
+		"c++":	"Z3_optimize_assert(Z3_context, Z3_optimize, Z3_ast)",
+		"go":	"OptimizeAssert"
+	}, {
+		"mangle":	"Z3_optimize_assert_and_track",
+		"c++":	"Z3_optimize_assert_and_track(Z3_context, Z3_optimize, Z3_ast, Z3_ast)",
+		"go":	"OptimizeAssertAndTrack"
+	}, {
+		"mangle":	"Z3_optimize_assert_soft",
+		"c++":	"Z3_optimize_assert_soft(Z3_context, Z3_optimize, Z3_ast, Z3_string, Z3_symbol)",
+		"go":	"OptimizeAssertSoft"
+	}, {
+		"mangle":	"Z3_optimize_check",
+		"c++":	"Z3_optimize_check(Z3_context, Z3_optimize, unsigned int, const Z3_ast *)",
+		"go":	"OptimizeCheck"
+	}, {
+		"mangle":	"Z3_optimize_dec_ref",
+		"c++":	"Z3_optimize_dec_ref(Z3_context, Z3_optimize)",
+		"go":	"OptimizeDecRef"
+	}, {
+		"mangle":	"Z3_optimize_from_file",
+		"c++":	"Z3_optimize_from_file(Z3_context, Z3_optimize, Z3_string)",
+		"go":	"OptimizeFromFile"
+	}, {
+		"mangle":	"Z3_optimize_from_string",
+		"c++":	"Z3_optimize_from_string(Z3_context, Z3_optimize, Z3_string)",
+		"go":	"OptimizeFromString"
+	}, {
+		"mangle":	"Z3_optimize_get_assertions",
+		"c++":	"Z3_optimize_get_assertions(Z3_context, Z3_optimize)",
+		"go":	"OptimizeGetAssertions"
+	}, {
+		"mangle":	"Z3_optimize_get_help",
+		"c++":	"Z3_optimize_get_help(Z3_context, Z3_optimize)",
+		"go":	"OptimizeGetHelp"
+	}, {
+		"mangle":	"Z3_optimize_get_lower",
+		"c++":	"Z3_optimize_get_lower(Z3_context, Z3_optimize, unsigned int)",
+		"go":	"OptimizeGetLower"
+	}, {
+		"mangle":	"Z3_optimize_get_lower_as_vector",
+		"c++":	"Z3_optimize_get_lower_as_vector(Z3_context, Z3_optimize, unsigned int)",
+		"go":	"OptimizeGetLowerAsVector"
+	}, {
+		"mangle":	"Z3_optimize_get_model",
+		"c++":	"Z3_optimize_get_model(Z3_context, Z3_optimize)",
+		"go":	"OptimizeGetModel"
+	}, {
+		"mangle":	"Z3_optimize_get_objectives",
+		"c++":	"Z3_optimize_get_objectives(Z3_context, Z3_optimize)",
+		"go":	"OptimizeGetObjectives"
+	}, {
+		"mangle":	"Z3_optimize_get_param_descrs",
+		"c++":	"Z3_optimize_get_param_descrs(Z3_context, Z3_optimize)",
+		"go":	"OptimizeGetParamDescrs"
+	}, {
+		"mangle":	"Z3_optimize_get_reason_unknown",
+		"c++":	"Z3_optimize_get_reason_unknown(Z3_context, Z3_optimize)",
+		"go":	"OptimizeGetReasonUnknown"
+	}, {
+		"mangle":	"Z3_optimize_get_statistics",
+		"c++":	"Z3_optimize_get_statistics(Z3_context, Z3_optimize)",
+		"go":	"OptimizeGetStatistics"
+	}, {
+		"mangle":	"Z3_optimize_get_unsat_core",
+		"c++":	"Z3_optimize_get_unsat_core(Z3_context, Z3_optimize)",
+		"go":	"OptimizeGetUnsatCore"
+	}, {
+		"mangle":	"Z3_optimize_get_upper",
+		"c++":	"Z3_optimize_get_upper(Z3_context, Z3_optimize, unsigned int)",
+		"go":	"OptimizeGetUpper"
+	}, {
+		"mangle":	"Z3_optimize_get_upper_as_vector",
+		"c++":	"Z3_optimize_get_upper_as_vector(Z3_context, Z3_optimize, unsigned int)",
+		"go":	"OptimizeGetUpperAsVector"
+	}, {
+		"mangle":	"Z3_optimize_inc_ref",
+		"c++":	"Z3_optimize_inc_ref(Z3_context, Z3_optimize)",
+		"go":	"OptimizeIncRef"
+	}, {
+		"mangle":	"Z3_optimize_maximize",
+		"c++":	"Z3_optimize_maximize(Z3_context, Z3_optimize, Z3_ast)",
+		"go":	"OptimizeMaximize"
+	}, {
+		"mangle":	"Z3_optimize_minimize",
+		"c++":	"Z3_optimize_minimize(Z3_context, Z3_optimize, Z3_ast)",
+		"go":	"OptimizeMinimize"
+	}, {
+		"mangle":	"Z3_optimize_pop",
+		"c++":	"Z3_optimize_pop(Z3_context, Z3_optimize)",
+		"go":	"OptimizePop"
+	}, {
+		"mangle":	"Z3_optimize_push",
+		"c++":	"Z3_optimize_push(Z3_context, Z3_optimize)",
+		"go":	"OptimizePush"
+	}, {
+		"mangle":	"Z3_optimize_register_model_eh",
+		"c++":	"Z3_optimize_register_model_eh(Z3_context, Z3_optimize, Z3_model, void *, Z3_model_eh *)",
+		"go":	"OptimizeRegisterModelEh"
+	}, {
+		"mangle":	"Z3_optimize_set_params",
+		"c++":	"Z3_optimize_set_params(Z3_context, Z3_optimize, Z3_params)",
+		"go":	"OptimizeSetParams"
+	}, {
+		"mangle":	"Z3_optimize_to_string",
+		"c++":	"Z3_optimize_to_string(Z3_context, Z3_optimize)",
+		"go":	"OptimizeToString"
+	}, {
+		"mangle":	"Z3_param_descrs_dec_ref",
+		"c++":	"Z3_param_descrs_dec_ref(Z3_context, Z3_param_descrs)",
+		"go":	"ParamDescrsDecRef"
+	}, {
+		"mangle":	"Z3_param_descrs_get_documentation",
+		"c++":	"Z3_param_descrs_get_documentation(Z3_context, Z3_param_descrs, Z3_symbol)",
+		"go":	"ParamDescrsGetDocumentation"
+	}, {
+		"mangle":	"Z3_param_descrs_get_kind",
+		"c++":	"Z3_param_descrs_get_kind(Z3_context, Z3_param_descrs, Z3_symbol)",
+		"go":	"ParamDescrsGetKind"
+	}, {
+		"mangle":	"Z3_param_descrs_get_name",
+		"c++":	"Z3_param_descrs_get_name(Z3_context, Z3_param_descrs, unsigned int)",
+		"go":	"ParamDescrsGetName"
+	}, {
+		"mangle":	"Z3_param_descrs_inc_ref",
+		"c++":	"Z3_param_descrs_inc_ref(Z3_context, Z3_param_descrs)",
+		"go":	"ParamDescrsIncRef"
+	}, {
+		"mangle":	"Z3_param_descrs_size",
+		"c++":	"Z3_param_descrs_size(Z3_context, Z3_param_descrs)",
+		"go":	"ParamDescrsSize"
+	}, {
+		"mangle":	"Z3_param_descrs_to_string",
+		"c++":	"Z3_param_descrs_to_string(Z3_context, Z3_param_descrs)",
+		"go":	"ParamDescrsToString"
+	}, {
+		"mangle":	"Z3_params_dec_ref",
+		"c++":	"Z3_params_dec_ref(Z3_context, Z3_params)",
+		"go":	"ParamsDecRef"
+	}, {
+		"mangle":	"Z3_params_inc_ref",
+		"c++":	"Z3_params_inc_ref(Z3_context, Z3_params)",
+		"go":	"ParamsIncRef"
+	}, {
+		"mangle":	"Z3_params_set_bool",
+		"c++":	"Z3_params_set_bool(Z3_context, Z3_params, Z3_symbol, int)",
+		"go":	"ParamsSetBool"
+	}, {
+		"mangle":	"Z3_params_set_double",
+		"c++":	"Z3_params_set_double(Z3_context, Z3_params, Z3_symbol, double)",
+		"go":	"ParamsSetDouble"
+	}, {
+		"mangle":	"Z3_params_set_symbol",
+		"c++":	"Z3_params_set_symbol(Z3_context, Z3_params, Z3_symbol, Z3_symbol)",
+		"go":	"ParamsSetSymbol"
+	}, {
+		"mangle":	"Z3_params_set_uint",
+		"c++":	"Z3_params_set_uint(Z3_context, Z3_params, Z3_symbol, unsigned int)",
+		"go":	"ParamsSetUint"
+	}, {
+		"mangle":	"Z3_params_to_string",
+		"c++":	"Z3_params_to_string(Z3_context, Z3_params)",
+		"go":	"ParamsToString"
+	}, {
+		"mangle":	"Z3_params_validate",
+		"c++":	"Z3_params_validate(Z3_context, Z3_params, Z3_param_descrs)",
+		"go":	"ParamsValidate"
+	}, {
+		"mangle":	"Z3_parse_smtlib2_file",
+		"c++":	"Z3_parse_smtlib2_file(Z3_context, Z3_string, unsigned int, const Z3_symbol *, const Z3_sort *, unsigned int, const Z3_symbol *, const Z3_func_decl *)",
+		"go":	"ParseSmtlib2File"
+	}, {
+		"mangle":	"Z3_parse_smtlib2_string",
+		"c++":	"Z3_parse_smtlib2_string(Z3_context, Z3_string, unsigned int, const Z3_symbol *, const Z3_sort *, unsigned int, const Z3_symbol *, const Z3_func_decl *)",
+		"go":	"ParseSmtlib2String"
+	}, {
+		"mangle":	"Z3_parser_context_add_decl",
+		"c++":	"Z3_parser_context_add_decl(Z3_context, Z3_parser_context, Z3_func_decl)",
+		"go":	"ParserContextAddDecl"
+	}, {
+		"mangle":	"Z3_parser_context_add_sort",
+		"c++":	"Z3_parser_context_add_sort(Z3_context, Z3_parser_context, Z3_sort)",
+		"go":	"ParserContextAddSort"
+	}, {
+		"mangle":	"Z3_parser_context_dec_ref",
+		"c++":	"Z3_parser_context_dec_ref(Z3_context, Z3_parser_context)",
+		"go":	"ParserContextDecRef"
+	}, {
+		"mangle":	"Z3_parser_context_from_string",
+		"c++":	"Z3_parser_context_from_string(Z3_context, Z3_parser_context, Z3_string)",
+		"go":	"ParserContextFromString"
+	}, {
+		"mangle":	"Z3_parser_context_inc_ref",
+		"c++":	"Z3_parser_context_inc_ref(Z3_context, Z3_parser_context)",
+		"go":	"ParserContextIncRef"
+	}, {
+		"mangle":	"Z3_pattern_to_ast",
+		"c++":	"Z3_pattern_to_ast(Z3_context, Z3_pattern)",
+		"go":	"PatternToAst"
+	}, {
+		"mangle":	"Z3_pattern_to_string",
+		"c++":	"Z3_pattern_to_string(Z3_context, Z3_pattern)",
+		"go":	"PatternToString"
+	}, {
+		"mangle":	"Z3_polynomial_subresultants",
+		"c++":	"Z3_polynomial_subresultants(Z3_context, Z3_ast, Z3_ast, Z3_ast)",
+		"go":	"PolynomialSubresultants"
+	}, {
+		"mangle":	"Z3_probe_and",
+		"c++":	"Z3_probe_and(Z3_context, Z3_probe, Z3_probe)",
+		"go":	"ProbeAnd"
+	}, {
+		"mangle":	"Z3_probe_apply",
+		"c++":	"Z3_probe_apply(Z3_context, Z3_probe, Z3_goal)",
+		"go":	"ProbeApply"
+	}, {
+		"mangle":	"Z3_probe_const",
+		"c++":	"Z3_probe_const(Z3_context, double)",
+		"go":	"ProbeConst"
+	}, {
+		"mangle":	"Z3_probe_dec_ref",
+		"c++":	"Z3_probe_dec_ref(Z3_context, Z3_probe)",
+		"go":	"ProbeDecRef"
+	}, {
+		"mangle":	"Z3_probe_eq",
+		"c++":	"Z3_probe_eq(Z3_context, Z3_probe, Z3_probe)",
+		"go":	"ProbeEq"
+	}, {
+		"mangle":	"Z3_probe_ge",
+		"c++":	"Z3_probe_ge(Z3_context, Z3_probe, Z3_probe)",
+		"go":	"ProbeGe"
+	}, {
+		"mangle":	"Z3_probe_get_descr",
+		"c++":	"Z3_probe_get_descr(Z3_context, Z3_string)",
+		"go":	"ProbeGetDescr"
+	}, {
+		"mangle":	"Z3_probe_gt",
+		"c++":	"Z3_probe_gt(Z3_context, Z3_probe, Z3_probe)",
+		"go":	"ProbeGt"
+	}, {
+		"mangle":	"Z3_probe_inc_ref",
+		"c++":	"Z3_probe_inc_ref(Z3_context, Z3_probe)",
+		"go":	"ProbeIncRef"
+	}, {
+		"mangle":	"Z3_probe_le",
+		"c++":	"Z3_probe_le(Z3_context, Z3_probe, Z3_probe)",
+		"go":	"ProbeLe"
+	}, {
+		"mangle":	"Z3_probe_lt",
+		"c++":	"Z3_probe_lt(Z3_context, Z3_probe, Z3_probe)",
+		"go":	"ProbeLt"
+	}, {
+		"mangle":	"Z3_probe_not",
+		"c++":	"Z3_probe_not(Z3_context, Z3_probe)",
+		"go":	"ProbeNot"
+	}, {
+		"mangle":	"Z3_probe_or",
+		"c++":	"Z3_probe_or(Z3_context, Z3_probe, Z3_probe)",
+		"go":	"ProbeOr"
+	}, {
+		"mangle":	"Z3_qe_lite",
+		"c++":	"Z3_qe_lite(Z3_context, Z3_ast_vector, Z3_ast)",
+		"go":	"QeLite"
+	}, {
+		"mangle":	"Z3_qe_model_project",
+		"c++":	"Z3_qe_model_project(Z3_context, Z3_model, unsigned int, const Z3_app *, Z3_ast)",
+		"go":	"QeModelProject"
+	}, {
+		"mangle":	"Z3_qe_model_project_skolem",
+		"c++":	"Z3_qe_model_project_skolem(Z3_context, Z3_model, unsigned int, const Z3_app *, Z3_ast, Z3_ast_map)",
+		"go":	"QeModelProjectSkolem"
+	}, {
+		"mangle":	"Z3_query_constructor",
+		"c++":	"Z3_query_constructor(Z3_context, Z3_constructor, unsigned int, Z3_func_decl *, Z3_func_decl *, Z3_func_decl *)",
+		"go":	"QueryConstructor"
+	}, {
+		"mangle":	"Z3_rcf_add",
+		"c++":	"Z3_rcf_add(Z3_context, Z3_rcf_num, Z3_rcf_num)",
+		"go":	"RcfAdd"
+	}, {
+		"mangle":	"Z3_rcf_coefficient",
+		"c++":	"Z3_rcf_coefficient(Z3_context, Z3_rcf_num, unsigned int)",
+		"go":	"RcfCoefficient"
+	}, {
+		"mangle":	"Z3_rcf_del",
+		"c++":	"Z3_rcf_del(Z3_context, Z3_rcf_num)",
+		"go":	"RcfDel"
+	}, {
+		"mangle":	"Z3_rcf_div",
+		"c++":	"Z3_rcf_div(Z3_context, Z3_rcf_num, Z3_rcf_num)",
+		"go":	"RcfDiv"
+	}, {
+		"mangle":	"Z3_rcf_eq",
+		"c++":	"Z3_rcf_eq(Z3_context, Z3_rcf_num, Z3_rcf_num)",
+		"go":	"RcfEq"
+	}, {
+		"mangle":	"Z3_rcf_extension_index",
+		"c++":	"Z3_rcf_extension_index(Z3_context, Z3_rcf_num)",
+		"go":	"RcfExtensionIndex"
+	}, {
+		"mangle":	"Z3_rcf_ge",
+		"c++":	"Z3_rcf_ge(Z3_context, Z3_rcf_num, Z3_rcf_num)",
+		"go":	"RcfGe"
+	}, {
+		"mangle":	"Z3_rcf_get_numerator_denominator",
+		"c++":	"Z3_rcf_get_numerator_denominator(Z3_context, Z3_rcf_num, Z3_rcf_num *, Z3_rcf_num *)",
+		"go":	"RcfGetNumeratorDenominator"
+	}, {
+		"mangle":	"Z3_rcf_gt",
+		"c++":	"Z3_rcf_gt(Z3_context, Z3_rcf_num, Z3_rcf_num)",
+		"go":	"RcfGt"
+	}, {
+		"mangle":	"Z3_rcf_infinitesimal_name",
+		"c++":	"Z3_rcf_infinitesimal_name(Z3_context, Z3_rcf_num)",
+		"go":	"RcfInfinitesimalName"
+	}, {
+		"mangle":	"Z3_rcf_interval",
+		"c++":	"Z3_rcf_interval(Z3_context, Z3_rcf_num, int *, int *, Z3_rcf_num *, int *, int *, Z3_rcf_num *)",
+		"go":	"RcfInterval"
+	}, {
+		"mangle":	"Z3_rcf_inv",
+		"c++":	"Z3_rcf_inv(Z3_context, Z3_rcf_num)",
+		"go":	"RcfInv"
+	}, {
+		"mangle":	"Z3_rcf_is_algebraic",
+		"c++":	"Z3_rcf_is_algebraic(Z3_context, Z3_rcf_num)",
+		"go":	"RcfIsAlgebraic"
+	}, {
+		"mangle":	"Z3_rcf_is_infinitesimal",
+		"c++":	"Z3_rcf_is_infinitesimal(Z3_context, Z3_rcf_num)",
+		"go":	"RcfIsInfinitesimal"
+	}, {
+		"mangle":	"Z3_rcf_is_rational",
+		"c++":	"Z3_rcf_is_rational(Z3_context, Z3_rcf_num)",
+		"go":	"RcfIsRational"
+	}, {
+		"mangle":	"Z3_rcf_is_transcendental",
+		"c++":	"Z3_rcf_is_transcendental(Z3_context, Z3_rcf_num)",
+		"go":	"RcfIsTranscendental"
+	}, {
+		"mangle":	"Z3_rcf_le",
+		"c++":	"Z3_rcf_le(Z3_context, Z3_rcf_num, Z3_rcf_num)",
+		"go":	"RcfLe"
+	}, {
+		"mangle":	"Z3_rcf_lt",
+		"c++":	"Z3_rcf_lt(Z3_context, Z3_rcf_num, Z3_rcf_num)",
+		"go":	"RcfLt"
+	}, {
+		"mangle":	"Z3_rcf_mk_e",
+		"c++":	"Z3_rcf_mk_e(Z3_context)",
+		"go":	"RcfMkE"
+	}, {
+		"mangle":	"Z3_rcf_mk_infinitesimal",
+		"c++":	"Z3_rcf_mk_infinitesimal(Z3_context)",
+		"go":	"RcfMkInfinitesimal"
+	}, {
+		"mangle":	"Z3_rcf_mk_pi",
+		"c++":	"Z3_rcf_mk_pi(Z3_context)",
+		"go":	"RcfMkPi"
+	}, {
+		"mangle":	"Z3_rcf_mk_rational",
+		"c++":	"Z3_rcf_mk_rational(Z3_context, Z3_string)",
+		"go":	"RcfMkRational"
+	}, {
+		"mangle":	"Z3_rcf_mk_roots",
+		"c++":	"Z3_rcf_mk_roots(Z3_context, unsigned int, const Z3_rcf_num *, Z3_rcf_num *)",
+		"go":	"RcfMkRoots"
+	}, {
+		"mangle":	"Z3_rcf_mk_small_int",
+		"c++":	"Z3_rcf_mk_small_int(Z3_context, int)",
+		"go":	"RcfMkSmallInt"
+	}, {
+		"mangle":	"Z3_rcf_mul",
+		"c++":	"Z3_rcf_mul(Z3_context, Z3_rcf_num, Z3_rcf_num)",
+		"go":	"RcfMul"
+	}, {
+		"mangle":	"Z3_rcf_neg",
+		"c++":	"Z3_rcf_neg(Z3_context, Z3_rcf_num)",
+		"go":	"RcfNeg"
+	}, {
+		"mangle":	"Z3_rcf_neq",
+		"c++":	"Z3_rcf_neq(Z3_context, Z3_rcf_num, Z3_rcf_num)",
+		"go":	"RcfNeq"
+	}, {
+		"mangle":	"Z3_rcf_num_coefficients",
+		"c++":	"Z3_rcf_num_coefficients(Z3_context, Z3_rcf_num)",
+		"go":	"RcfNumCoefficients"
+	}, {
+		"mangle":	"Z3_rcf_num_sign_condition_coefficients",
+		"c++":	"Z3_rcf_num_sign_condition_coefficients(Z3_context, Z3_rcf_num, unsigned int)",
+		"go":	"RcfNumSignConditionCoefficients"
+	}, {
+		"mangle":	"Z3_rcf_num_sign_conditions",
+		"c++":	"Z3_rcf_num_sign_conditions(Z3_context, Z3_rcf_num)",
+		"go":	"RcfNumSignConditions"
+	}, {
+		"mangle":	"Z3_rcf_num_to_decimal_string",
+		"c++":	"Z3_rcf_num_to_decimal_string(Z3_context, Z3_rcf_num, unsigned int)",
+		"go":	"RcfNumToDecimalString"
+	}, {
+		"mangle":	"Z3_rcf_num_to_string",
+		"c++":	"Z3_rcf_num_to_string(Z3_context, Z3_rcf_num, int, int)",
+		"go":	"RcfNumToString"
+	}, {
+		"mangle":	"Z3_rcf_power",
+		"c++":	"Z3_rcf_power(Z3_context, Z3_rcf_num, unsigned int)",
+		"go":	"RcfPower"
+	}, {
+		"mangle":	"Z3_rcf_sign_condition_coefficient",
+		"c++":	"Z3_rcf_sign_condition_coefficient(Z3_context, Z3_rcf_num, unsigned int, unsigned int)",
+		"go":	"RcfSignConditionCoefficient"
+	}, {
+		"mangle":	"Z3_rcf_sign_condition_sign",
+		"c++":	"Z3_rcf_sign_condition_sign(Z3_context, Z3_rcf_num, unsigned int)",
+		"go":	"RcfSignConditionSign"
+	}, {
+		"mangle":	"Z3_rcf_sub",
+		"c++":	"Z3_rcf_sub(Z3_context, Z3_rcf_num, Z3_rcf_num)",
+		"go":	"RcfSub"
+	}, {
+		"mangle":	"Z3_rcf_transcendental_name",
+		"c++":	"Z3_rcf_transcendental_name(Z3_context, Z3_rcf_num)",
+		"go":	"RcfTranscendentalName"
+	}, {
+		"mangle":	"Z3_reset_memory",
+		"c++":	"Z3_reset_memory()",
+		"go":	"ResetMemory"
+	}, {
+		"mangle":	"Z3_set_ast_print_mode",
+		"c++":	"Z3_set_ast_print_mode(Z3_context, Z3_ast_print_mode)",
+		"go":	"SetAstPrintMode"
+	}, {
+		"mangle":	"Z3_set_error",
+		"c++":	"Z3_set_error(Z3_context, Z3_error_code)",
+		"go":	"SetError"
+	}, {
+		"mangle":	"Z3_set_error_handler",
+		"c++":	"Z3_set_error_handler(Z3_context, Z3_error_handler *)",
+		"go":	"SetErrorHandler"
+	}, {
+		"mangle":	"Z3_set_param_value",
+		"c++":	"Z3_set_param_value(Z3_config, Z3_string, Z3_string)",
+		"go":	"SetParamValue"
+	}, {
+		"mangle":	"Z3_simplifier_and_then",
+		"c++":	"Z3_simplifier_and_then(Z3_context, Z3_simplifier, Z3_simplifier)",
+		"go":	"SimplifierAndThen"
+	}, {
+		"mangle":	"Z3_simplifier_dec_ref",
+		"c++":	"Z3_simplifier_dec_ref(Z3_context, Z3_simplifier)",
+		"go":	"SimplifierDecRef"
+	}, {
+		"mangle":	"Z3_simplifier_get_descr",
+		"c++":	"Z3_simplifier_get_descr(Z3_context, Z3_string)",
+		"go":	"SimplifierGetDescr"
+	}, {
+		"mangle":	"Z3_simplifier_get_help",
+		"c++":	"Z3_simplifier_get_help(Z3_context, Z3_simplifier)",
+		"go":	"SimplifierGetHelp"
+	}, {
+		"mangle":	"Z3_simplifier_get_param_descrs",
+		"c++":	"Z3_simplifier_get_param_descrs(Z3_context, Z3_simplifier)",
+		"go":	"SimplifierGetParamDescrs"
+	}, {
+		"mangle":	"Z3_simplifier_inc_ref",
+		"c++":	"Z3_simplifier_inc_ref(Z3_context, Z3_simplifier)",
+		"go":	"SimplifierIncRef"
+	}, {
+		"mangle":	"Z3_simplifier_using_params",
+		"c++":	"Z3_simplifier_using_params(Z3_context, Z3_simplifier, Z3_params)",
+		"go":	"SimplifierUsingParams"
+	}, {
+		"mangle":	"Z3_simplify",
+		"c++":	"Z3_simplify(Z3_context, Z3_ast)",
+		"go":	"Simplify"
+	}, {
+		"mangle":	"Z3_simplify_ex",
+		"c++":	"Z3_simplify_ex(Z3_context, Z3_ast, Z3_params)",
+		"go":	"SimplifyEx"
+	}, {
+		"mangle":	"Z3_simplify_get_help",
+		"c++":	"Z3_simplify_get_help(Z3_context)",
+		"go":	"SimplifyGetHelp"
+	}, {
+		"mangle":	"Z3_simplify_get_param_descrs",
+		"c++":	"Z3_simplify_get_param_descrs(Z3_context)",
+		"go":	"SimplifyGetParamDescrs"
+	}, {
+		"mangle":	"Z3_solver_add_simplifier",
+		"c++":	"Z3_solver_add_simplifier(Z3_context, Z3_solver, Z3_simplifier)",
+		"go":	"SolverAddSimplifier"
+	}, {
+		"mangle":	"Z3_solver_assert",
+		"c++":	"Z3_solver_assert(Z3_context, Z3_solver, Z3_ast)",
+		"go":	"SolverAssert"
+	}, {
+		"mangle":	"Z3_solver_assert_and_track",
+		"c++":	"Z3_solver_assert_and_track(Z3_context, Z3_solver, Z3_ast, Z3_ast)",
+		"go":	"SolverAssertAndTrack"
+	}, {
+		"mangle":	"Z3_solver_check",
+		"c++":	"Z3_solver_check(Z3_context, Z3_solver)",
+		"go":	"SolverCheck"
+	}, {
+		"mangle":	"Z3_solver_check_assumptions",
+		"c++":	"Z3_solver_check_assumptions(Z3_context, Z3_solver, unsigned int, const Z3_ast *)",
+		"go":	"SolverCheckAssumptions"
+	}, {
+		"mangle":	"Z3_solver_congruence_next",
+		"c++":	"Z3_solver_congruence_next(Z3_context, Z3_solver, Z3_ast)",
+		"go":	"SolverCongruenceNext"
+	}, {
+		"mangle":	"Z3_solver_congruence_root",
+		"c++":	"Z3_solver_congruence_root(Z3_context, Z3_solver, Z3_ast)",
+		"go":	"SolverCongruenceRoot"
+	}, {
+		"mangle":	"Z3_solver_cube",
+		"c++":	"Z3_solver_cube(Z3_context, Z3_solver, Z3_ast_vector, unsigned int)",
+		"go":	"SolverCube"
+	}, {
+		"mangle":	"Z3_solver_dec_ref",
+		"c++":	"Z3_solver_dec_ref(Z3_context, Z3_solver)",
+		"go":	"SolverDecRef"
+	}, {
+		"mangle":	"Z3_solver_from_file",
+		"c++":	"Z3_solver_from_file(Z3_context, Z3_solver, Z3_string)",
+		"go":	"SolverFromFile"
+	}, {
+		"mangle":	"Z3_solver_from_string",
+		"c++":	"Z3_solver_from_string(Z3_context, Z3_solver, Z3_string)",
+		"go":	"SolverFromString"
+	}, {
+		"mangle":	"Z3_solver_get_assertions",
+		"c++":	"Z3_solver_get_assertions(Z3_context, Z3_solver)",
+		"go":	"SolverGetAssertions"
+	}, {
+		"mangle":	"Z3_solver_get_consequences",
+		"c++":	"Z3_solver_get_consequences(Z3_context, Z3_solver, Z3_ast_vector, Z3_ast_vector, Z3_ast_vector)",
+		"go":	"SolverGetConsequences"
+	}, {
+		"mangle":	"Z3_solver_get_help",
+		"c++":	"Z3_solver_get_help(Z3_context, Z3_solver)",
+		"go":	"SolverGetHelp"
+	}, {
+		"mangle":	"Z3_solver_get_levels",
+		"c++":	"Z3_solver_get_levels(Z3_context, Z3_solver, Z3_ast_vector, unsigned int, unsigned int *)",
+		"go":	"SolverGetLevels"
+	}, {
+		"mangle":	"Z3_solver_get_model",
+		"c++":	"Z3_solver_get_model(Z3_context, Z3_solver)",
+		"go":	"SolverGetModel"
+	}, {
+		"mangle":	"Z3_solver_get_non_units",
+		"c++":	"Z3_solver_get_non_units(Z3_context, Z3_solver)",
+		"go":	"SolverGetNonUnits"
+	}, {
+		"mangle":	"Z3_solver_get_num_scopes",
+		"c++":	"Z3_solver_get_num_scopes(Z3_context, Z3_solver)",
+		"go":	"SolverGetNumScopes"
+	}, {
+		"mangle":	"Z3_solver_get_param_descrs",
+		"c++":	"Z3_solver_get_param_descrs(Z3_context, Z3_solver)",
+		"go":	"SolverGetParamDescrs"
+	}, {
+		"mangle":	"Z3_solver_get_proof",
+		"c++":	"Z3_solver_get_proof(Z3_context, Z3_solver)",
+		"go":	"SolverGetProof"
+	}, {
+		"mangle":	"Z3_solver_get_reason_unknown",
+		"c++":	"Z3_solver_get_reason_unknown(Z3_context, Z3_solver)",
+		"go":	"SolverGetReasonUnknown"
+	}, {
+		"mangle":	"Z3_solver_get_statistics",
+		"c++":	"Z3_solver_get_statistics(Z3_context, Z3_solver)",
+		"go":	"SolverGetStatistics"
+	}, {
+		"mangle":	"Z3_solver_get_trail",
+		"c++":	"Z3_solver_get_trail(Z3_context, Z3_solver)",
+		"go":	"SolverGetTrail"
+	}, {
+		"mangle":	"Z3_solver_get_units",
+		"c++":	"Z3_solver_get_units(Z3_context, Z3_solver)",
+		"go":	"SolverGetUnits"
+	}, {
+		"mangle":	"Z3_solver_get_unsat_core",
+		"c++":	"Z3_solver_get_unsat_core(Z3_context, Z3_solver)",
+		"go":	"SolverGetUnsatCore"
+	}, {
+		"mangle":	"Z3_solver_import_model_converter",
+		"c++":	"Z3_solver_import_model_converter(Z3_context, Z3_solver, Z3_solver)",
+		"go":	"SolverImportModelConverter"
+	}, {
+		"mangle":	"Z3_solver_inc_ref",
+		"c++":	"Z3_solver_inc_ref(Z3_context, Z3_solver)",
+		"go":	"SolverIncRef"
+	}, {
+		"mangle":	"Z3_solver_interrupt",
+		"c++":	"Z3_solver_interrupt(Z3_context, Z3_solver)",
+		"go":	"SolverInterrupt"
+	}, {
+		"mangle":	"Z3_solver_next_split",
+		"c++":	"Z3_solver_next_split(Z3_context, Z3_solver_callback, Z3_ast, unsigned int, Z3_lbool)",
+		"go":	"SolverNextSplit"
+	}, {
+		"mangle":	"Z3_solver_pop",
+		"c++":	"Z3_solver_pop(Z3_context, Z3_solver, unsigned int)",
+		"go":	"SolverPop"
+	}, {
+		"mangle":	"Z3_solver_propagate_consequence",
+		"c++":	"Z3_solver_propagate_consequence(Z3_context, Z3_solver_callback, unsigned int, const Z3_ast *, unsigned int, const Z3_ast *, const Z3_ast *, Z3_ast)",
+		"go":	"SolverPropagateConsequence"
+	}, {
+		"mangle":	"Z3_solver_propagate_created",
+		"c++":	"Z3_solver_propagate_created(Z3_context, Z3_solver, Z3_created_eh *)",
+		"go":	"SolverPropagateCreated"
+	}, {
+		"mangle":	"Z3_solver_propagate_decide",
+		"c++":	"Z3_solver_propagate_decide(Z3_context, Z3_solver, Z3_decide_eh *)",
+		"go":	"SolverPropagateDecide"
+	}, {
+		"mangle":	"Z3_solver_propagate_declare",
+		"c++":	"Z3_solver_propagate_declare(Z3_context, Z3_symbol, unsigned int, Z3_sort *, Z3_sort)",
+		"go":	"SolverPropagateDeclare"
+	}, {
+		"mangle":	"Z3_solver_propagate_diseq",
+		"c++":	"Z3_solver_propagate_diseq(Z3_context, Z3_solver, Z3_eq_eh *)",
+		"go":	"SolverPropagateDiseq"
+	}, {
+		"mangle":	"Z3_solver_propagate_eq",
+		"c++":	"Z3_solver_propagate_eq(Z3_context, Z3_solver, Z3_eq_eh *)",
+		"go":	"SolverPropagateEq"
+	}, {
+		"mangle":	"Z3_solver_propagate_final",
+		"c++":	"Z3_solver_propagate_final(Z3_context, Z3_solver, Z3_final_eh *)",
+		"go":	"SolverPropagateFinal"
+	}, {
+		"mangle":	"Z3_solver_propagate_fixed",
+		"c++":	"Z3_solver_propagate_fixed(Z3_context, Z3_solver, Z3_fixed_eh *)",
+		"go":	"SolverPropagateFixed"
+	}, {
+		"mangle":	"Z3_solver_propagate_init",
+		"c++":	"Z3_solver_propagate_init(Z3_context, Z3_solver, void *, Z3_push_eh *, Z3_pop_eh *, Z3_fresh_eh *)",
+		"go":	"SolverPropagateInit"
+	}, {
+		"mangle":	"Z3_solver_propagate_register",
+		"c++":	"Z3_solver_propagate_register(Z3_context, Z3_solver, Z3_ast)",
+		"go":	"SolverPropagateRegister"
+	}, {
+		"mangle":	"Z3_solver_propagate_register_cb",
+		"c++":	"Z3_solver_propagate_register_cb(Z3_context, Z3_solver_callback, Z3_ast)",
+		"go":	"SolverPropagateRegisterCb"
+	}, {
+		"mangle":	"Z3_solver_push",
+		"c++":	"Z3_solver_push(Z3_context, Z3_solver)",
+		"go":	"SolverPush"
+	}, {
+		"mangle":	"Z3_solver_register_on_clause",
+		"c++":	"Z3_solver_register_on_clause(Z3_context, Z3_solver, void *, Z3_on_clause_eh *)",
+		"go":	"SolverRegisterOnClause"
+	}, {
+		"mangle":	"Z3_solver_reset",
+		"c++":	"Z3_solver_reset(Z3_context, Z3_solver)",
+		"go":	"SolverReset"
+	}, {
+		"mangle":	"Z3_solver_set_params",
+		"c++":	"Z3_solver_set_params(Z3_context, Z3_solver, Z3_params)",
+		"go":	"SolverSetParams"
+	}, {
+		"mangle":	"Z3_solver_to_dimacs_string",
+		"c++":	"Z3_solver_to_dimacs_string(Z3_context, Z3_solver, int)",
+		"go":	"SolverToDimacsString"
+	}, {
+		"mangle":	"Z3_solver_to_string",
+		"c++":	"Z3_solver_to_string(Z3_context, Z3_solver)",
+		"go":	"SolverToString"
+	}, {
+		"mangle":	"Z3_solver_translate",
+		"c++":	"Z3_solver_translate(Z3_context, Z3_solver, Z3_context)",
+		"go":	"SolverTranslate"
+	}, {
+		"mangle":	"Z3_sort_to_ast",
+		"c++":	"Z3_sort_to_ast(Z3_context, Z3_sort)",
+		"go":	"SortToAst"
+	}, {
+		"mangle":	"Z3_sort_to_string",
+		"c++":	"Z3_sort_to_string(Z3_context, Z3_sort)",
+		"go":	"SortToString"
+	}, {
+		"mangle":	"Z3_stats_dec_ref",
+		"c++":	"Z3_stats_dec_ref(Z3_context, Z3_stats)",
+		"go":	"StatsDecRef"
+	}, {
+		"mangle":	"Z3_stats_get_double_value",
+		"c++":	"Z3_stats_get_double_value(Z3_context, Z3_stats, unsigned int)",
+		"go":	"StatsGetDoubleValue"
+	}, {
+		"mangle":	"Z3_stats_get_key",
+		"c++":	"Z3_stats_get_key(Z3_context, Z3_stats, unsigned int)",
+		"go":	"StatsGetKey"
+	}, {
+		"mangle":	"Z3_stats_get_uint_value",
+		"c++":	"Z3_stats_get_uint_value(Z3_context, Z3_stats, unsigned int)",
+		"go":	"StatsGetUintValue"
+	}, {
+		"mangle":	"Z3_stats_inc_ref",
+		"c++":	"Z3_stats_inc_ref(Z3_context, Z3_stats)",
+		"go":	"StatsIncRef"
+	}, {
+		"mangle":	"Z3_stats_is_double",
+		"c++":	"Z3_stats_is_double(Z3_context, Z3_stats, unsigned int)",
+		"go":	"StatsIsDouble"
+	}, {
+		"mangle":	"Z3_stats_is_uint",
+		"c++":	"Z3_stats_is_uint(Z3_context, Z3_stats, unsigned int)",
+		"go":	"StatsIsUint"
+	}, {
+		"mangle":	"Z3_stats_size",
+		"c++":	"Z3_stats_size(Z3_context, Z3_stats)",
+		"go":	"StatsSize"
+	}, {
+		"mangle":	"Z3_stats_to_string",
+		"c++":	"Z3_stats_to_string(Z3_context, Z3_stats)",
+		"go":	"StatsToString"
+	}, {
+		"mangle":	"Z3_substitute",
+		"c++":	"Z3_substitute(Z3_context, Z3_ast, unsigned int, const Z3_ast *, const Z3_ast *)",
+		"go":	"Substitute"
+	}, {
+		"mangle":	"Z3_substitute_funs",
+		"c++":	"Z3_substitute_funs(Z3_context, Z3_ast, unsigned int, const Z3_func_decl *, const Z3_ast *)",
+		"go":	"SubstituteFuns"
+	}, {
+		"mangle":	"Z3_substitute_vars",
+		"c++":	"Z3_substitute_vars(Z3_context, Z3_ast, unsigned int, const Z3_ast *)",
+		"go":	"SubstituteVars"
+	}, {
+		"mangle":	"Z3_tactic_and_then",
+		"c++":	"Z3_tactic_and_then(Z3_context, Z3_tactic, Z3_tactic)",
+		"go":	"TacticAndThen"
+	}, {
+		"mangle":	"Z3_tactic_apply",
+		"c++":	"Z3_tactic_apply(Z3_context, Z3_tactic, Z3_goal)",
+		"go":	"TacticApply"
+	}, {
+		"mangle":	"Z3_tactic_apply_ex",
+		"c++":	"Z3_tactic_apply_ex(Z3_context, Z3_tactic, Z3_goal, Z3_params)",
+		"go":	"TacticApplyEx"
+	}, {
+		"mangle":	"Z3_tactic_cond",
+		"c++":	"Z3_tactic_cond(Z3_context, Z3_probe, Z3_tactic, Z3_tactic)",
+		"go":	"TacticCond"
+	}, {
+		"mangle":	"Z3_tactic_dec_ref",
+		"c++":	"Z3_tactic_dec_ref(Z3_context, Z3_tactic)",
+		"go":	"TacticDecRef"
+	}, {
+		"mangle":	"Z3_tactic_fail",
+		"c++":	"Z3_tactic_fail(Z3_context)",
+		"go":	"TacticFail"
+	}, {
+		"mangle":	"Z3_tactic_fail_if",
+		"c++":	"Z3_tactic_fail_if(Z3_context, Z3_probe)",
+		"go":	"TacticFailIf"
+	}, {
+		"mangle":	"Z3_tactic_fail_if_not_decided",
+		"c++":	"Z3_tactic_fail_if_not_decided(Z3_context)",
+		"go":	"TacticFailIfNotDecided"
+	}, {
+		"mangle":	"Z3_tactic_get_descr",
+		"c++":	"Z3_tactic_get_descr(Z3_context, Z3_string)",
+		"go":	"TacticGetDescr"
+	}, {
+		"mangle":	"Z3_tactic_get_help",
+		"c++":	"Z3_tactic_get_help(Z3_context, Z3_tactic)",
+		"go":	"TacticGetHelp"
+	}, {
+		"mangle":	"Z3_tactic_get_param_descrs",
+		"c++":	"Z3_tactic_get_param_descrs(Z3_context, Z3_tactic)",
+		"go":	"TacticGetParamDescrs"
+	}, {
+		"mangle":	"Z3_tactic_inc_ref",
+		"c++":	"Z3_tactic_inc_ref(Z3_context, Z3_tactic)",
+		"go":	"TacticIncRef"
+	}, {
+		"mangle":	"Z3_tactic_or_else",
+		"c++":	"Z3_tactic_or_else(Z3_context, Z3_tactic, Z3_tactic)",
+		"go":	"TacticOrElse"
+	}, {
+		"mangle":	"Z3_tactic_par_and_then",
+		"c++":	"Z3_tactic_par_and_then(Z3_context, Z3_tactic, Z3_tactic)",
+		"go":	"TacticParAndThen"
+	}, {
+		"mangle":	"Z3_tactic_par_or",
+		"c++":	"Z3_tactic_par_or(Z3_context, unsigned int, const Z3_tactic *)",
+		"go":	"TacticParOr"
+	}, {
+		"mangle":	"Z3_tactic_repeat",
+		"c++":	"Z3_tactic_repeat(Z3_context, Z3_tactic, unsigned int)",
+		"go":	"TacticRepeat"
+	}, {
+		"mangle":	"Z3_tactic_skip",
+		"c++":	"Z3_tactic_skip(Z3_context)",
+		"go":	"TacticSkip"
+	}, {
+		"mangle":	"Z3_tactic_try_for",
+		"c++":	"Z3_tactic_try_for(Z3_context, Z3_tactic, unsigned int)",
+		"go":	"TacticTryFor"
+	}, {
+		"mangle":	"Z3_tactic_using_params",
+		"c++":	"Z3_tactic_using_params(Z3_context, Z3_tactic, Z3_params)",
+		"go":	"TacticUsingParams"
+	}, {
+		"mangle":	"Z3_tactic_when",
+		"c++":	"Z3_tactic_when(Z3_context, Z3_probe, Z3_tactic)",
+		"go":	"TacticWhen"
+	}, {
+		"mangle":	"Z3_to_app",
+		"c++":	"Z3_to_app(Z3_context, Z3_ast)",
+		"go":	"ToApp"
+	}, {
+		"mangle":	"Z3_to_func_decl",
+		"c++":	"Z3_to_func_decl(Z3_context, Z3_ast)",
+		"go":	"ToFuncDecl"
+	}, {
+		"mangle":	"Z3_toggle_warning_messages",
+		"c++":	"Z3_toggle_warning_messages(int)",
+		"go":	"ToggleWarningMessages"
+	}, {
+		"mangle":	"Z3_translate",
+		"c++":	"Z3_translate(Z3_context, Z3_ast, Z3_context)",
+		"go":	"Translate"
+	}, {
+		"mangle":	"Z3_update_param_value",
+		"c++":	"Z3_update_param_value(Z3_context, Z3_string, Z3_string)",
+		"go":	"UpdateParamValue"
+	}, {
+		"mangle":	"Z3_update_term",
+		"c++":	"Z3_update_term(Z3_context, Z3_ast, unsigned int, const Z3_ast *)",
+		"go":	"UpdateTerm"
+	}]
