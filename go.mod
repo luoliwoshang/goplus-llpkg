@@ -1,3 +1,3 @@
-module github.com/goplus/llpkg
+module github.com/luoliwoshang/goplus-llpkg
 
 go 1.20
