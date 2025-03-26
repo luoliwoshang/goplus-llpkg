@@ -132,11 +132,6 @@ xmlError Error
 xmlErrorDomain ErrorDomain
 xmlErrorLevel ErrorLevel
 xmlErrorPtr ErrorPtr
-xmlExpCtxt ExpCtxt
-xmlExpCtxtPtr ExpCtxtPtr
-xmlExpNode ExpNode
-xmlExpNodePtr ExpNodePtr
-xmlExpNodeType ExpNodeType
 xmlExternalEntityLoader ExternalEntityLoader
 xmlFeature Feature
 xmlFreeFunc FreeFunc

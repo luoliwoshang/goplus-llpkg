@@ -45,6 +45,11 @@ type X_xmlXPathContext struct {
 	Dict               DictPtr
 	Flags              c.Int
 	Cache              unsafe.Pointer
+	OpLimit            c.Ulong
+	OpCount            c.Ulong
+	Depth              c.Int
+	MaxDepth           c.Int
+	MaxParserDepth     c.Int
 }
 type XPathContext X_xmlXPathContext
 type XPathContextPtr *XPathContext
@@ -93,6 +98,8 @@ const (
 	XPATHINVALIDCTXT               XPathError = 22
 	XPATHSTACKERROR                XPathError = 23
 	XPATHFORBIDVARIABLEERROR       XPathError = 24
+	XPATHOPLIMITEXCEEDED           XPathError = 25
+	XPATHRECURSIONLIMITEXCEEDED    XPathError = 26
 )
 
 type X_xmlNodeSet struct {
