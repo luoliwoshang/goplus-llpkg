@@ -1,10 +1,8 @@
 name: Clean unused branch
 
-
 on:
   issues:
     types: [closed]
-
 
 jobs:
   clean-resource:
@@ -22,10 +20,10 @@ jobs:
           go-version: "1.23"
       - name: Skip Cache Parser Tool
         run: |
-          go env -w GOPRIVATE=github.com/MeteorsLiu/llpkgstore
+          go env -w GOPRIVATE=github.com/luoliwoshang/llpkgstore
       - name: Set up Parser Tool
         run: |
-          go install -v github.com/MeteorsLiu/llpkgstore/cmd/maintain@gha-test
+          go install -v github.com/luoliwoshang/llpkgstore/cmd/maintain@latest
       - name: Run cleaner process
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
