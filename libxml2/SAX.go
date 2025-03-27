@@ -111,7 +111,3 @@ func (recv_ *SAXHandlerV1) InitxmlDefaultSAXHandler(warning c.Int) {
 // llgo:link (*SAXHandlerV1).InithtmlDefaultSAXHandler C.inithtmlDefaultSAXHandler
 func (recv_ *SAXHandlerV1) InithtmlDefaultSAXHandler() {
 }
-
-// llgo:link (*SAXHandlerV1).InitdocbDefaultSAXHandler C.initdocbDefaultSAXHandler
-func (recv_ *SAXHandlerV1) InitdocbDefaultSAXHandler() {
-}

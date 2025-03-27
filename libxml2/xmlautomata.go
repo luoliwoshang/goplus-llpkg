@@ -72,7 +72,7 @@ func AutomataNewCounterTrans(am AutomataPtr, from AutomataStatePtr, to AutomataS
 func AutomataNewCounter(am AutomataPtr, min c.Int, max c.Int) c.Int
 
 //go:linkname AutomataCompile C.xmlAutomataCompile
-func AutomataCompile(am AutomataPtr) RegexpPtr
+func AutomataCompile(am AutomataPtr) *X_xmlRegexp
 
 //go:linkname AutomataIsDeterminist C.xmlAutomataIsDeterminist
 func AutomataIsDeterminist(am AutomataPtr) c.Int

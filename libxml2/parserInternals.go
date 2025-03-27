@@ -6,6 +6,7 @@ import (
 )
 
 const MAX_TEXT_LENGTH = 10000000
+const MAX_HUGE_LENGTH = 1000000000
 const MAX_NAME_LENGTH = 50000
 const MAX_DICTIONARY_LIMIT = 10000000
 const MAX_LOOKUP_LIMIT = 10000000
@@ -276,15 +277,6 @@ func NextChar(ctxt ParserCtxtPtr)
 
 //go:linkname ParserInputShrink C.xmlParserInputShrink
 func ParserInputShrink(in ParserInputPtr)
-
-/*
- * Actually comes from the HTML parser but launched from the init stuff.
- */
-//go:linkname HtmlInitAutoClose C.htmlInitAutoClose
-func HtmlInitAutoClose()
-
-//go:linkname HtmlCreateFileParserCtxt C.htmlCreateFileParserCtxt
-func HtmlCreateFileParserCtxt(filename *int8, encoding *int8) HtmlParserCtxtPtr
 
 // llgo:type C
 type EntityReferenceFunc func(EntityPtr, NodePtr, NodePtr)

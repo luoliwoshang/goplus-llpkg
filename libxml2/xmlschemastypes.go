@@ -15,7 +15,7 @@ const (
 )
 
 //go:linkname SchemaInitTypes C.xmlSchemaInitTypes
-func SchemaInitTypes()
+func SchemaInitTypes() c.Int
 
 //go:linkname SchemaCleanupTypes C.xmlSchemaCleanupTypes
 func SchemaCleanupTypes()

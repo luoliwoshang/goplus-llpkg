@@ -65,6 +65,11 @@ const (
 	PARSEREADER  ParserMode = 5
 )
 
+type X_xmlStartTag struct {
+	Unused [8]uint8
+}
+type StartTag X_xmlStartTag
+
 // llgo:type C
 type ResolveEntitySAXFunc func(unsafe.Pointer, *Char, *Char) ParserInputPtr
 
@@ -319,6 +324,11 @@ func ParseCtxtExternalEntity(ctx ParserCtxtPtr, URL *Char, ID *Char, lst *NodePt
  */
 //go:linkname NewParserCtxt C.xmlNewParserCtxt
 func NewParserCtxt() ParserCtxtPtr
+
+// llgo:link (*SAXHandler).NewSAXParserCtxt C.xmlNewSAXParserCtxt
+func (recv_ *SAXHandler) NewSAXParserCtxt(userData unsafe.Pointer) ParserCtxtPtr {
+	return nil
+}
 
 //go:linkname InitParserCtxt C.xmlInitParserCtxt
 func InitParserCtxt(ctxt ParserCtxtPtr) c.Int
