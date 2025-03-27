@@ -5,6 +5,10 @@ import (
 	"unsafe"
 )
 
+const XPATH_POINT = 5
+const XPATH_RANGE = 6
+const XPATH_LOCATIONSET = 7
+
 type X_xmlXPathContext struct {
 	Doc                DocPtr
 	Node               NodePtr
@@ -48,8 +52,6 @@ type X_xmlXPathContext struct {
 	OpLimit            c.Ulong
 	OpCount            c.Ulong
 	Depth              c.Int
-	MaxDepth           c.Int
-	MaxParserDepth     c.Int
 }
 type XPathContext X_xmlXPathContext
 type XPathContextPtr *XPathContext
@@ -112,16 +114,13 @@ type NodeSetPtr *NodeSet
 type XPathObjectType c.Int
 
 const (
-	XPATHUNDEFINED   XPathObjectType = 0
-	XPATHNODESET     XPathObjectType = 1
-	XPATHBOOLEAN     XPathObjectType = 2
-	XPATHNUMBER      XPathObjectType = 3
-	XPATHSTRING      XPathObjectType = 4
-	XPATHPOINT       XPathObjectType = 5
-	XPATHRANGE       XPathObjectType = 6
-	XPATHLOCATIONSET XPathObjectType = 7
-	XPATHUSERS       XPathObjectType = 8
-	XPATHXSLTTREE    XPathObjectType = 9
+	XPATHUNDEFINED XPathObjectType = 0
+	XPATHNODESET   XPathObjectType = 1
+	XPATHBOOLEAN   XPathObjectType = 2
+	XPATHNUMBER    XPathObjectType = 3
+	XPATHSTRING    XPathObjectType = 4
+	XPATHUSERS     XPathObjectType = 8
+	XPATHXSLTTREE  XPathObjectType = 9
 )
 
 type X_xmlXPathObject struct {

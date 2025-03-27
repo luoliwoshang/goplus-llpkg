@@ -114,12 +114,5 @@ func (recv_ *SAXHandler) SAX2InitHtmlDefaultSAXHandler() {
 //go:linkname HtmlDefaultSAXHandlerInit C.htmlDefaultSAXHandlerInit
 func HtmlDefaultSAXHandlerInit()
 
-// llgo:link (*SAXHandler).SAX2InitDocbDefaultSAXHandler C.xmlSAX2InitDocbDefaultSAXHandler
-func (recv_ *SAXHandler) SAX2InitDocbDefaultSAXHandler() {
-}
-
-//go:linkname DocbDefaultSAXHandlerInit C.docbDefaultSAXHandlerInit
-func DocbDefaultSAXHandlerInit()
-
 //go:linkname DefaultSAXHandlerInit C.xmlDefaultSAXHandlerInit
 func DefaultSAXHandlerInit()

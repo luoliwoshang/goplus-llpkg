@@ -6,6 +6,7 @@ import (
 )
 
 const BASE_BUFFER_SIZE = 4096
+const DOCB_DOCUMENT_NODE = 21
 
 type X_xmlParserInputBuffer struct {
 	Context       unsafe.Pointer
@@ -35,21 +36,23 @@ type OutputBuffer X_xmlOutputBuffer
 type OutputBufferPtr *OutputBuffer
 
 type X_xmlParserInput struct {
-	Buf        ParserInputBufferPtr
-	Filename   *int8
-	Directory  *int8
-	Base       *Char
-	Cur        *Char
-	End        *Char
-	Length     c.Int
-	Line       c.Int
-	Col        c.Int
-	Consumed   c.Ulong
-	Free       unsafe.Pointer
-	Encoding   *Char
-	Version    *Char
-	Standalone c.Int
-	Id         c.Int
+	Buf            ParserInputBufferPtr
+	Filename       *int8
+	Directory      *int8
+	Base           *Char
+	Cur            *Char
+	End            *Char
+	Length         c.Int
+	Line           c.Int
+	Col            c.Int
+	Consumed       c.Ulong
+	Free           unsafe.Pointer
+	Encoding       *Char
+	Version        *Char
+	Standalone     c.Int
+	Id             c.Int
+	ParentConsumed c.Ulong
+	Entity         EntityPtr
 }
 type ParserInput X_xmlParserInput
 type ParserInputPtr *ParserInput
@@ -124,7 +127,7 @@ type X_xmlParserCtxt struct {
 	NsMax             c.Int
 	NsTab             **Char
 	Attallocs         *c.Int
-	PushTab           *unsafe.Pointer
+	PushTab           *StartTag
 	AttsDefault       HashTablePtr
 	AttsSpecial       HashTablePtr
 	NsWellFormed      c.Int
@@ -144,6 +147,9 @@ type X_xmlParserCtxt struct {
 	NodeInfoTab       *ParserNodeInfo
 	InputId           c.Int
 	Sizeentcopy       c.Ulong
+	EndCheckState     c.Int
+	NbErrors          uint16
+	NbWarnings        uint16
 }
 type ParserCtxt X_xmlParserCtxt
 type ParserCtxtPtr *ParserCtxt
@@ -195,25 +201,26 @@ type SAXHandler X_xmlSAXHandler
 type SAXHandlerPtr *SAXHandler
 
 type X_xmlEntity struct {
-	X_private  unsafe.Pointer
-	Type       ElementType
-	Name       *Char
-	Children   *X_xmlNode
-	Last       *X_xmlNode
-	Parent     *X_xmlDtd
-	Next       *X_xmlNode
-	Prev       *X_xmlNode
-	Doc        *X_xmlDoc
-	Orig       *Char
-	Content    *Char
-	Length     c.Int
-	Etype      EntityType
-	ExternalID *Char
-	SystemID   *Char
-	Nexte      *X_xmlEntity
-	URI        *Char
-	Owner      c.Int
-	Checked    c.Int
+	X_private    unsafe.Pointer
+	Type         ElementType
+	Name         *Char
+	Children     *X_xmlNode
+	Last         *X_xmlNode
+	Parent       *X_xmlDtd
+	Next         *X_xmlNode
+	Prev         *X_xmlNode
+	Doc          *X_xmlDoc
+	Orig         *Char
+	Content      *Char
+	Length       c.Int
+	Etype        EntityType
+	ExternalID   *Char
+	SystemID     *Char
+	Nexte        *X_xmlEntity
+	URI          *Char
+	Owner        c.Int
+	Flags        c.Int
+	ExpandedSize c.Ulong
 }
 type Entity X_xmlEntity
 type EntityPtr *Entity
@@ -285,7 +292,6 @@ const (
 	NAMESPACEDECL    ElementType = 18
 	XINCLUDESTART    ElementType = 19
 	XINCLUDEEND      ElementType = 20
-	DOCBDOCUMENTNODE ElementType = 21
 )
 
 type X_xmlNotation struct {

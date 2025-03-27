@@ -94,9 +94,6 @@ func ThrDefOutputBufferCreateFilenameDefault(func_ OutputBufferCreateFilenameFun
 //go:linkname ThrDefParserInputBufferCreateFilenameDefault C.xmlThrDefParserInputBufferCreateFilenameDefault
 func ThrDefParserInputBufferCreateFilenameDefault(func_ ParserInputBufferCreateFilenameFunc) ParserInputBufferCreateFilenameFunc
 
-//go:linkname X__docbDefaultSAXHandler C.__docbDefaultSAXHandler
-func X__docbDefaultSAXHandler() *SAXHandlerV1
-
 //go:linkname X__htmlDefaultSAXHandler C.__htmlDefaultSAXHandler
 func X__htmlDefaultSAXHandler() *SAXHandlerV1
 
