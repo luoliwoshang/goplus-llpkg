@@ -7,10 +7,6 @@
 		"c++":	"UTF8Toisolat1(unsigned char *, int *, const unsigned char *, int *)",
 		"go":	"UTF8Toisolat1"
 	}, {
-		"mangle":	"__docbDefaultSAXHandler",
-		"c++":	"__docbDefaultSAXHandler()",
-		"go":	"X__docbDefaultSAXHandler"
-	}, {
 		"mangle":	"__htmlDefaultSAXHandler",
 		"c++":	"__htmlDefaultSAXHandler()",
 		"go":	"X__htmlDefaultSAXHandler"
@@ -150,10 +146,6 @@
 		"mangle":	"comment",
 		"c++":	"comment(void *, const xmlChar *)",
 		"go":	"Comment"
-	}, {
-		"mangle":	"docbDefaultSAXHandlerInit",
-		"c++":	"docbDefaultSAXHandlerInit()",
-		"go":	"DocbDefaultSAXHandlerInit"
 	}, {
 		"mangle":	"elementDecl",
 		"c++":	"elementDecl(void *, const xmlChar *, int, xmlElementContentPtr)",
@@ -347,6 +339,10 @@
 		"c++":	"htmlNewParserCtxt()",
 		"go":	"HtmlNewParserCtxt"
 	}, {
+		"mangle":	"htmlNewSAXParserCtxt",
+		"c++":	"htmlNewSAXParserCtxt(const htmlSAXHandler *, void *)",
+		"go":	"(*HtmlSAXHandler).HtmlNewSAXParserCtxt"
+	}, {
 		"mangle":	"htmlNodeDump",
 		"c++":	"htmlNodeDump(xmlBufferPtr, xmlDocPtr, xmlNodePtr)",
 		"go":	"HtmlNodeDump"
@@ -454,10 +450,6 @@
 		"mangle":	"initGenericErrorDefaultFunc",
 		"c++":	"initGenericErrorDefaultFunc(xmlGenericErrorFunc *)",
 		"go":	"InitGenericErrorDefaultFunc"
-	}, {
-		"mangle":	"initdocbDefaultSAXHandler",
-		"c++":	"initdocbDefaultSAXHandler(xmlSAXHandlerV1 *)",
-		"go":	"(*SAXHandlerV1).InitdocbDefaultSAXHandler"
 	}, {
 		"mangle":	"inithtmlDefaultSAXHandler",
 		"c++":	"inithtmlDefaultSAXHandler(xmlSAXHandlerV1 *)",
@@ -854,6 +846,22 @@
 		"mangle":	"xmlByteConsumed",
 		"c++":	"xmlByteConsumed(xmlParserCtxtPtr)",
 		"go":	"ByteConsumed"
+	}, {
+		"mangle":	"xmlC14NDocDumpMemory",
+		"c++":	"xmlC14NDocDumpMemory(xmlDocPtr, xmlNodeSetPtr, int, xmlChar **, int, xmlChar **)",
+		"go":	"C14NDocDumpMemory"
+	}, {
+		"mangle":	"xmlC14NDocSave",
+		"c++":	"xmlC14NDocSave(xmlDocPtr, xmlNodeSetPtr, int, xmlChar **, int, const char *, int)",
+		"go":	"C14NDocSave"
+	}, {
+		"mangle":	"xmlC14NDocSaveTo",
+		"c++":	"xmlC14NDocSaveTo(xmlDocPtr, xmlNodeSetPtr, int, xmlChar **, int, xmlOutputBufferPtr)",
+		"go":	"C14NDocSaveTo"
+	}, {
+		"mangle":	"xmlC14NExecute",
+		"c++":	"xmlC14NExecute(xmlDocPtr, xmlC14NIsVisibleCallback, void *, int, xmlChar **, int, xmlOutputBufferPtr)",
+		"go":	"C14NExecute"
 	}, {
 		"mangle":	"xmlCanonicPath",
 		"c++":	"xmlCanonicPath(const xmlChar *)",
@@ -2159,6 +2167,10 @@
 		"c++":	"xmlMemShow(FILE *, int)",
 		"go":	"MemShow"
 	}, {
+		"mangle":	"xmlMemSize",
+		"c++":	"xmlMemSize(void *)",
+		"go":	"MemSize"
+	}, {
 		"mangle":	"xmlMemStrdupLoc",
 		"c++":	"xmlMemStrdupLoc(const char *, const char *, int)",
 		"go":	"MemStrdupLoc"
@@ -2514,6 +2526,10 @@
 		"mangle":	"xmlNewReference",
 		"c++":	"xmlNewReference(const xmlDoc *, const xmlChar *)",
 		"go":	"(*Doc).NewReference"
+	}, {
+		"mangle":	"xmlNewSAXParserCtxt",
+		"c++":	"xmlNewSAXParserCtxt(const xmlSAXHandler *, void *)",
+		"go":	"(*SAXHandler).NewSAXParserCtxt"
 	}, {
 		"mangle":	"xmlNewStringInputStream",
 		"c++":	"xmlNewStringInputStream(xmlParserCtxtPtr, const xmlChar *)",
@@ -3111,6 +3127,10 @@
 		"c++":	"xmlPopInputCallbacks()",
 		"go":	"PopInputCallbacks"
 	}, {
+		"mangle":	"xmlPopOutputCallbacks",
+		"c++":	"xmlPopOutputCallbacks()",
+		"go":	"PopOutputCallbacks"
+	}, {
 		"mangle":	"xmlPreviousElementSibling",
 		"c++":	"xmlPreviousElementSibling(xmlNodePtr)",
 		"go":	"PreviousElementSibling"
@@ -3490,10 +3510,6 @@
 		"mangle":	"xmlSAX2InitDefaultSAXHandler",
 		"c++":	"xmlSAX2InitDefaultSAXHandler(xmlSAXHandler *, int)",
 		"go":	"(*SAXHandler).SAX2InitDefaultSAXHandler"
-	}, {
-		"mangle":	"xmlSAX2InitDocbDefaultSAXHandler",
-		"c++":	"xmlSAX2InitDocbDefaultSAXHandler(xmlSAXHandler *)",
-		"go":	"(*SAXHandler).SAX2InitDocbDefaultSAXHandler"
 	}, {
 		"mangle":	"xmlSAX2InitHtmlDefaultSAXHandler",
 		"c++":	"xmlSAX2InitHtmlDefaultSAXHandler(xmlSAXHandler *)",
@@ -6391,87 +6407,11 @@
 		"c++":	"xmlXPatherror(xmlXPathParserContextPtr, const char *, int, int)",
 		"go":	"XPatherror"
 	}, {
-		"mangle":	"xmlXPtrBuildNodeList",
-		"c++":	"xmlXPtrBuildNodeList(xmlXPathObjectPtr)",
-		"go":	"XPtrBuildNodeList"
-	}, {
 		"mangle":	"xmlXPtrEval",
 		"c++":	"xmlXPtrEval(const xmlChar *, xmlXPathContextPtr)",
 		"go":	"(*Char).XPtrEval"
 	}, {
-		"mangle":	"xmlXPtrEvalRangePredicate",
-		"c++":	"xmlXPtrEvalRangePredicate(xmlXPathParserContextPtr)",
-		"go":	"XPtrEvalRangePredicate"
-	}, {
-		"mangle":	"xmlXPtrFreeLocationSet",
-		"c++":	"xmlXPtrFreeLocationSet(xmlLocationSetPtr)",
-		"go":	"XPtrFreeLocationSet"
-	}, {
-		"mangle":	"xmlXPtrLocationSetAdd",
-		"c++":	"xmlXPtrLocationSetAdd(xmlLocationSetPtr, xmlXPathObjectPtr)",
-		"go":	"XPtrLocationSetAdd"
-	}, {
-		"mangle":	"xmlXPtrLocationSetCreate",
-		"c++":	"xmlXPtrLocationSetCreate(xmlXPathObjectPtr)",
-		"go":	"XPtrLocationSetCreate"
-	}, {
-		"mangle":	"xmlXPtrLocationSetDel",
-		"c++":	"xmlXPtrLocationSetDel(xmlLocationSetPtr, xmlXPathObjectPtr)",
-		"go":	"XPtrLocationSetDel"
-	}, {
-		"mangle":	"xmlXPtrLocationSetMerge",
-		"c++":	"xmlXPtrLocationSetMerge(xmlLocationSetPtr, xmlLocationSetPtr)",
-		"go":	"XPtrLocationSetMerge"
-	}, {
-		"mangle":	"xmlXPtrLocationSetRemove",
-		"c++":	"xmlXPtrLocationSetRemove(xmlLocationSetPtr, int)",
-		"go":	"XPtrLocationSetRemove"
-	}, {
-		"mangle":	"xmlXPtrNewCollapsedRange",
-		"c++":	"xmlXPtrNewCollapsedRange(xmlNodePtr)",
-		"go":	"XPtrNewCollapsedRange"
-	}, {
 		"mangle":	"xmlXPtrNewContext",
 		"c++":	"xmlXPtrNewContext(xmlDocPtr, xmlNodePtr, xmlNodePtr)",
 		"go":	"XPtrNewContext"
-	}, {
-		"mangle":	"xmlXPtrNewLocationSetNodeSet",
-		"c++":	"xmlXPtrNewLocationSetNodeSet(xmlNodeSetPtr)",
-		"go":	"XPtrNewLocationSetNodeSet"
-	}, {
-		"mangle":	"xmlXPtrNewLocationSetNodes",
-		"c++":	"xmlXPtrNewLocationSetNodes(xmlNodePtr, xmlNodePtr)",
-		"go":	"XPtrNewLocationSetNodes"
-	}, {
-		"mangle":	"xmlXPtrNewRange",
-		"c++":	"xmlXPtrNewRange(xmlNodePtr, int, xmlNodePtr, int)",
-		"go":	"XPtrNewRange"
-	}, {
-		"mangle":	"xmlXPtrNewRangeNodeObject",
-		"c++":	"xmlXPtrNewRangeNodeObject(xmlNodePtr, xmlXPathObjectPtr)",
-		"go":	"XPtrNewRangeNodeObject"
-	}, {
-		"mangle":	"xmlXPtrNewRangeNodePoint",
-		"c++":	"xmlXPtrNewRangeNodePoint(xmlNodePtr, xmlXPathObjectPtr)",
-		"go":	"XPtrNewRangeNodePoint"
-	}, {
-		"mangle":	"xmlXPtrNewRangeNodes",
-		"c++":	"xmlXPtrNewRangeNodes(xmlNodePtr, xmlNodePtr)",
-		"go":	"XPtrNewRangeNodes"
-	}, {
-		"mangle":	"xmlXPtrNewRangePointNode",
-		"c++":	"xmlXPtrNewRangePointNode(xmlXPathObjectPtr, xmlNodePtr)",
-		"go":	"XPtrNewRangePointNode"
-	}, {
-		"mangle":	"xmlXPtrNewRangePoints",
-		"c++":	"xmlXPtrNewRangePoints(xmlXPathObjectPtr, xmlXPathObjectPtr)",
-		"go":	"XPtrNewRangePoints"
-	}, {
-		"mangle":	"xmlXPtrRangeToFunction",
-		"c++":	"xmlXPtrRangeToFunction(xmlXPathParserContextPtr, int)",
-		"go":	"XPtrRangeToFunction"
-	}, {
-		"mangle":	"xmlXPtrWrapLocationSet",
-		"c++":	"xmlXPtrWrapLocationSet(xmlLocationSetPtr)",
-		"go":	"XPtrWrapLocationSet"
 	}]

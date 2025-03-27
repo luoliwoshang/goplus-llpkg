@@ -91,6 +91,9 @@ func X__xmlParserInputBufferCreateFilename(URI *int8, enc CharEncoding) ParserIn
 //go:linkname CleanupOutputCallbacks C.xmlCleanupOutputCallbacks
 func CleanupOutputCallbacks()
 
+//go:linkname PopOutputCallbacks C.xmlPopOutputCallbacks
+func PopOutputCallbacks() c.Int
+
 //go:linkname RegisterDefaultOutputCallbacks C.xmlRegisterDefaultOutputCallbacks
 func RegisterDefaultOutputCallbacks()
 

@@ -57,17 +57,17 @@ func SchematronNewDocParserCtxt(doc DocPtr) SchematronParserCtxtPtr
 func SchematronFreeParserCtxt(ctxt SchematronParserCtxtPtr)
 
 /*****
-XMLPUBFUN void XMLCALL
+XMLPUBFUN void
 	    xmlSchematronSetParserErrors(xmlSchematronParserCtxtPtr ctxt,
 					 xmlSchematronValidityErrorFunc err,
 					 xmlSchematronValidityWarningFunc warn,
 					 void *ctx);
-XMLPUBFUN int XMLCALL
+XMLPUBFUN int
 		xmlSchematronGetParserErrors(xmlSchematronParserCtxtPtr ctxt,
 					xmlSchematronValidityErrorFunc * err,
 					xmlSchematronValidityWarningFunc * warn,
 					void **ctx);
-XMLPUBFUN int XMLCALL
+XMLPUBFUN int
 		xmlSchematronIsValid	(xmlSchematronValidCtxtPtr ctxt);
  *****/
 //go:linkname SchematronParse C.xmlSchematronParse
@@ -83,22 +83,22 @@ func SchematronFree(schema SchematronPtr)
 func SchematronSetValidStructuredErrors(ctxt SchematronValidCtxtPtr, serror StructuredErrorFunc, ctx unsafe.Pointer)
 
 /******
-XMLPUBFUN void XMLCALL
+XMLPUBFUN void
 	    xmlSchematronSetValidErrors	(xmlSchematronValidCtxtPtr ctxt,
 					 xmlSchematronValidityErrorFunc err,
 					 xmlSchematronValidityWarningFunc warn,
 					 void *ctx);
-XMLPUBFUN int XMLCALL
+XMLPUBFUN int
 	    xmlSchematronGetValidErrors	(xmlSchematronValidCtxtPtr ctxt,
 					 xmlSchematronValidityErrorFunc *err,
 					 xmlSchematronValidityWarningFunc *warn,
 					 void **ctx);
-XMLPUBFUN int XMLCALL
+XMLPUBFUN int
 	    xmlSchematronSetValidOptions(xmlSchematronValidCtxtPtr ctxt,
 					 int options);
-XMLPUBFUN int XMLCALL
+XMLPUBFUN int
 	    xmlSchematronValidCtxtGetOptions(xmlSchematronValidCtxtPtr ctxt);
-XMLPUBFUN int XMLCALL
+XMLPUBFUN int
             xmlSchematronValidateOneElement (xmlSchematronValidCtxtPtr ctxt,
 			                 xmlNodePtr elem);
  *******/

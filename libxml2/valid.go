@@ -25,7 +25,7 @@ type X_xmlValidCtxt struct {
 	NodeNr    c.Int
 	NodeMax   c.Int
 	NodeTab   *NodePtr
-	FinishDtd c.Uint
+	Flags     c.Uint
 	Doc       DocPtr
 	Valid     c.Int
 	Vstate    *ValidState

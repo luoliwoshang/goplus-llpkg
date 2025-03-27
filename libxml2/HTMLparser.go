@@ -45,6 +45,9 @@ type HtmlEntityDescPtr *HtmlEntityDesc
 /*
  * There is only few public functions.
  */
+//go:linkname HtmlInitAutoClose C.htmlInitAutoClose
+func HtmlInitAutoClose()
+
 // llgo:link (*Char).HtmlTagLookup C.htmlTagLookup
 func (recv_ *Char) HtmlTagLookup() *HtmlElemDesc {
 	return nil
@@ -76,6 +79,11 @@ func HtmlParseElement(ctxt HtmlParserCtxtPtr)
 //go:linkname HtmlNewParserCtxt C.htmlNewParserCtxt
 func HtmlNewParserCtxt() HtmlParserCtxtPtr
 
+// llgo:link (*HtmlSAXHandler).HtmlNewSAXParserCtxt C.htmlNewSAXParserCtxt
+func (recv_ *HtmlSAXHandler) HtmlNewSAXParserCtxt(userData unsafe.Pointer) HtmlParserCtxtPtr {
+	return nil
+}
+
 //go:linkname HtmlCreateMemoryParserCtxt C.htmlCreateMemoryParserCtxt
 func HtmlCreateMemoryParserCtxt(buffer *int8, size c.Int) HtmlParserCtxtPtr
 
@@ -91,6 +99,9 @@ func (recv_ *Char) HtmlSAXParseDoc(encoding *int8, sax HtmlSAXHandlerPtr, userDa
 func (recv_ *Char) HtmlParseDoc(encoding *int8) HtmlDocPtr {
 	return nil
 }
+
+//go:linkname HtmlCreateFileParserCtxt C.htmlCreateFileParserCtxt
+func HtmlCreateFileParserCtxt(filename *int8, encoding *int8) HtmlParserCtxtPtr
 
 //go:linkname HtmlSAXParseFile C.htmlSAXParseFile
 func HtmlSAXParseFile(filename *int8, encoding *int8, sax HtmlSAXHandlerPtr, userData unsafe.Pointer) HtmlDocPtr

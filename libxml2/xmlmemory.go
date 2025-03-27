@@ -49,6 +49,9 @@ func CleanupMemory()
 /*
  * These are specific to the XML debug memory wrapper.
  */
+//go:linkname MemSize C.xmlMemSize
+func MemSize(ptr unsafe.Pointer) uintptr
+
 //go:linkname MemUsed C.xmlMemUsed
 func MemUsed() c.Int
 

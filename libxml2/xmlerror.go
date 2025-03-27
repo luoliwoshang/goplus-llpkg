@@ -182,6 +182,7 @@ const (
 	ERRVERSIONMISMATCH                      ParserErrors = 109
 	ERRNAMETOOLONG                          ParserErrors = 110
 	ERRUSERSTOP                             ParserErrors = 111
+	ERRCOMMENTABRUPTLYENDED                 ParserErrors = 112
 	NSERRXMLNAMESPACE                       ParserErrors = 200
 	NSERRUNDEFINEDNAMESPACE                 ParserErrors = 201
 	NSERRQNAME                              ParserErrors = 202
@@ -232,6 +233,7 @@ const (
 	DTDDUPTOKEN                             ParserErrors = 541
 	HTMLSTRUCUREERROR                       ParserErrors = 800
 	HTMLUNKNOWNTAG                          ParserErrors = 801
+	HTMLINCORRECTLYOPENEDCOMMENT            ParserErrors = 802
 	RNGPANYNAMEATTRANCESTOR                 ParserErrors = 1000
 	RNGPATTRCONFLICT                        ParserErrors = 1001
 	RNGPATTRIBUTECHILDREN                   ParserErrors = 1002

@@ -3,13 +3,6 @@ attributeSAXFunc AttributeSAXFunc
 cdataBlockSAXFunc CdataBlockSAXFunc
 charactersSAXFunc CharactersSAXFunc
 commentSAXFunc CommentSAXFunc
-docbDocPtr DocbDocPtr
-docbParserCtxt DocbParserCtxt
-docbParserCtxtPtr DocbParserCtxtPtr
-docbParserInput DocbParserInput
-docbParserInputPtr DocbParserInputPtr
-docbSAXHandler DocbSAXHandler
-docbSAXHandlerPtr DocbSAXHandlerPtr
 elementDeclSAXFunc ElementDeclSAXFunc
 endDocumentSAXFunc EndDocumentSAXFunc
 endElementNsSAX2Func EndElementNsSAX2Func
@@ -159,8 +152,6 @@ xmlListDataCompare ListDataCompare
 xmlListDeallocator ListDeallocator
 xmlListPtr ListPtr
 xmlListWalker ListWalker
-xmlLocationSet LocationSet
-xmlLocationSetPtr LocationSetPtr
 xmlMallocFunc MallocFunc
 xmlModule Module
 xmlModuleOption ModuleOption
@@ -295,6 +286,7 @@ xmlShellCmd ShellCmd
 xmlShellCtxt ShellCtxt
 xmlShellCtxtPtr ShellCtxtPtr
 xmlShellReadlineFunc ShellReadlineFunc
+xmlStartTag StartTag
 xmlStrdupFunc StrdupFunc
 xmlStreamCtxt StreamCtxt
 xmlStreamCtxtPtr StreamCtxtPtr
