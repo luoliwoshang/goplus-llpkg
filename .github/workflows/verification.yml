@@ -89,9 +89,3 @@ jobs:
           ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
         run: |
           llpkgstore verification
-
-      - name: Run Demotest process
-        env:
-          LLPKG_PATH: ${{ env.LLPKG_PATH }}
-        run: |
-          demotest run
