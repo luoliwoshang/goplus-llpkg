@@ -6,6 +6,10 @@ import (
 	"unsafe"
 )
 
+const RVT_LOCAL = 1
+const RVT_FUNC_RESULT = 2
+const RVT_GLOBAL = 3
+
 /*
  * Interfaces for the variable module.
  */

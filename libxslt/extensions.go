@@ -139,7 +139,7 @@ func PreComputeExtModuleElement(style StylesheetPtr, inst libxml2.NodePtr) ElemP
 func GetExtInfo(style StylesheetPtr, URI *libxml2.Char) libxml2.HashTablePtr
 
 /**
- * Test module http://xmlsoft.org/XSLT/
+ * Test of the extension module API
  */
 //go:linkname RegisterTestModule C.xsltRegisterTestModule
 func RegisterTestModule()

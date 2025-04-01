@@ -38,6 +38,7 @@ type X_xsltTemplate struct {
 	TemplMax       c.Int
 	TemplCalledTab *TemplatePtr
 	TemplCountTab  *c.Int
+	Position       c.Int
 }
 type Template X_xsltTemplate
 type TemplatePtr *Template
@@ -53,15 +54,15 @@ type X_xsltStylesheet struct {
 	CdataSection       libxml2.HashTablePtr
 	Variables          StackElemPtr
 	Templates          TemplatePtr
-	TemplatesHash      unsafe.Pointer
-	RootMatch          unsafe.Pointer
-	KeyMatch           unsafe.Pointer
-	ElemMatch          unsafe.Pointer
-	AttrMatch          unsafe.Pointer
-	ParentMatch        unsafe.Pointer
-	TextMatch          unsafe.Pointer
-	PiMatch            unsafe.Pointer
-	CommentMatch       unsafe.Pointer
+	TemplatesHash      libxml2.HashTablePtr
+	RootMatch          *X_xsltCompMatch
+	KeyMatch           *X_xsltCompMatch
+	ElemMatch          *X_xsltCompMatch
+	AttrMatch          *X_xsltCompMatch
+	ParentMatch        *X_xsltCompMatch
+	TextMatch          *X_xsltCompMatch
+	PiMatch            *X_xsltCompMatch
+	CommentMatch       *X_xsltCompMatch
 	NsAliases          libxml2.HashTablePtr
 	AttributeSets      libxml2.HashTablePtr
 	NsHash             libxml2.HashTablePtr
@@ -99,6 +100,8 @@ type X_xsltStylesheet struct {
 	ForwardsCompatible c.Int
 	NamedTemplates     libxml2.HashTablePtr
 	XpathCtxt          libxml2.XPathContextPtr
+	OpLimit            c.Ulong
+	OpCount            c.Ulong
 }
 
 type X_xsltDecimalFormat struct {
@@ -227,6 +230,11 @@ type X_xsltTransformContext struct {
 	MaxTemplateVars     c.Int
 	OpLimit             c.Ulong
 	OpCount             c.Ulong
+	SourceDocDirty      c.Int
+	CurrentId           c.Ulong
+	NewLocale           unsafe.Pointer
+	FreeLocale          unsafe.Pointer
+	GenSortKey          unsafe.Pointer
 }
 type TransformContext X_xsltTransformContext
 type TransformContextPtr *TransformContext
@@ -289,7 +297,6 @@ type X_xsltStylePreComp struct {
 	Descending  c.Int
 	Lang        *libxml2.Char
 	HasLang     c.Int
-	Locale      Locale
 	CaseOrder   *libxml2.Char
 	LowerFirst  c.Int
 	Use         *libxml2.Char
@@ -348,6 +355,14 @@ const (
 	OUTPUTTEXT OutputType = 2
 )
 
+// llgo:type C
+type NewLocaleFunc func(*libxml2.Char, c.Int) unsafe.Pointer
+
+// llgo:type C
+type FreeLocaleFunc func(unsafe.Pointer)
+
+// llgo:type C
+type GenSortKeyFunc func(unsafe.Pointer, *libxml2.Char) *libxml2.Char
 type TransformState c.Int
 
 const (
@@ -437,7 +452,7 @@ func ExtensionInstructionResultRegister(ctxt TransformContextPtr, obj libxml2.XP
 func ExtensionInstructionResultFinalize(ctxt TransformContextPtr) c.Int
 
 //go:linkname FlagRVTs C.xsltFlagRVTs
-func FlagRVTs(ctxt TransformContextPtr, obj libxml2.XPathObjectPtr, val unsafe.Pointer) c.Int
+func FlagRVTs(ctxt TransformContextPtr, obj libxml2.XPathObjectPtr, val c.Int) c.Int
 
 //go:linkname FreeRVTs C.xsltFreeRVTs
 func FreeRVTs(ctxt TransformContextPtr)

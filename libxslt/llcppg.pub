@@ -16,6 +16,8 @@ xsltExtInitFunction ExtInitFunction
 xsltExtShutdownFunction ExtShutdownFunction
 xsltFormatNumberInfo FormatNumberInfo
 xsltFormatNumberInfoPtr FormatNumberInfoPtr
+xsltFreeLocaleFunc FreeLocaleFunc
+xsltGenSortKeyFunc GenSortKeyFunc
 xsltHandleDebuggerCallback HandleDebuggerCallback
 xsltKeyDef KeyDef
 xsltKeyDefPtr KeyDefPtr
@@ -24,6 +26,7 @@ xsltKeyTablePtr KeyTablePtr
 xsltLoadType LoadType
 xsltLocale Locale
 xsltLocaleChar LocaleChar
+xsltNewLocaleFunc NewLocaleFunc
 xsltNumberData NumberData
 xsltNumberDataPtr NumberDataPtr
 xsltOutputType OutputType

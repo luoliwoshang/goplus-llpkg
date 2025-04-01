@@ -20,7 +20,7 @@
 		"go":	"AllocateExtraCtxt"
 	}, {
 		"mangle":	"xsltApplyAttributeSet",
-		"c++":	"xsltApplyAttributeSet(int, xmlNodePtr, xmlNodePtr, const xmlChar *)",
+		"c++":	"xsltApplyAttributeSet(xsltTransformContextPtr, xmlNodePtr, xmlNodePtr, const xmlChar *)",
 		"go":	"ApplyAttributeSet"
 	}, {
 		"mangle":	"xsltApplyImports",
@@ -280,7 +280,7 @@
 		"go":	"FindTemplate"
 	}, {
 		"mangle":	"xsltFlagRVTs",
-		"c++":	"xsltFlagRVTs(xsltTransformContextPtr, xmlXPathObjectPtr, void *)",
+		"c++":	"xsltFlagRVTs(xsltTransformContextPtr, xmlXPathObjectPtr, int)",
 		"go":	"FlagRVTs"
 	}, {
 		"mangle":	"xsltForEach",
@@ -300,7 +300,7 @@
 		"go":	"FreeAVTList"
 	}, {
 		"mangle":	"xsltFreeAttributeSetsHashes",
-		"c++":	"xsltFreeAttributeSetsHashes(int)",
+		"c++":	"xsltFreeAttributeSetsHashes(xsltStylesheetPtr)",
 		"go":	"FreeAttributeSetsHashes"
 	}, {
 		"mangle":	"xsltFreeCompMatchList",
@@ -332,7 +332,7 @@
 		"go":	"FreeKeys"
 	}, {
 		"mangle":	"xsltFreeLocale",
-		"c++":	"xsltFreeLocale(xsltLocale)",
+		"c++":	"xsltFreeLocale(void *)",
 		"go":	"FreeLocale"
 	}, {
 		"mangle":	"xsltFreeLocales",
@@ -512,7 +512,7 @@
 		"go":	"LocalVariablePush"
 	}, {
 		"mangle":	"xsltLocaleStrcmp",
-		"c++":	"xsltLocaleStrcmp(xsltLocale, const xsltLocaleChar *, const xsltLocaleChar *)",
+		"c++":	"xsltLocaleStrcmp(void *, const xmlChar *, const xmlChar *)",
 		"go":	"LocaleStrcmp"
 	}, {
 		"mangle":	"xsltMessage",
@@ -536,7 +536,7 @@
 		"go":	"NewElemPreComp"
 	}, {
 		"mangle":	"xsltNewLocale",
-		"c++":	"xsltNewLocale(const xmlChar *)",
+		"c++":	"xsltNewLocale(const xmlChar *, int)",
 		"go":	"NewLocale"
 	}, {
 		"mangle":	"xsltNewSecurityPrefs",
@@ -580,7 +580,7 @@
 		"go":	"ParseGlobalVariable"
 	}, {
 		"mangle":	"xsltParseStylesheetAttributeSet",
-		"c++":	"xsltParseStylesheetAttributeSet(int, xmlNodePtr)",
+		"c++":	"xsltParseStylesheetAttributeSet(xsltStylesheetPtr, xmlNodePtr)",
 		"go":	"ParseStylesheetAttributeSet"
 	}, {
 		"mangle":	"xsltParseStylesheetCallerParam",
@@ -728,7 +728,7 @@
 		"go":	"ReleaseRVT"
 	}, {
 		"mangle":	"xsltResolveStylesheetAttributeSet",
-		"c++":	"xsltResolveStylesheetAttributeSet(int)",
+		"c++":	"xsltResolveStylesheetAttributeSet(xsltStylesheetPtr)",
 		"go":	"ResolveStylesheetAttributeSet"
 	}, {
 		"mangle":	"xsltRunStylesheet",
@@ -766,6 +766,10 @@
 		"mangle":	"xsltSecurityForbid",
 		"c++":	"xsltSecurityForbid(xsltSecurityPrefsPtr, xsltTransformContextPtr, const char *)",
 		"go":	"SecurityForbid"
+	}, {
+		"mangle":	"xsltSetCtxtLocaleHandlers",
+		"c++":	"xsltSetCtxtLocaleHandlers(xsltTransformContextPtr, xsltNewLocaleFunc, xsltFreeLocaleFunc, xsltGenSortKeyFunc)",
+		"go":	"SetCtxtLocaleHandlers"
 	}, {
 		"mangle":	"xsltSetCtxtParseOptions",
 		"c++":	"xsltSetCtxtParseOptions(xsltTransformContextPtr, int)",
@@ -828,7 +832,7 @@
 		"go":	"SplitQName"
 	}, {
 		"mangle":	"xsltStrxfrm",
-		"c++":	"xsltStrxfrm(xsltLocale, const xmlChar *)",
+		"c++":	"xsltStrxfrm(void *, const xmlChar *)",
 		"go":	"Strxfrm"
 	}, {
 		"mangle":	"xsltStyleGetExtData",
