@@ -82,9 +82,6 @@ func SetSortFunc(handler SortFunc)
 //go:linkname SetCtxtSortFunc C.xsltSetCtxtSortFunc
 func SetCtxtSortFunc(ctxt TransformContextPtr, handler SortFunc)
 
-//go:linkname SetCtxtLocaleHandlers C.xsltSetCtxtLocaleHandlers
-func SetCtxtLocaleHandlers(ctxt TransformContextPtr, newLocale NewLocaleFunc, freeLocale FreeLocaleFunc, genSortKey GenSortKeyFunc)
-
 //go:linkname DefaultSortFunction C.xsltDefaultSortFunction
 func DefaultSortFunction(ctxt TransformContextPtr, sorts *libxml2.NodePtr, nbsorts c.Int)
 

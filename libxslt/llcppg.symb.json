@@ -769,7 +769,7 @@
 	}, {
 		"mangle":	"xsltSetCtxtLocaleHandlers",
 		"c++":	"xsltSetCtxtLocaleHandlers(xsltTransformContextPtr, xsltNewLocaleFunc, xsltFreeLocaleFunc, xsltGenSortKeyFunc)",
-		"go":	"SetCtxtLocaleHandlers"
+		"go":	"-"
 	}, {
 		"mangle":	"xsltSetCtxtParseOptions",
 		"c++":	"xsltSetCtxtParseOptions(xsltTransformContextPtr, int)",
