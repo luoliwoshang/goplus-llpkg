@@ -5,40 +5,45 @@ name: Verify Go Module
 on:
   pull_request:
     branches:
-      - "release-branch.**"
+      - 'release-branch.**'
       - main
+    paths-ignore:
+      - '.github/**'
+      - LICENSE
+      - README.md
+      - '.gitignore'
 
 jobs:
   llcppg-verification:
     name: Verify Go Module
     runs-on: ubuntu-24.04
-
+    strategy:
+      matrix:
+        llgo: [v0.10.1]
+        llcppg: [v0.2.1]
     steps:
       - name: Checkout
-        id: checkout
         uses: actions/checkout@v4
       - name: Check out LLGo
         uses: actions/checkout@v4
         with:
-          repository: "goplus/llgo"
+          repository: 'goplus/llgo'
           path: .llgo
+          ref: ${{matrix.llgo}}
       - name: Check out LLCppg
         uses: actions/checkout@v4
         with:
-          repository: "goplus/llcppg"
+          repository: 'goplus/llcppg'
           path: .llcppg
-          ref: "v0.2.0"
+          ref: ${{matrix.llcppg}}
       - name: Set up Go
         uses: actions/setup-go@v4
         with:
-          go-version: "1.23"
-      - name: Skip Cache Parser Tool
+          go-version: 1.23.x
+      - name: Set up Tool
         run: |
-          go env -w GOPRIVATE=github.com/luoliwoshang/llpkgstore
-      - name: Set up Parser Tool
-        run: |
-          go install -v github.com/luoliwoshang/llpkgstore/cmd/llpkgstore@latest
-          go install -v github.com/luoliwoshang/llpkgstore/cmd/demotest@latest
+          go install -v github.com/goplus/llpkgstore/cmd/llpkgstore@latest
+          go install -v github.com/goplus/llpkgstore/cmd/demotest@latest
       - name: Set up Conan
         run: |
           sudo apt-get install -y python3 python3-pip
@@ -61,31 +66,29 @@ jobs:
         run: |
           llgo install ./_xtool/llcppsymg
           llgo install ./_xtool/llcppsigfetch
-          go install github.com/goplus/llcppg/cmd/llcppcfg@v0.2.0
-          go install github.com/goplus/llcppg/cmd/gogensig@v0.2.0
-          go install github.com/goplus/llcppg@v0.2.0
+          go install github.com/goplus/llcppg/cmd/llcppcfg@${{matrix.llcppg}}
+          go install github.com/goplus/llcppg/cmd/gogensig@${{matrix.llcppg}}
+          go install github.com/goplus/llcppg@${{matrix.llcppg}}
       - name: Get changed files
         id: changed-files
         uses: tj-actions/changed-files@v45
-
       - name: Checkout to website
         uses: actions/checkout@v4
         with:
           ref: website
           path: .website
-
       - name: Copy llpkgstore.json to root
         continue-on-error: true
         run: |
-          # ignore error
           ls .website .website/public
           cp .website/public/llpkgstore.json .
           rm -rf .website
-
-      - name: Verfication
-        id: gen-go-module
+      - name: Verification
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
-        run: |
-          llpkgstore verification
+        run: llpkgstore verification
+      - name: Run demotest process
+        env:
+          LLPKG_PATH: ${{ env.LLPKG_PATH }}
+        run: demotest run
