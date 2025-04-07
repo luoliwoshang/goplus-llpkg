@@ -77,11 +77,11 @@
 	}, {
 		"mangle":	"cJSON_AddItemToArray",
 		"c++":	"cJSON_AddItemToArray(cJSON *, cJSON *)",
-		"go":	"(*CJSON).AddItemToArray"
+		"go":	"(*CJSON).AddItem"
 	}, {
 		"mangle":	"cJSON_AddItemToObject",
 		"c++":	"cJSON_AddItemToObject(cJSON *, const char *, cJSON *)",
-		"go":	"(*CJSON).AddItemToObject"
+		"go":	"(*CJSON).SetItem"
 	}, {
 		"mangle":	"cJSON_AddItemToObjectCS",
 		"c++":	"cJSON_AddItemToObjectCS(cJSON *, const char *, cJSON *)",
@@ -117,7 +117,7 @@
 	}, {
 		"mangle":	"cJSON_CreateArray",
 		"c++":	"cJSON_CreateArray()",
-		"go":	"CreateArray"
+		"go":	"Array"
 	}, {
 		"mangle":	"cJSON_CreateArrayReference",
 		"c++":	"cJSON_CreateArrayReference(const cJSON *)",
@@ -153,7 +153,7 @@
 	}, {
 		"mangle":	"cJSON_CreateObject",
 		"c++":	"cJSON_CreateObject()",
-		"go":	"CreateObject"
+		"go":	"Object"
 	}, {
 		"mangle":	"cJSON_CreateObjectReference",
 		"c++":	"cJSON_CreateObjectReference(const cJSON *)",
@@ -165,7 +165,7 @@
 	}, {
 		"mangle":	"cJSON_CreateString",
 		"c++":	"cJSON_CreateString(const char *)",
-		"go":	"CreateString"
+		"go":	"String"
 	}, {
 		"mangle":	"cJSON_CreateStringArray",
 		"c++":	"cJSON_CreateStringArray(const char *const *, int)",
@@ -329,7 +329,7 @@
 	}, {
 		"mangle":	"cJSON_PrintUnformatted",
 		"c++":	"cJSON_PrintUnformatted(const cJSON *)",
-		"go":	"(*CJSON).PrintUnformatted"
+		"go":	"(*CJSON).CStr"
 	}, {
 		"mangle":	"cJSON_ReplaceItemInArray",
 		"c++":	"cJSON_ReplaceItemInArray(cJSON *, int, cJSON *)",
@@ -361,7 +361,7 @@
 	}, {
 		"mangle":	"cJSON_free",
 		"c++":	"cJSON_free(void *)",
-		"go":	"Free"
+		"go":	"FreeCStr"
 	}, {
 		"mangle":	"cJSON_malloc",
 		"c++":	"cJSON_malloc(size_t)",
