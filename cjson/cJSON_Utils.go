@@ -4,56 +4,81 @@ import (
 	"github.com/goplus/llgo/c"
 	_ "unsafe"
 )
+
+/* Implement RFC6901 (https://tools.ietf.org/html/rfc6901) JSON Pointer spec. */
 // llgo:link (*CJSON).GetPointer C.cJSONUtils_GetPointer
-func (p *CJSON) GetPointer(pointer *int8) *CJSON {
+func (recv_ *CJSON) GetPointer(pointer *int8) *CJSON {
 	return nil
 }
+
 // llgo:link (*CJSON).GetPointerCaseSensitive C.cJSONUtils_GetPointerCaseSensitive
-func (p *CJSON) GetPointerCaseSensitive(pointer *int8) *CJSON {
+func (recv_ *CJSON) GetPointerCaseSensitive(pointer *int8) *CJSON {
 	return nil
 }
+
+/* Implement RFC6902 (https://tools.ietf.org/html/rfc6902) JSON Patch spec. */
+/* NOTE: This modifies objects in 'from' and 'to' by sorting the elements by their key */
 // llgo:link (*CJSON).GeneratePatches C.cJSONUtils_GeneratePatches
-func (p *CJSON) GeneratePatches(to *CJSON) *CJSON {
+func (recv_ *CJSON) GeneratePatches(to *CJSON) *CJSON {
 	return nil
 }
+
 // llgo:link (*CJSON).GeneratePatchesCaseSensitive C.cJSONUtils_GeneratePatchesCaseSensitive
-func (p *CJSON) GeneratePatchesCaseSensitive(to *CJSON) *CJSON {
+func (recv_ *CJSON) GeneratePatchesCaseSensitive(to *CJSON) *CJSON {
 	return nil
 }
+
+/* Utility for generating patch array entries. */
 // llgo:link (*CJSON).AddPatchToArray C.cJSONUtils_AddPatchToArray
-func (p *CJSON) AddPatchToArray(operation *int8, path *int8, value *CJSON) {
+func (recv_ *CJSON) AddPatchToArray(operation *int8, path *int8, value *CJSON) {
 }
+
+/* Returns 0 for success. */
 // llgo:link (*CJSON).ApplyPatches C.cJSONUtils_ApplyPatches
-func (p *CJSON) ApplyPatches(patches *CJSON) c.Int {
+func (recv_ *CJSON) ApplyPatches(patches *CJSON) c.Int {
 	return 0
 }
+
 // llgo:link (*CJSON).ApplyPatchesCaseSensitive C.cJSONUtils_ApplyPatchesCaseSensitive
-func (p *CJSON) ApplyPatchesCaseSensitive(patches *CJSON) c.Int {
+func (recv_ *CJSON) ApplyPatchesCaseSensitive(patches *CJSON) c.Int {
 	return 0
 }
+
+/* Implement RFC7386 (https://tools.ietf.org/html/rfc7396) JSON Merge Patch spec. */
+/* target will be modified by patch. return value is new ptr for target. */
 // llgo:link (*CJSON).MergePatch C.cJSONUtils_MergePatch
-func (p *CJSON) MergePatch(patch *CJSON) *CJSON {
+func (recv_ *CJSON) MergePatch(patch *CJSON) *CJSON {
 	return nil
 }
+
 // llgo:link (*CJSON).MergePatchCaseSensitive C.cJSONUtils_MergePatchCaseSensitive
-func (p *CJSON) MergePatchCaseSensitive(patch *CJSON) *CJSON {
+func (recv_ *CJSON) MergePatchCaseSensitive(patch *CJSON) *CJSON {
 	return nil
 }
+
+/* generates a patch to move from -> to */
+/* NOTE: This modifies objects in 'from' and 'to' by sorting the elements by their key */
 // llgo:link (*CJSON).GenerateMergePatch C.cJSONUtils_GenerateMergePatch
-func (p *CJSON) GenerateMergePatch(to *CJSON) *CJSON {
+func (recv_ *CJSON) GenerateMergePatch(to *CJSON) *CJSON {
 	return nil
 }
+
 // llgo:link (*CJSON).GenerateMergePatchCaseSensitive C.cJSONUtils_GenerateMergePatchCaseSensitive
-func (p *CJSON) GenerateMergePatchCaseSensitive(to *CJSON) *CJSON {
+func (recv_ *CJSON) GenerateMergePatchCaseSensitive(to *CJSON) *CJSON {
 	return nil
 }
+
+/* Given a root object and a target object, construct a pointer from one to the other. */
 // llgo:link (*CJSON).FindPointerFromObjectTo C.cJSONUtils_FindPointerFromObjectTo
-func (p *CJSON) FindPointerFromObjectTo(target *CJSON) *int8 {
+func (recv_ *CJSON) FindPointerFromObjectTo(target *CJSON) *int8 {
 	return nil
 }
+
+/* Sorts the members of the object into alphabetical order. */
 // llgo:link (*CJSON).SortObject C.cJSONUtils_SortObject
-func (p *CJSON) SortObject() {
+func (recv_ *CJSON) SortObject() {
 }
+
 // llgo:link (*CJSON).SortObjectCaseSensitive C.cJSONUtils_SortObjectCaseSensitive
-func (p *CJSON) SortObjectCaseSensitive() {
+func (recv_ *CJSON) SortObjectCaseSensitive() {
 }

@@ -1,4 +1,60 @@
 [{
+		"mangle":	"cJSONUtils_AddPatchToArray",
+		"c++":	"cJSONUtils_AddPatchToArray(cJSON *const, const char *const, const char *const, const cJSON *const)",
+		"go":	"(*CJSON).AddPatchToArray"
+	}, {
+		"mangle":	"cJSONUtils_ApplyPatches",
+		"c++":	"cJSONUtils_ApplyPatches(cJSON *const, const cJSON *const)",
+		"go":	"(*CJSON).ApplyPatches"
+	}, {
+		"mangle":	"cJSONUtils_ApplyPatchesCaseSensitive",
+		"c++":	"cJSONUtils_ApplyPatchesCaseSensitive(cJSON *const, const cJSON *const)",
+		"go":	"(*CJSON).ApplyPatchesCaseSensitive"
+	}, {
+		"mangle":	"cJSONUtils_FindPointerFromObjectTo",
+		"c++":	"cJSONUtils_FindPointerFromObjectTo(const cJSON *const, const cJSON *const)",
+		"go":	"(*CJSON).FindPointerFromObjectTo"
+	}, {
+		"mangle":	"cJSONUtils_GenerateMergePatch",
+		"c++":	"cJSONUtils_GenerateMergePatch(cJSON *const, cJSON *const)",
+		"go":	"(*CJSON).GenerateMergePatch"
+	}, {
+		"mangle":	"cJSONUtils_GenerateMergePatchCaseSensitive",
+		"c++":	"cJSONUtils_GenerateMergePatchCaseSensitive(cJSON *const, cJSON *const)",
+		"go":	"(*CJSON).GenerateMergePatchCaseSensitive"
+	}, {
+		"mangle":	"cJSONUtils_GeneratePatches",
+		"c++":	"cJSONUtils_GeneratePatches(cJSON *const, cJSON *const)",
+		"go":	"(*CJSON).GeneratePatches"
+	}, {
+		"mangle":	"cJSONUtils_GeneratePatchesCaseSensitive",
+		"c++":	"cJSONUtils_GeneratePatchesCaseSensitive(cJSON *const, cJSON *const)",
+		"go":	"(*CJSON).GeneratePatchesCaseSensitive"
+	}, {
+		"mangle":	"cJSONUtils_GetPointer",
+		"c++":	"cJSONUtils_GetPointer(cJSON *const, const char *)",
+		"go":	"(*CJSON).GetPointer"
+	}, {
+		"mangle":	"cJSONUtils_GetPointerCaseSensitive",
+		"c++":	"cJSONUtils_GetPointerCaseSensitive(cJSON *const, const char *)",
+		"go":	"(*CJSON).GetPointerCaseSensitive"
+	}, {
+		"mangle":	"cJSONUtils_MergePatch",
+		"c++":	"cJSONUtils_MergePatch(cJSON *, const cJSON *const)",
+		"go":	"(*CJSON).MergePatch"
+	}, {
+		"mangle":	"cJSONUtils_MergePatchCaseSensitive",
+		"c++":	"cJSONUtils_MergePatchCaseSensitive(cJSON *, const cJSON *const)",
+		"go":	"(*CJSON).MergePatchCaseSensitive"
+	}, {
+		"mangle":	"cJSONUtils_SortObject",
+		"c++":	"cJSONUtils_SortObject(cJSON *const)",
+		"go":	"(*CJSON).SortObject"
+	}, {
+		"mangle":	"cJSONUtils_SortObjectCaseSensitive",
+		"c++":	"cJSONUtils_SortObjectCaseSensitive(cJSON *const)",
+		"go":	"(*CJSON).SortObjectCaseSensitive"
+	}, {
 		"mangle":	"cJSON_AddArrayToObject",
 		"c++":	"cJSON_AddArrayToObject(cJSON *const, const char *const)",
 		"go":	"(*CJSON).AddArrayToObject"
@@ -21,11 +77,11 @@
 	}, {
 		"mangle":	"cJSON_AddItemToArray",
 		"c++":	"cJSON_AddItemToArray(cJSON *, cJSON *)",
-		"go":	"(*CJSON).AddItem"
+		"go":	"(*CJSON).AddItemToArray"
 	}, {
 		"mangle":	"cJSON_AddItemToObject",
 		"c++":	"cJSON_AddItemToObject(cJSON *, const char *, cJSON *)",
-		"go":	"(*CJSON).SetItem"
+		"go":	"(*CJSON).AddItemToObject"
 	}, {
 		"mangle":	"cJSON_AddItemToObjectCS",
 		"c++":	"cJSON_AddItemToObjectCS(cJSON *, const char *, cJSON *)",
@@ -61,7 +117,7 @@
 	}, {
 		"mangle":	"cJSON_CreateArray",
 		"c++":	"cJSON_CreateArray()",
-		"go":	"Array"
+		"go":	"CreateArray"
 	}, {
 		"mangle":	"cJSON_CreateArrayReference",
 		"c++":	"cJSON_CreateArrayReference(const cJSON *)",
@@ -97,7 +153,7 @@
 	}, {
 		"mangle":	"cJSON_CreateObject",
 		"c++":	"cJSON_CreateObject()",
-		"go":	"Object"
+		"go":	"CreateObject"
 	}, {
 		"mangle":	"cJSON_CreateObjectReference",
 		"c++":	"cJSON_CreateObjectReference(const cJSON *)",
@@ -109,7 +165,7 @@
 	}, {
 		"mangle":	"cJSON_CreateString",
 		"c++":	"cJSON_CreateString(const char *)",
-		"go":	"String"
+		"go":	"CreateString"
 	}, {
 		"mangle":	"cJSON_CreateStringArray",
 		"c++":	"cJSON_CreateStringArray(const char *const *, int)",
@@ -273,7 +329,7 @@
 	}, {
 		"mangle":	"cJSON_PrintUnformatted",
 		"c++":	"cJSON_PrintUnformatted(const cJSON *)",
-		"go":	"(*CJSON).CStr"
+		"go":	"(*CJSON).PrintUnformatted"
 	}, {
 		"mangle":	"cJSON_ReplaceItemInArray",
 		"c++":	"cJSON_ReplaceItemInArray(cJSON *, int, cJSON *)",
@@ -305,7 +361,7 @@
 	}, {
 		"mangle":	"cJSON_free",
 		"c++":	"cJSON_free(void *)",
-		"go":	"FreeCStr"
+		"go":	"Free"
 	}, {
 		"mangle":	"cJSON_malloc",
 		"c++":	"cJSON_malloc(size_t)",
