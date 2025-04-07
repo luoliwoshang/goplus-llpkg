@@ -1,7 +1,7 @@
 package libxslt
 
 import (
-	"github.com/luoliwoshang/goplus-llpkg/libxml2"
+	"github.com/goplus/llpkg/libxml2"
 	_ "unsafe"
 )
 
