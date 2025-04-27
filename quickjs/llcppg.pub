@@ -1,0 +1,62 @@
+BFConstCache
+BOOL
+CharRange
+CharRangeOpEnum
+DynBuf
+DynBufReallocFunc
+JSAtom
+JSCFunction
+JSCFunctionData
+JSCFunctionEnum
+JSCFunctionListEntry
+JSCFunctionMagic
+JSCFunctionType
+JSClass
+JSClassCall
+JSClassDef
+JSClassExoticMethods
+JSClassFinalizer
+JSClassGCMark
+JSClassID
+JSContext
+JSFreeArrayBufferDataFunc
+JSGCObjectHeader
+JSHostPromiseRejectionTracker
+JSInterruptHandler
+JSJobFunc
+JSMallocFunctions
+JSMallocState
+JSMemoryUsage
+JSModuleDef
+JSModuleInitFunc
+JSModuleLoaderFunc
+JSModuleNormalizeFunc
+JSObject
+JSPromiseStateEnum
+JSPropertyDescriptor
+JSPropertyEnum
+JSRefCountHeader
+JSRuntime
+JSSharedArrayBufferFunctions
+JSValue
+JSValueUnion
+JS_MarkFunc JSMarkFunc
+UnicodeGCEnum
+UnicodeNormalizationEnum
+UnicodePropertyEnum
+UnicodeScriptEnum
+bf_context_t BfContextT
+bf_flags_t BfFlagsT
+bf_realloc_func_t BfReallocFuncT
+bf_rnd_t BfRndT
+bf_t BfT
+bfdec_t BfdecT
+dlimb_t DlimbT
+int128_t Int128T
+limb_t LimbT
+list_head ListHead
+packed_u16 PackedU16
+packed_u32 PackedU32
+packed_u64 PackedU64
+slimb_t SlimbT
+uint128_t Uint128T
