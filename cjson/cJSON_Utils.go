@@ -1,18 +1,18 @@
 package cjson
 
 import (
-	"github.com/goplus/llgo/c"
+	"github.com/goplus/lib/c"
 	_ "unsafe"
 )
 
 /* Implement RFC6901 (https://tools.ietf.org/html/rfc6901) JSON Pointer spec. */
 // llgo:link (*JSON).GetPointer C.cJSONUtils_GetPointer
-func (recv_ *JSON) GetPointer(pointer *int8) *JSON {
+func (recv_ *JSON) GetPointer(pointer *c.Char) *JSON {
 	return nil
 }
 
 // llgo:link (*JSON).GetPointerCaseSensitive C.cJSONUtils_GetPointerCaseSensitive
-func (recv_ *JSON) GetPointerCaseSensitive(pointer *int8) *JSON {
+func (recv_ *JSON) GetPointerCaseSensitive(pointer *c.Char) *JSON {
 	return nil
 }
 
@@ -30,7 +30,7 @@ func (recv_ *JSON) GeneratePatchesCaseSensitive(to *JSON) *JSON {
 
 /* Utility for generating patch array entries. */
 // llgo:link (*JSON).AddPatchToArray C.cJSONUtils_AddPatchToArray
-func (recv_ *JSON) AddPatchToArray(operation *int8, path *int8, value *JSON) {
+func (recv_ *JSON) AddPatchToArray(operation *c.Char, path *c.Char, value *JSON) {
 }
 
 /* Returns 0 for success. */
@@ -70,7 +70,7 @@ func (recv_ *JSON) GenerateMergePatchCaseSensitive(to *JSON) *JSON {
 
 /* Given a root object and a target object, construct a pointer from one to the other. */
 // llgo:link (*JSON).FindPointerFromObjectTo C.cJSONUtils_FindPointerFromObjectTo
-func (recv_ *JSON) FindPointerFromObjectTo(target *JSON) *int8 {
+func (recv_ *JSON) FindPointerFromObjectTo(target *JSON) *c.Char {
 	return nil
 }
 
