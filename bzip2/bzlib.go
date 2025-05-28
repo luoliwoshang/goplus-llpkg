@@ -1,8 +1,8 @@
 package bzip2
 
 import (
-	"github.com/goplus/llgo/c"
-	"unsafe"
+	"github.com/goplus/lib/c"
+	_ "unsafe"
 )
 
 const RUN = 0
@@ -16,18 +16,18 @@ const STREAM_END = 4
 const MAX_UNUSED = 5000
 
 type BzStream struct {
-	NextIn       *int8
+	NextIn       *c.Char
 	AvailIn      c.Uint
 	TotalInLo32  c.Uint
 	TotalInHi32  c.Uint
-	NextOut      *int8
+	NextOut      *c.Char
 	AvailOut     c.Uint
 	TotalOutLo32 c.Uint
 	TotalOutHi32 c.Uint
-	State        unsafe.Pointer
-	Bzalloc      unsafe.Pointer
-	Bzfree       unsafe.Pointer
-	Opaque       unsafe.Pointer
+	State        c.Pointer
+	Bzalloc      c.Pointer
+	Bzfree       c.Pointer
+	Opaque       c.Pointer
 }
 
 /*-- Core (low-level) library functions --*/
@@ -61,25 +61,25 @@ func (recv_ *BzStream) DecompressEnd() c.Int {
 	return 0
 }
 
-type BZFILE [0]byte
+type BZFILE c.Void
 
 //go:linkname ReadOpen C.BZ2_bzReadOpen
-func ReadOpen(bzerror *c.Int, f *c.FILE, verbosity c.Int, small c.Int, unused unsafe.Pointer, nUnused c.Int) *BZFILE
+func ReadOpen(bzerror *c.Int, f *c.FILE, verbosity c.Int, small c.Int, unused c.Pointer, nUnused c.Int) *BZFILE
 
 //go:linkname ReadClose C.BZ2_bzReadClose
 func ReadClose(bzerror *c.Int, b *BZFILE)
 
 //go:linkname ReadGetUnused C.BZ2_bzReadGetUnused
-func ReadGetUnused(bzerror *c.Int, b *BZFILE, unused *unsafe.Pointer, nUnused *c.Int)
+func ReadGetUnused(bzerror *c.Int, b *BZFILE, unused *c.Pointer, nUnused *c.Int)
 
 //go:linkname Read C.BZ2_bzRead
-func Read(bzerror *c.Int, b *BZFILE, buf unsafe.Pointer, len c.Int) c.Int
+func Read(bzerror *c.Int, b *BZFILE, buf c.Pointer, len c.Int) c.Int
 
 //go:linkname WriteOpen C.BZ2_bzWriteOpen
 func WriteOpen(bzerror *c.Int, f *c.FILE, blockSize100k c.Int, verbosity c.Int, workFactor c.Int) *BZFILE
 
 //go:linkname Write C.BZ2_bzWrite
-func Write(bzerror *c.Int, b *BZFILE, buf unsafe.Pointer, len c.Int)
+func Write(bzerror *c.Int, b *BZFILE, buf c.Pointer, len c.Int)
 
 //go:linkname WriteClose C.BZ2_bzWriteClose
 func WriteClose(bzerror *c.Int, b *BZFILE, abandon c.Int, nbytes_in *c.Uint, nbytes_out *c.Uint)
@@ -89,10 +89,10 @@ func WriteClose64(bzerror *c.Int, b *BZFILE, abandon c.Int, nbytes_in_lo32 *c.Ui
 
 /*-- Utility functions --*/
 //go:linkname BuffToBuffCompress C.BZ2_bzBuffToBuffCompress
-func BuffToBuffCompress(dest *int8, destLen *c.Uint, source *int8, sourceLen c.Uint, blockSize100k c.Int, verbosity c.Int, workFactor c.Int) c.Int
+func BuffToBuffCompress(dest *c.Char, destLen *c.Uint, source *c.Char, sourceLen c.Uint, blockSize100k c.Int, verbosity c.Int, workFactor c.Int) c.Int
 
 //go:linkname BuffToBuffDecompress C.BZ2_bzBuffToBuffDecompress
-func BuffToBuffDecompress(dest *int8, destLen *c.Uint, source *int8, sourceLen c.Uint, small c.Int, verbosity c.Int) c.Int
+func BuffToBuffDecompress(dest *c.Char, destLen *c.Uint, source *c.Char, sourceLen c.Uint, small c.Int, verbosity c.Int) c.Int
 
 /*--
    Code contributed by Yoshioka Tsuneo (tsuneo@rr.iij4u.or.jp)
@@ -103,21 +103,21 @@ func BuffToBuffDecompress(dest *int8, destLen *c.Uint, source *int8, sourceLen c
    If this code breaks, please contact both Yoshioka and me.
 --*/
 //go:linkname LibVersion C.BZ2_bzlibVersion
-func LibVersion() *int8
+func LibVersion() *c.Char
 
 //go:linkname Open C.BZ2_bzopen
-func Open(path *int8, mode *int8) *BZFILE
+func Open(path *c.Char, mode *c.Char) *BZFILE
 
 //go:linkname Dopen C.BZ2_bzdopen
-func Dopen(fd c.Int, mode *int8) *BZFILE
+func Dopen(fd c.Int, mode *c.Char) *BZFILE
 
 // llgo:link (*BZFILE).Read C.BZ2_bzread
-func (recv_ *BZFILE) Read(buf unsafe.Pointer, len c.Int) c.Int {
+func (recv_ *BZFILE) Read(buf c.Pointer, len c.Int) c.Int {
 	return 0
 }
 
 // llgo:link (*BZFILE).Write C.BZ2_bzwrite
-func (recv_ *BZFILE) Write(buf unsafe.Pointer, len c.Int) c.Int {
+func (recv_ *BZFILE) Write(buf c.Pointer, len c.Int) c.Int {
 	return 0
 }
 
@@ -131,6 +131,6 @@ func (recv_ *BZFILE) Close() {
 }
 
 // llgo:link (*BZFILE).Error C.BZ2_bzerror
-func (recv_ *BZFILE) Error(errnum *c.Int) *int8 {
+func (recv_ *BZFILE) Error(errnum *c.Int) *c.Char {
 	return nil
 }
