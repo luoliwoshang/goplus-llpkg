@@ -23,8 +23,8 @@ jobs:
           - macos-latest
           - ubuntu-24.04
           - ubuntu-24.04-arm
-        llgo: [v0.10.1]
-        llcppg: [v0.3.1]
+        llgo: [87c7b65223eea16ade3ad1de4079bf2a20d20b1b]
+        llcppg: [v0.5.0]
 
     runs-on: ${{matrix.os}}
     steps:
@@ -52,17 +52,18 @@ jobs:
       - name: Install dependencies
         if: startsWith(matrix.os, 'macos')
         run: |
-          brew install llvm@18 bdw-gc openssl libffi libuv cmake cjson conan
+          brew install llvm@19 bdw-gc openssl libffi libuv cmake cjson conan lld@19
           brew link --force libffi
-          echo "$(brew --prefix llvm@18)/bin" >> $GITHUB_PATH
+          echo "$(brew --prefix llvm@19)/bin" >> $GITHUB_PATH
+          echo "$(brew --prefix lld@19)/bin" >> $GITHUB_PATH
       - name: Install dependencies
         if: startsWith(matrix.os, 'ubuntu')
         run: |
           sudo apt-get update
-          echo "deb http://apt.llvm.org/$(lsb_release -cs)/ llvm-toolchain-$(lsb_release -cs)-18 main" | sudo tee /etc/apt/sources.list.d/llvm.list
+          echo "deb http://apt.llvm.org/$(lsb_release -cs)/ llvm-toolchain-$(lsb_release -cs)-19 main" | sudo tee /etc/apt/sources.list.d/llvm.list
           wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
-          sudo apt-get install -y python3 libcjson-dev python3-pip llvm-18-dev libuv1-dev clang-18 libunwind-dev libclang-18-dev lld-18 cmake pkg-config libgc-dev libssl-dev zlib1g-dev libffi-dev libcjson-dev
-          echo "/usr/lib/llvm-18/bin" >> $GITHUB_PATH
+          sudo apt-get install -y python3 libcjson-dev python3-pip llvm-19-dev libuv1-dev clang-19 libunwind-dev libclang-19-dev lld-19 cmake pkg-config libgc-dev libssl-dev zlib1g-dev libffi-dev libcjson-dev
+          echo "/usr/lib/llvm-19/bin" >> $GITHUB_PATH
           python3 -m pip install conan
       - name: Set up Conan
         run: |
@@ -70,8 +71,7 @@ jobs:
       - name: Setup LLGo
         working-directory: .llgo
         run: |
-          cd compiler
-          go install -v ./cmd/...
+          go install -v ./cmd/llgo/...
           export LLGO_ROOT=$GITHUB_WORKSPACE/llgo
           echo "LLGO_ROOT=$LLGO_ROOT" >> $GITHUB_ENV
       - name: Setup LLCppg
