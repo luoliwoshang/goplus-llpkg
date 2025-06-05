@@ -1,8 +1,8 @@
 package quickjs
 
 import (
-	"github.com/goplus/llgo/c"
-	"unsafe"
+	"github.com/goplus/lib/c"
+	_ "unsafe"
 )
 
 const UTF8_CHAR_LEN_MAX = 6
@@ -15,39 +15,39 @@ const (
 )
 
 //go:linkname Pstrcpy C.pstrcpy
-func Pstrcpy(buf *int8, buf_size c.Int, str *int8)
+func Pstrcpy(buf *c.Char, buf_size c.Int, str *c.Char)
 
 //go:linkname Pstrcat C.pstrcat
-func Pstrcat(buf *int8, buf_size c.Int, s *int8) *int8
+func Pstrcat(buf *c.Char, buf_size c.Int, s *c.Char) *c.Char
 
 //go:linkname Strstart C.strstart
-func Strstart(str *int8, val *int8, ptr **int8) c.Int
+func Strstart(str *c.Char, val *c.Char, ptr **c.Char) c.Int
 
 //go:linkname HasSuffix C.has_suffix
-func HasSuffix(str *int8, suffix *int8) c.Int
+func HasSuffix(str *c.Char, suffix *c.Char) c.Int
 
 type PackedU64 struct {
-	V uint64
+	V c.Uint64T
 }
 
 type PackedU32 struct {
-	V uint32
+	V c.Uint32T
 }
 
 type PackedU16 struct {
-	V uint16
+	V c.Uint16T
 }
 
 // llgo:type C
-type DynBufReallocFunc func(unsafe.Pointer, unsafe.Pointer, uintptr) unsafe.Pointer
+type DynBufReallocFunc func(c.Pointer, c.Pointer, c.SizeT) c.Pointer
 
 type DynBuf struct {
-	Buf           *uint8
-	Size          uintptr
-	AllocatedSize uintptr
+	Buf           *c.Uint8T
+	Size          c.SizeT
+	AllocatedSize c.SizeT
 	Error         BOOL
-	ReallocFunc   *unsafe.Pointer
-	Opaque        unsafe.Pointer
+	ReallocFunc   *c.Pointer
+	Opaque        c.Pointer
 }
 
 // llgo:link (*DynBuf).DbufInit C.dbuf_init
@@ -55,41 +55,41 @@ func (recv_ *DynBuf) DbufInit() {
 }
 
 // llgo:link (*DynBuf).DbufInit2 C.dbuf_init2
-func (recv_ *DynBuf) DbufInit2(opaque unsafe.Pointer, realloc_func DynBufReallocFunc) {
+func (recv_ *DynBuf) DbufInit2(opaque c.Pointer, realloc_func DynBufReallocFunc) {
 }
 
 // llgo:link (*DynBuf).DbufRealloc C.dbuf_realloc
-func (recv_ *DynBuf) DbufRealloc(new_size uintptr) c.Int {
+func (recv_ *DynBuf) DbufRealloc(new_size c.SizeT) c.Int {
 	return 0
 }
 
 // llgo:link (*DynBuf).DbufWrite C.dbuf_write
-func (recv_ *DynBuf) DbufWrite(offset uintptr, data *uint8, len uintptr) c.Int {
+func (recv_ *DynBuf) DbufWrite(offset c.SizeT, data *c.Uint8T, len c.SizeT) c.Int {
 	return 0
 }
 
 // llgo:link (*DynBuf).DbufPut C.dbuf_put
-func (recv_ *DynBuf) DbufPut(data *uint8, len uintptr) c.Int {
+func (recv_ *DynBuf) DbufPut(data *c.Uint8T, len c.SizeT) c.Int {
 	return 0
 }
 
 // llgo:link (*DynBuf).DbufPutSelf C.dbuf_put_self
-func (recv_ *DynBuf) DbufPutSelf(offset uintptr, len uintptr) c.Int {
+func (recv_ *DynBuf) DbufPutSelf(offset c.SizeT, len c.SizeT) c.Int {
 	return 0
 }
 
 // llgo:link (*DynBuf).DbufPutc C.dbuf_putc
-func (recv_ *DynBuf) DbufPutc(c uint8) c.Int {
+func (recv_ *DynBuf) DbufPutc(c c.Uint8T) c.Int {
 	return 0
 }
 
 // llgo:link (*DynBuf).DbufPutstr C.dbuf_putstr
-func (recv_ *DynBuf) DbufPutstr(str *int8) c.Int {
+func (recv_ *DynBuf) DbufPutstr(str *c.Char) c.Int {
 	return 0
 }
 
 // llgo:link (*DynBuf).DbufPrintf C.dbuf_printf
-func (recv_ *DynBuf) DbufPrintf(fmt *int8, __llgo_va_list ...interface{}) c.Int {
+func (recv_ *DynBuf) DbufPrintf(fmt *c.Char, __llgo_va_list ...interface{}) c.Int {
 	return 0
 }
 
@@ -98,10 +98,10 @@ func (recv_ *DynBuf) DbufFree() {
 }
 
 //go:linkname UnicodeToUtf8 C.unicode_to_utf8
-func UnicodeToUtf8(buf *uint8, c c.Uint) c.Int
+func UnicodeToUtf8(buf *c.Uint8T, c c.Uint) c.Int
 
 //go:linkname UnicodeFromUtf8 C.unicode_from_utf8
-func UnicodeFromUtf8(p *uint8, max_len c.Int, pp **uint8) c.Int
+func UnicodeFromUtf8(p *c.Uint8T, max_len c.Int, pp **c.Uint8T) c.Int
 
 //go:linkname Rqsort C.rqsort
-func Rqsort(base unsafe.Pointer, nmemb uintptr, size uintptr, cmp func(unsafe.Pointer, unsafe.Pointer, unsafe.Pointer) c.Int, arg unsafe.Pointer)
+func Rqsort(base c.Pointer, nmemb c.SizeT, size c.SizeT, cmp func(c.Pointer, c.Pointer, c.Pointer) c.Int, arg c.Pointer)

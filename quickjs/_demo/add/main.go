@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/goplus/llgo/c"
+	"github.com/goplus/lib/c"
 	"github.com/goplus/llpkg/quickjs"
 )
 
@@ -17,8 +17,7 @@ func main() {
 	}
 	ctx.JsStdAddHelpers(0, nil)
 	jsCode := c.Str("console.log('Hello from QuickJS! 1 + 2 =', 1 + 2);")
-	result := ctx.JSEval(jsCode, c.Strlen(jsCode), c.Str("<input>"), 0)
-	ctx.X__JSFreeValue(result)
+	ctx.JSEval(jsCode, c.Strlen(jsCode), c.Str("<input>"), 0)
 	ctx.JSFreeContext()
 	rt.JSFreeRuntime()
 }
