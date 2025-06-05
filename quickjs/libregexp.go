@@ -32,6 +32,3 @@ func LreCheckStackOverflow(opaque c.Pointer, alloca_size c.SizeT) c.Int
 
 //go:linkname LreRealloc C.lre_realloc
 func LreRealloc(opaque c.Pointer, ptr c.Pointer, size c.SizeT) c.Pointer
-
-//go:linkname LreJsIsIdentNext C.lre_js_is_ident_next
-func LreJsIsIdentNext(c c.Int) c.Int
