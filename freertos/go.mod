@@ -1,4 +1,4 @@
-module freertos
+module github.com/luoliwoshang/goplus-llpkg/freertos
 
 go 1.20
 
